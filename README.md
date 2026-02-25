@@ -1,7 +1,7 @@
 # 🎮 自作GAME STREAM DJ v1.2.0-beta
+配信者向け高機能BGM管理ツール。YouTube音源をコピーするだけで曲を登録、自動でループ解析、OBS連動など自動曲を切り替え機能
 <img width="1752" height="1029" alt="スクリーンショット 2026-02-23 164926" src="https://github.com/user-attachments/assets/867cb036-9089-4634-8170-209956534859" />
 
-配信者向け高機能BGM管理ツール。YouTube音源をコピーするだけで曲を登録、自動でループ解析、OBS連動など自動曲を切り替え機能
 ## 🚀 起動方法
 
 1. **`start.bat`** をダブルクリック
