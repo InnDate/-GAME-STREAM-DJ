@@ -17,8 +17,8 @@ const state = {
     lastSelectedId: null,
 
     deckA: {
-        videoId: '', currentUrl: '', p1: null, p2: null, activePlayer: 1,
-        ready1: false, ready2: false,
+        videoId: '', currentUrl: '', p1: null, p2: null, pPreload: null, activePlayer: 1,
+        ready1: false, ready2: false, readyPreload: false,
         volume: 80, trim: 1.0, trimAutoEnabled: false, loopStart: 0, loopEnd: 9999,
         queue: [],
         nextLoopQueued: false,
@@ -28,8 +28,8 @@ const state = {
     },
 
     deckB: {
-        videoId: '', currentUrl: '', p1: null, p2: null, activePlayer: 1,
-        ready1: false, ready2: false,
+        videoId: '', currentUrl: '', p1: null, p2: null, pPreload: null, activePlayer: 1,
+        ready1: false, ready2: false, readyPreload: false,
         volume: 80, trim: 1.0, trimAutoEnabled: false, loopStart: 6, loopEnd: 92,
         queue: [],
         nextLoopQueued: false,
@@ -2640,15 +2640,20 @@ function loadTrackDirect(deckKey, url, autoPlay = true, trackId = null, trackInf
     
     resetDeck(deckKey);
 
-    const nextP = deckState.activePlayer === 1 ? deckState.p2 : deckState.p1;
-
     if (autoPlay && isPlaying) {
         // Loader -> Fade sequence
-        // Load into the INACTIVE player to keep current music playing
+        // Use Preload player to check if video is ready without touching p1/p2
         deckState.pendingFade = { vid, autoPlay, trackId, trackInfo };
-        nextP.cueVideoById({videoId: vid, suggestedQuality: 'tiny'});
+        if (deckState.pPreload) {
+            deckState.pPreload.cueVideoById({videoId: vid, suggestedQuality: 'tiny'});
+        } else {
+            // Fallback if pPreload not ready
+            const nextP = deckState.activePlayer === 1 ? deckState.p2 : deckState.p1;
+            nextP.cueVideoById({videoId: vid, suggestedQuality: 'tiny'});
+        }
     } else if (autoPlay) {
         activeP.loadVideoById({videoId: vid, suggestedQuality: 'tiny'});
+        const nextP = deckState.activePlayer === 1 ? deckState.p2 : deckState.p1;
         nextP.cueVideoById({videoId: vid, suggestedQuality: 'tiny'});
     } else {
         deckState.p1.cueVideoById({videoId: vid, suggestedQuality: 'tiny'});
@@ -3684,10 +3689,11 @@ window.onYouTubeIframeAPIReady = function () {
         const isB = deckKey.startsWith('deckB');
         const dk = isB ? state.deckB : state.deckA;
         if (deckKey.endsWith('1')) dk.ready1 = true;
-        else dk.ready2 = true;
+        else if (deckKey.endsWith('2')) dk.ready2 = true;
+        else if (deckKey.endsWith('Preload')) dk.readyPreload = true;
         
         // Initial quality set
-        const p = (deckKey.endsWith('1') ? dk.p1 : dk.p2);
+        const p = (deckKey.endsWith('1') ? dk.p1 : (deckKey.endsWith('2') ? dk.p2 : dk.pPreload));
         if (p && p.setPlaybackQuality) p.setPlaybackQuality('tiny');
     };
 
@@ -3703,29 +3709,23 @@ window.onYouTubeIframeAPIReady = function () {
             const dkKey = deckKey.startsWith('deckB') ? 'deckB' : 'deckA';
             const deckState = state[dkKey];
             
-            // Only trigger if this specific player is the NEXT one to be played
+            // Trigger if PRELOAD player is ready, or if we used the loop player as fallback
+            const isPreload = deckKey.endsWith('Preload');
             const isNextP = (deckState.activePlayer === 1 && deckKey.endsWith('2')) || (deckState.activePlayer === 2 && deckKey.endsWith('1'));
 
-            if (deckState.pendingFade && isNextP) {
+            if (deckState.pendingFade && (isPreload || isNextP)) {
                 deckState.pendingFade = null;
-                // Fix: Select duration based on which DECK is being switched, not the current global mode
                 const duration = (dkKey === 'deckB' ? state.settings.fadeDurationAB : state.settings.fadeDurationBA) || 2.0;
 
                 animateDeckFade(dkKey, 1.0, 0.0, duration * 1000, () => {
-                    // 1. Pause current active player
-                    const oldP = deckState.activePlayer === 1 ? deckState.p1 : deckState.p2;
-                    if (oldP && oldP.pauseVideo) oldP.pauseVideo();
-
-                    // 2. Swap active player
-                    deckState.activePlayer = (deckState.activePlayer === 1 ? 2 : 1);
-
-                    // 3. Play new player
-                    const newP = deckState.activePlayer === 1 ? deckState.p1 : deckState.p2;
-                    if (newP && newP.playVideo) {
-                        newP.playVideo();
+                    // Start new track on current active player
+                    // Since it was buffered in pPreload, this should be fast
+                    const p = deckState.activePlayer === 1 ? deckState.p1 : deckState.p2;
+                    if (p && p.loadVideoById) {
+                        p.loadVideoById({videoId: deckState.videoId, suggestedQuality: 'tiny'});
                     }
 
-                    // 4. Restore volume instantly
+                    // Restore volume instantly
                     deckState.fadeMultiplier = 1.0;
                     applyMixer();
                 });
@@ -3755,6 +3755,14 @@ window.onYouTubeIframeAPIReady = function () {
             onPlaybackRateChange: () => forceSpeedGuard()
         }
     });
+    state.deckA.pPreload = new YT.Player('player-a-preload', {
+        height: '1', width: '1', playerVars: { playsinline: 1, controls: 0, disablekb: 1 },
+        events: { 
+            onReady: () => commonOnReady('deckAPreload'),
+            onStateChange: (e) => commonOnStateChange('deckAPreload', e)
+        }
+    });
+
     state.deckB.p1 = new YT.Player('player-b-1', {
         height: '1', width: '1', playerVars: { playsinline: 1, controls: 0, disablekb: 1 },
         events: { 
@@ -3771,6 +3779,13 @@ window.onYouTubeIframeAPIReady = function () {
             onStateChange: (e) => commonOnStateChange('deckB2', e),
             onError: (e) => commonOnError('deckB2', e),
             onPlaybackRateChange: () => forceSpeedGuard()
+        }
+    });
+    state.deckB.pPreload = new YT.Player('player-b-preload', {
+        height: '1', width: '1', playerVars: { playsinline: 1, controls: 0, disablekb: 1 },
+        events: { 
+            onReady: () => commonOnReady('deckBPreload'),
+            onStateChange: (e) => commonOnStateChange('deckBPreload', e)
         }
     });
 };
