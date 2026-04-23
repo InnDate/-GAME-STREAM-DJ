@@ -1,5 +1,5 @@
 /**
- * 自作GAME STREAM DJ - v1.8.9
+ * 自作GAME STREAM DJ - v1.9.0
  * Grouping and Advanced UI
  */
 
@@ -378,6 +378,7 @@ function resetDeck(deckKey) {
 
     if (dk.p1) dk.p1.pauseVideo();
     if (dk.p2) dk.p2.pauseVideo();
+    if (dk.pPreload) dk.pPreload.pauseVideo();
 
     applyMixer(); // Ensure volume is restored in actual players
 }
@@ -3755,6 +3756,12 @@ window.onYouTubeIframeAPIReady = function () {
                 animateDeckFade(dkKey, 1.0, 0.0, duration * 1000, () => {
                     // Play the player that just became CUED
                     const targetP = (isPreload ? deckState.pPreload : (isP1 ? deckState.p1 : (isP2 ? deckState.p2 : null)));
+                    
+                    // Pause ALL other players in this deck to ensure old song stops completely
+                    if (deckState.p1 && deckState.p1 !== targetP) deckState.p1.pauseVideo();
+                    if (deckState.p2 && deckState.p2 !== targetP) deckState.p2.pauseVideo();
+                    if (deckState.pPreload && deckState.pPreload !== targetP) deckState.pPreload.pauseVideo();
+
                     if (targetP && targetP.playVideo) {
                         targetP.playVideo();
                     }
