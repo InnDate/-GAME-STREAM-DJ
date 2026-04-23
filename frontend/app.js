@@ -1,5 +1,5 @@
 /**
- * 自作GAME STREAM DJ - v1.8.8
+ * 自作GAME STREAM DJ - v1.8.9
  * Grouping and Advanced UI
  */
 
@@ -2650,12 +2650,14 @@ function loadTrackDirect(deckKey, url, autoPlay = true, trackId = null, trackInf
         deckState.nextLoopQueued = false;
         applyMixer();
 
-        // Use Preload player only. DO NOT touch p1/p2 as they are playing.
+        // Use a player that is NOT currently playing for preloading
         deckState.pendingFade = { vid, autoPlay, trackId, trackInfo };
-        if (deckState.pPreload) {
-            deckState.pPreload.cueVideoById({videoId: vid, suggestedQuality: 'tiny'});
+        
+        const loaderP = (deckState.activePlayer === 3) ? deckState.p1 : deckState.pPreload;
+        if (loaderP) {
+            loaderP.cueVideoById({videoId: vid, suggestedQuality: 'tiny'});
         } else {
-            console.error("pPreload not ready for", deckKey);
+            console.error("No loader player ready for", deckKey);
             deckState.p1.cueVideoById({videoId: vid, suggestedQuality: 'tiny'});
         }
     } else {
@@ -3738,27 +3740,39 @@ window.onYouTubeIframeAPIReady = function () {
             const dkKey = deckKey.startsWith('deckB') ? 'deckB' : 'deckA';
             const deckState = state[dkKey];
             
-            // Trigger if PRELOAD player is ready
+            // Trigger if a non-active player we cued is ready
             const isPreload = deckKey.endsWith('Preload');
+            const isP1 = deckKey.endsWith('1');
+            const isP2 = deckKey.endsWith('2');
 
-            if (deckState.pendingFade && isPreload) {
+            const isActive = (deckState.activePlayer === 3 && isPreload) ||
+                             (deckState.activePlayer === 1 && isP1) ||
+                             (deckState.activePlayer === 2 && isP2);
+
+            if (deckState.pendingFade && !isActive) {
                 deckState.pendingFade = null;
                 // Use directional fade duration
                 const duration = (state.mode === 'A' ? state.settings.fadeDurationAB : state.settings.fadeDurationBA) || 2.0;
 
                 animateDeckFade(dkKey, 1.0, 0.0, duration * 1000, () => {
-                    // Play the track DIRECTLY on pPreload to avoid loading lag
-                    if (deckState.pPreload && deckState.pPreload.playVideo) {
-                        deckState.pPreload.playVideo();
+                    // Play the player that just became CUED
+                    const targetP = (isPreload ? deckState.pPreload : (isP1 ? deckState.p1 : (isP2 ? deckState.p2 : null)));
+                    if (targetP && targetP.playVideo) {
+                        targetP.playVideo();
                     }
                     
-                    // Mark pPreload (Player 3) as active
-                    deckState.activePlayer = 3;
+                    // Mark this player as active
+                    deckState.activePlayer = (isPreload ? 3 : (isP1 ? 1 : 2));
 
-                    // Update p1 and p2 with the NEW video in background so they are ready for future loops
-                    // (Current song is already playing on pPreload, so it's safe to update p1/p2)
-                    if (deckState.p1) deckState.p1.cueVideoById({videoId: deckState.videoId, suggestedQuality: 'tiny'});
-                    if (deckState.p2) deckState.p2.cueVideoById({videoId: deckState.videoId, suggestedQuality: 'tiny'});
+                    // Update the OTHER loop player in background so they are ready for future loops
+                    // If we are on 3 or 1, prepare 2. If we are on 2, prepare 1.
+                    const otherP = (deckState.activePlayer === 2) ? deckState.p1 : deckState.p2;
+                    if (otherP) otherP.cueVideoById({videoId: deckState.videoId, suggestedQuality: 'tiny'});
+                    
+                    // Also ensure the other primary player is updated if we switched to/from Preload
+                    if (deckState.activePlayer === 3) {
+                        if (deckState.p1) deckState.p1.cueVideoById({videoId: deckState.videoId, suggestedQuality: 'tiny'});
+                    }
 
                     // Restore volume instantly
                     deckState.fadeMultiplier = 1.0;
