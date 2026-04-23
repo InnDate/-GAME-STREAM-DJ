@@ -365,8 +365,16 @@ function resetDeck(deckKey) {
     dk.activePlayer = 1;
     dk.nextLoopQueued = false;
     dk.switching = false;
+
+    // Stop ongoing fade and reset multiplier
+    if (!dk.fadeId) dk.fadeId = 0;
+    dk.fadeId++;
+    dk.fadeMultiplier = 1.0;
+
     if (dk.p1) dk.p1.pauseVideo();
     if (dk.p2) dk.p2.pauseVideo();
+
+    applyMixer(); // Ensure volume is restored in actual players
 }
 
 function resetDeckA() {
@@ -3700,7 +3708,8 @@ window.onYouTubeIframeAPIReady = function () {
 
             if (deckState.pendingFade && isNextP) {
                 deckState.pendingFade = null;
-                const duration = (state.mode === 'A' ? state.settings.fadeDurationAB : state.settings.fadeDurationBA) || 2.0;
+                // Fix: Select duration based on which DECK is being switched, not the current global mode
+                const duration = (dkKey === 'deckB' ? state.settings.fadeDurationAB : state.settings.fadeDurationBA) || 2.0;
 
                 animateDeckFade(dkKey, 1.0, 0.0, duration * 1000, () => {
                     // 1. Pause current active player
