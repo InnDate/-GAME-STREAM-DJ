@@ -1,5 +1,5 @@
 /**
- * 自作GAME STREAM DJ - v1.8.7
+ * 自作GAME STREAM DJ - v1.8.8
  * Grouping and Advanced UI
  */
 
@@ -2647,24 +2647,25 @@ function loadTrackDirect(deckKey, url, autoPlay = true, trackId = null, trackInf
 
     if (autoPlay && isPlaying) {
         // Loader -> Fade sequence
-        // Use Preload player to check if video is ready without touching p1/p2
+        // Use Preload player only. DO NOT touch p1/p2 yet as they might be playing.
         deckState.pendingFade = { vid, autoPlay, trackId, trackInfo };
         if (deckState.pPreload) {
             deckState.pPreload.cueVideoById({videoId: vid, suggestedQuality: 'tiny'});
         } else {
-            // Should not happen if init is correct
             console.error("pPreload not ready for", deckKey);
+            // Fallback to p1 only if absolutely necessary (will cause stutter)
             deckState.p1.cueVideoById({videoId: vid, suggestedQuality: 'tiny'});
         }
-    } else if (autoPlay) {
-        // Not playing -> Load directly to p1
-        deckState.activePlayer = 1;
-        deckState.p1.loadVideoById({videoId: vid, suggestedQuality: 'tiny'});
     } else {
+        // Not playing -> Load directly to p1 and p2
         deckState.activePlayer = 1;
-        deckState.p1.cueVideoById({videoId: vid, suggestedQuality: 'tiny'});
+        if (autoPlay) {
+            deckState.p1.loadVideoById({videoId: vid, suggestedQuality: 'tiny'});
+        } else {
+            deckState.p1.cueVideoById({videoId: vid, suggestedQuality: 'tiny'});
+        }
+        deckState.p2.cueVideoById({videoId: vid, suggestedQuality: 'tiny'});
     }
-    deckState.p2.cueVideoById({videoId: vid, suggestedQuality: 'tiny'});
     fetchTitle(vid, `info-${keyLower}-title`, deckKey);
 }
 
@@ -3743,6 +3744,11 @@ window.onYouTubeIframeAPIReady = function () {
                     
                     // Mark pPreload (Player 3) as active
                     deckState.activePlayer = 3;
+
+                    // Update p1 and p2 with the NEW video in background so they are ready for future loops
+                    // (Current song is already playing on pPreload, so it's safe to update p1/p2)
+                    if (deckState.p1) deckState.p1.cueVideoById({videoId: deckState.videoId, suggestedQuality: 'tiny'});
+                    if (deckState.p2) deckState.p2.cueVideoById({videoId: deckState.videoId, suggestedQuality: 'tiny'});
 
                     // Restore volume instantly
                     deckState.fadeMultiplier = 1.0;
