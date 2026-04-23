@@ -2,9 +2,11 @@
   "playlists": {
     "deckA": [
       {
-        "url": "https://www.youtube.com/watch?v=8Ec5zMIbREk&list=PLhmIWJu57gfcU5ZFjASxtHlFtcQTrCEdg&index=103",
-        "title": "098 - Random Dungeon Theme 1 - (Pokémon Mystery Dungeon - Explorers of Sky)",
-        "id": "17769122750084194"
+        "url": "https://www.youtube.com/watch?v=dZCWU1q3xAs&list=PLhmIWJu57gfcU5ZFjASxtHlFtcQTrCEdg&index=104",
+        "title": "099 - Random Dungeon Theme 2 - (Pokémon Mystery Dungeon - Explorers of Sky)",
+        "id": "17769146743888453",
+        "trim": 1,
+        "rms": 0.1
       },
       {
         "url": "https://www.youtube.com/watch?v=sFkhJMg-lwM",
@@ -12,6 +14,13 @@
         "loopStart": 41.94,
         "loopEnd": 93.53,
         "id": "17769089163704909"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=8Ec5zMIbREk&list=PLhmIWJu57gfcU5ZFjASxtHlFtcQTrCEdg&index=103",
+        "title": "098 - Random Dungeon Theme 1 - (Pokémon Mystery Dungeon - Explorers of Sky)",
+        "id": "17769146435529872",
+        "loopStart": 74.614,
+        "loopEnd": 158.852
       },
       {
         "url": "https://www.youtube.com/watch?v=E_l1LJWfqUc",
@@ -41,7 +50,7 @@
         "id": "group_17743237239684413",
         "type": "group",
         "title": "Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-        "collapsed": false,
+        "collapsed": true,
         "children": [
           {
             "url": "https://www.youtube.com/watch?v=AYSM_upZDYk",
@@ -2129,7 +2138,9 @@
         "title": "【Pokémon LEGENDS Z-A】オヤブン(異次元ミアレ)戦闘 BGM 【M次元ラッシュ】【1時間耐久】【ポケモンZA】【作業用BGM】",
         "loopStart": 0,
         "loopEnd": 0,
-        "id": "17769074415319743"
+        "id": "17769074415319743",
+        "trim": 4.67,
+        "rms": 0.0214
       },
       {
         "id": "17766827086503462",
@@ -2639,8 +2650,8 @@
             "url": "https://www.youtube.com/watch?v=6-fQXz4B8NY#title=%E3%80%90Pok%C3%A9mon%20LEGENDS%20Z-A%E3%80%91%E3%82%AA%E3%83%A4%E3%83%96%E3%83%B3(%E7%95%B0%E6%AC%A1%E5%85%83%E3%83%9F%E3%82%A2%E3%83%AC)%E6%88%A6%E9%97%98%20BGM%20%E3%80%90M%E6%AC%A1%E5%85%83%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5%E3%80%91%E3%80%901%E6%99%82%E9%96%93%E8%80%90%E4%B9%85%E3%80%91%E3%80%90%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3ZA%E3%80%91%E3%80%90%E4%BD%9C%E6%A5%AD%E7%94%A8BGM%E3%80%91#title=%E3%80%90Pok%C3%A9mon%20LEGENDS%20Z-A%E3%80%91%E3%82%AA%E3%83%A4%E3%83%96%E3%83%B3(%E7%95%B0%E6%AC%A1%E5%85%83%E3%83%9F%E3%82%A2%E3%83%AC)%E6%88%A6%E9%97%98%20BGM%20%E3%80%90M%E6%AC%A1%E5%85%83%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5%E3%80%91%E3%80%901%E6%99%82%E9%96%93%E8%80%90%E4%B9%85%E3%80%91%E3%80%90%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3ZA%E3%80%91%E3%80%90%E4%BD%9C%E6%A5%AD%E7%94%A8BGM%E3%80%91#title=%E3%80%90Pok%C3%A9mon%20LEGENDS%20Z-A%E3%80%91%E3%82%AA%E3%83%A4%E3%83%96%E3%83%B3(%E7%95%B0%E6%AC%A1%E5%85%83%E3%83%9F%E3%82%A2%E3%83%AC)%E6%88%A6%E9%97%98%20BGM%20%E3%80%90M%E6%AC%A1%E5%85%83%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5%E3%80%91%E3%80%901%E6%99%82%E9%96%93%E8%80%90%E4%B9%85%E3%80%91%E3%80%90%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3ZA%E3%80%91%E3%80%90%E4%BD%9C%E6%A5%AD%E7%94%A8BGM%E3%80%91#title=%E3%80%90Pok%C3%A9mon%20LEGENDS%20Z-A%E3%80%91%E3%82%AA%E3%83%A4%E3%83%96%E3%83%B3(%E7%95%B0%E6%AC%A1%E5%85%83%E3%83%9F%E3%82%A2%E3%83%AC)%E6%88%A6%E9%97%98%20BGM%20%E3%80%90M%E6%AC%A1%E5%85%83%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5%E3%80%91%E3%80%901%E6%99%82%E9%96%93%E8%80%90%E4%B9%85%E3%80%91%E3%80%90%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3ZA%E3%80%91%E3%80%90%E4%BD%9C%E6%A5%AD%E7%94%A8BGM%E3%80%91&trim=4&title=%E3%80%90Pok%C3%A9mon%20LEGENDS%20Z-A%E3%80%91%E3%82%AA%E3%83%A4%E3%83%96%E3%83%B3(%E7%95%B0%E6%AC%A1%E5%85%83%E3%83%9F%E3%82%A2%E3%83%AC)%E6%88%A6%E9%97%98%20BGM%20%E3%80%90M%E6%AC%A1%E5%85%83%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5%E3%80%91%E3%80%901%E6%99%82%E9%96%93%E8%80%90%E4%B9%85%E3%80%91%E3%80%90%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3ZA%E3%80%91%E3%80%90%E4%BD%9C%E6%A5%AD%E7%94%A8BGM%E3%80%91#title=%E3%80%90Pok%C3%A9mon%20LEGENDS%20Z-A%E3%80%91%E3%82%AA%E3%83%A4%E3%83%96%E3%83%B3(%E7%95%B0%E6%AC%A1%E5%85%83%E3%83%9F%E3%82%A2%E3%83%AC)%E6%88%A6%E9%97%98%20BGM%20%E3%80%90M%E6%AC%A1%E5%85%83%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5%E3%80%91%E3%80%901%E6%99%82%E9%96%93%E8%80%90%E4%B9%85%E3%80%91%E3%80%90%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3ZA%E3%80%91%E3%80%90%E4%BD%9C%E6%A5%AD%E7%94%A8BGM%E3%80%91#title=%E3%80%90Pok%C3%A9mon%20LEGENDS%20Z-A%E3%80%91%E3%82%AA%E3%83%A4%E3%83%96%E3%83%B3(%E7%95%B0%E6%AC%A1%E5%85%83%E3%83%9F%E3%82%A2%E3%83%AC)%E6%88%A6%E9%97%98%20BGM%20%E3%80%90M%E6%AC%A1%E5%85%83%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5%E3%80%91%E3%80%901%E6%99%82%E9%96%93%E8%80%90%E4%B9%85%E3%80%91%E3%80%90%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3ZA%E3%80%91%E3%80%90%E4%BD%9C%E6%A5%AD%E7%94%A8BGM%E3%80%91#title=%E3%80%90Pok%C3%A9mon%20LEGENDS%20Z-A%E3%80%91%E3%82%AA%E3%83%A4%E3%83%96%E3%83%B3(%E7%95%B0%E6%AC%A1%E5%85%83%E3%83%9F%E3%82%A2%E3%83%AC)%E6%88%A6%E9%97%98%20BGM%20%E3%80%90M%E6%AC%A1%E5%85%83%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5%E3%80%91%E3%80%901%E6%99%82%E9%96%93%E8%80%90%E4%B9%85%E3%80%91%E3%80%90%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3ZA%E3%80%91%E3%80%90%E4%BD%9C%E6%A5%AD%E7%94%A8BGM%E3%80%91#title=%E3%80%90Pok%C3%A9mon%20LEGENDS%20Z-A%E3%80%91%E3%82%AA%E3%83%A4%E3%83%96%E3%83%B3(%E7%95%B0%E6%AC%A1%E5%85%83%E3%83%9F%E3%82%A2%E3%83%AC)%E6%88%A6%E9%97%98%20BGM%20%E3%80%90M%E6%AC%A1%E5%85%83%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5%E3%80%91%E3%80%901%E6%99%82%E9%96%93%E8%80%90%E4%B9%85%E3%80%91%E3%80%90%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3ZA%E3%80%91%E3%80%90%E4%BD%9C%E6%A5%AD%E7%94%A8BGM%E3%80%91",
             "title": "【Pokémon LEGENDS Z-A】オヤブン(異次元ミアレ)戦闘 BGM 【M次元ラッシュ】【1時間耐久】【ポケモンZA】【作業用BGM】",
             "id": "17768351722038035",
-            "trim": 3.57,
-            "rms": 0.0224
+            "trim": 4.67,
+            "rms": 0.0214
           },
           {
             "url": "https://www.youtube.com/watch?v=0vvmc_gQQJU#trim=2.5&title=%E3%80%90Pok%C3%A9mon%20LEGENDS%20Z-A%E3%80%91%E9%87%8E%E7%94%9F%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3(%E7%95%B0%E6%AC%A1%E5%85%83%E3%83%9F%E3%82%A2%E3%83%AC)%20%E6%88%A6%E9%97%98%20BGM%20%E3%80%901%E6%99%82%E9%96%93%E8%80%90%E4%B9%85%E3%80%91%E3%80%90%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3ZA%E3%80%91%E3%80%90%E4%BD%9C%E6%A5%AD%E7%94%A8BGM%E3%80%91#trim=2.5&title=%E3%80%90Pok%C3%A9mon%20LEGENDS%20Z-A%E3%80%91%E9%87%8E%E7%94%9F%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3(%E7%95%B0%E6%AC%A1%E5%85%83%E3%83%9F%E3%82%A2%E3%83%AC)%20%E6%88%A6%E9%97%98%20BGM%20%E3%80%901%E6%99%82%E9%96%93%E8%80%90%E4%B9%85%E3%80%91%E3%80%90%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3ZA%E3%80%91%E3%80%90%E4%BD%9C%E6%A5%AD%E7%94%A8BGM%E3%80%91",
@@ -7199,7 +7210,7 @@
     "playModeA": "shuffle",
     "playModeB": "group_shuffle",
     "obsEnabled": true,
-    "clipboardWatchEnabled": true,
+    "clipboardWatchEnabled": false,
     "timerMinutes": 10,
     "timerEnabledAB": true,
     "timerEnabledBA": false,
@@ -7215,7 +7226,7 @@
     "timerSecondsAB": 2,
     "timerSecondsBA": 0,
     "clipboardAutoAnalyze": false,
-    "targetRms": 0.0224,
+    "targetRms": 0.021,
     "syncTrim": true
   }
 }

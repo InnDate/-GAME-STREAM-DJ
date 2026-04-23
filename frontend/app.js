@@ -2587,6 +2587,14 @@ function loadTrackDirect(deckKey, url, autoPlay = true, trackId = null, trackInf
                 indicator.textContent = 'WAITING...';
                 indicator.classList.add('trim-scanning');
             }
+            // もし隣のデッキが実際に解析中でなければ、強制的に解析を開始させる
+            const otherLower = isA ? 'b' : 'a';
+            const otherIndicator = document.getElementById(`trim-auto-${otherLower}`);
+            if (otherIndicator && !otherIndicator.classList.contains('trim-scanning')) {
+                otherIndicator.textContent = 'SCANNING...';
+                otherIndicator.classList.add('trim-scanning');
+                state.ws.send(JSON.stringify({ type: 'analyze_loop', url: otherDeck.currentUrl, trim_only: true, target_rms: state.settings.targetRms || 0.08 }));
+            }
         } else {
             // デフォルトの基準でスキャン
             const indicator = document.getElementById(`trim-auto-${keyLower}`);
@@ -2624,15 +2632,20 @@ function loadTrackDirect(deckKey, url, autoPlay = true, trackId = null, trackInf
     
     resetDeck(deckKey);
 
+    const nextP = deckState.activePlayer === 1 ? deckState.p2 : deckState.p1;
+
     if (autoPlay && isPlaying) {
+        // Loader -> Fade sequence
+        // Load into the INACTIVE player to keep current music playing
         deckState.pendingFade = { vid, autoPlay, trackId, trackInfo };
-        deckState.p1.cueVideoById({videoId: vid, suggestedQuality: 'tiny'});
+        nextP.cueVideoById({videoId: vid, suggestedQuality: 'tiny'});
     } else if (autoPlay) {
-        deckState.p1.loadVideoById({videoId: vid, suggestedQuality: 'tiny'});
+        activeP.loadVideoById({videoId: vid, suggestedQuality: 'tiny'});
+        nextP.cueVideoById({videoId: vid, suggestedQuality: 'tiny'});
     } else {
         deckState.p1.cueVideoById({videoId: vid, suggestedQuality: 'tiny'});
+        deckState.p2.cueVideoById({videoId: vid, suggestedQuality: 'tiny'});
     }
-    deckState.p2.cueVideoById({videoId: vid, suggestedQuality: 'tiny'});
     fetchTitle(vid, `info-${keyLower}-title`, deckKey);
 }
 
@@ -2758,11 +2771,12 @@ function animateTrimChange(deckKey, targetTrim) {
 
 function animateDeckFade(deckKey, start, end, duration, onComplete) {
     const deck = state[deckKey];
-    const fadeId = ++currentFadeId; // Share global fade ID for cancellation
+    if (!deck.fadeId) deck.fadeId = 0;
+    const fadeId = ++deck.fadeId; 
     const startTime = Date.now();
 
     function step() {
-        if (fadeId !== currentFadeId) return;
+        if (fadeId !== deck.fadeId) return;
 
         const progress = Math.min((Date.now() - startTime) / duration, 1);
         deck.fadeMultiplier = start + (end - start) * (1 - Math.pow(1 - progress, 3));
@@ -3121,18 +3135,17 @@ function setupSeekAndVol() {
         
         if (trimValInput) {
             trimValInput.onchange = (e) => {
-                pushHistory();
+                if (!trimValInput.dataset.dragging) pushHistory();
                 let val = parseFloat(e.target.value);
                 if (isNaN(val) || val <= 0) val = 1.0;
                 e.target.value = val.toFixed(2);
                 
                 const dk = k === 'a' ? state.deckA : state.deckB;
                 dk.trim = val;
-                
                 applyMixer();
                 
-                // Save manual trim to track data
-                if (dk.videoId) {
+                // ドラッグ中以外（数値入力など）は即座に保存
+                if (dk.videoId && !trimValInput.dataset.dragging) {
                     const findAndSave = (list) => {
                         const item = list.find(i => i.url === dk.currentUrl);
                         if (item) {
@@ -3175,7 +3188,29 @@ function setupSeekAndVol() {
             };
             
             const onMouseUp = () => {
-                pushHistory();
+                delete trimValInput.dataset.dragging;
+                
+                // ドラッグ終了時に最終的な値をライブラリに反映して保存
+                const dk = k === 'a' ? state.deckA : state.deckB;
+                const finalVal = parseFloat(trimValInput.value);
+                if (dk.videoId && !isNaN(finalVal)) {
+                    const findAndSave = (list) => {
+                        const item = list.find(i => i.url === dk.currentUrl);
+                        if (item) {
+                            item.trim = finalVal;
+                            return true;
+                        }
+                        for (const i of list) {
+                            if (i.type === 'group' && i.children && findAndSave(i.children)) return true;
+                        }
+                        return false;
+                    };
+                    findAndSave(state.library);
+                    findAndSave(state.deckA.queue);
+                    findAndSave(state.deckB.queue);
+                    saveState(false);
+                }
+
                 document.removeEventListener('mousemove', onMouseMove);
                 document.removeEventListener('mouseup', onMouseUp);
                 document.body.style.cursor = '';
@@ -3183,6 +3218,7 @@ function setupSeekAndVol() {
             
             trimLabel.onmousedown = (e) => {
                 pushHistory();
+                trimValInput.dataset.dragging = "true";
                 e.preventDefault();
                 startY = e.clientY;
                 startVal = parseFloat(trimValInput.value) || 1.0;
@@ -3230,6 +3266,15 @@ function setupSeekAndVol() {
                             dk.pendingSyncTrim = true;
                             e.target.textContent = 'WAITING...';
                             e.target.classList.add('trim-scanning');
+                            
+                            // 隣のデッキが解析中でなければ強制解析
+                            const otherLower = k === 'a' ? 'b' : 'a';
+                            const otherIndicator = document.getElementById(`trim-auto-${otherLower}`);
+                            if (otherIndicator && !otherIndicator.classList.contains('trim-scanning')) {
+                                otherIndicator.textContent = 'SCANNING...';
+                                otherIndicator.classList.add('trim-scanning');
+                                state.ws.send(JSON.stringify({ type: 'analyze_loop', url: otherDk.currentUrl, trim_only: true, target_rms: state.settings.targetRms || 0.08 }));
+                            }
                             return;
                         } else if (!otherDk.videoId) {
                             // 曲がない → 待機
@@ -3649,17 +3694,29 @@ window.onYouTubeIframeAPIReady = function () {
         if (e.data === YT.PlayerState.CUED) {
             const dkKey = deckKey.startsWith('deckB') ? 'deckB' : 'deckA';
             const deckState = state[dkKey];
-            if (deckState.pendingFade) {
-                const info = deckState.pendingFade;
-                deckState.pendingFade = null;
+            
+            // Only trigger if this specific player is the NEXT one to be played
+            const isNextP = (deckState.activePlayer === 1 && deckKey.endsWith('2')) || (deckState.activePlayer === 2 && deckKey.endsWith('1'));
 
+            if (deckState.pendingFade && isNextP) {
+                deckState.pendingFade = null;
                 const duration = (state.mode === 'A' ? state.settings.fadeDurationAB : state.settings.fadeDurationBA) || 2.0;
 
                 animateDeckFade(dkKey, 1.0, 0.0, duration * 1000, () => {
-                    const p = deckState.activePlayer === 1 ? deckState.p1 : deckState.p2;
-                    if (p && p.playVideo) {
-                        p.playVideo();
+                    // 1. Pause current active player
+                    const oldP = deckState.activePlayer === 1 ? deckState.p1 : deckState.p2;
+                    if (oldP && oldP.pauseVideo) oldP.pauseVideo();
+
+                    // 2. Swap active player
+                    deckState.activePlayer = (deckState.activePlayer === 1 ? 2 : 1);
+
+                    // 3. Play new player
+                    const newP = deckState.activePlayer === 1 ? deckState.p1 : deckState.p2;
+                    if (newP && newP.playVideo) {
+                        newP.playVideo();
                     }
+
+                    // 4. Restore volume instantly
                     deckState.fadeMultiplier = 1.0;
                     applyMixer();
                 });
