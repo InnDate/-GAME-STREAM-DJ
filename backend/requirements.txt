@@ -1,0 +1,11 @@
+fastapi>=0.100.0
+uvicorn[standard]>=0.23.0
+websockets>=11.0
+python-multipart
+numpy>=1.24.0
+librosa>=0.10.0
+yt-dlp>=2023.10.0
+pyperclip>=1.8.0
+keyboard>=0.13.0
+obsws-python>=1.6.0
+scipy>=1.11.0

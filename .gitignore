@@ -1,0 +1,23 @@
+# Dependency directories
+node_modules/
+backend/.venv/
+backend/__pycache__/
+
+# App specific temporary files
+backend/temp_audio/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Agent/IDE metadata
+.agent/
+.cursor/
+
+# Distribution files
+*.zip
+
+# Note: dj_state.json contains your library data. 
+# If you want to keep your library private when sharing on GitHub,
+# uncomment the line below:
+# backend/dj_state.json

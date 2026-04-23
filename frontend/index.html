@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自作GAME STREAM DJ v1.8.3 | Pro Audio Controller</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Outfit:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="top-bar">
+            <div class="logo">
+                <span class="logo-icon">🎮</span>
+                <span class="logo-text">GAME STREAM DJ <span class="version-tag">v1.8.3</span></span>
+            </div>
+            <div class="header-center" style="position: absolute; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 15px;">
+                <button id="btn-open-replace" class="btn-search-replace" title="Global Search and Replace" style="padding: 2px 8px; font-size: 0.7rem; background: #222; color: #ddd; border: 1px solid #444; border-radius: 4px;">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i> 検索・置換
+                </button>
+                <div style="width: 1px; height: 16px; background: rgba(255,255,255,0.1);"></div>
+                <button id="btn-open-settings" class="btn-secondary" style="padding: 2px 8px; font-size: 0.7rem; background: #222; color: #ddd; border: 1px solid #444; border-radius: 4px;"><i
+                        class="fa-solid fa-gear"></i> 設定 (Switch Triggers)</button>
+                <div style="width: 1px; height: 16px; background: rgba(255,255,255,0.1);"></div>
+                <div class="connection-status" style="display: flex; flex-direction: row; gap: 12px;">
+                    <div style="display: flex; align-items: center; gap: 4px; line-height: 1;">
+                        <span class="status-dot" id="ws-status-dot"></span>
+                        <span id="ws-status-text" style="font-size: 0.6rem; color: #a1a1aa;">WS: Connecting...</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 4px; line-height: 1;">
+                        <span class="status-dot" id="obs-header-status-dot" style="background: #ef4444;"></span>
+                        <span id="obs-header-status-text" style="font-size: 0.6rem; color: #ef4444;">OBS: Disconnected</span>
+                    </div>
+                </div>
+            </div>
+            <div class="status-indicator">
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <span class="status-text" id="global-status">SYSTEM READY</span>
+                    <button id="btn-cancel-analysis" class="btn-cancel-mini hidden" title="キャンセル" 
+                        style="background:#ff5a5a; color:white; border:none; border-radius:50%; width:18px; height:18px; font-size:10px; cursor:pointer; display:flex; align-items:center; justify-content:center;">✖</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Decks Area -->
+        <main class="decks-container" style="align-items:center;">
+            <!-- Deck A -->
+            <section class="deck deck-a active" id="deck-a"
+                style="display:flex; flex-direction:row; padding:6px 8px; gap:8px;">
+                <div style="flex:1; display:flex; flex-direction:column; gap:4px; min-width:0;">
+                    <!-- Header Info & LOOP -->
+                    <div style="display:flex; justify-content:space-between; align-items:center; gap:4px;">
+                        <div style="display:flex; align-items:center; gap:6px;">
+                            <span style="font-weight:900; color:var(--accent-a); font-style:italic; font-size:1.1rem;">A</span>
+                            <button class="btn-text-small btn-add-lib" id="btn-add-a"
+                                style="padding:0; font-size:0.7rem;"><i class="fa-solid fa-plus"></i></button>
+                            <div style="display:flex; gap:2px;">
+                                <div class="mini-player-container">
+                                    <div id="player-a-1" class="youtube-player"></div>
+                                </div>
+                                <div class="mini-player-container">
+                                    <div id="player-a-2" class="youtube-player"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- LOOP -->
+                        <div class="loop-controls-compact"
+                            style="display:flex; align-items:center; gap:2px; font-size:0.6rem; padding:1px 4px; background:#111; border-radius:4px; border:1px solid #222;">
+                            <span style="color:#666; font-weight:bold;">LOOP</span>
+                            <input type="number" id="loop-start-a" value="0" step="0.01"
+                                style="width:34px; background:transparent; border:none; border-bottom:1px solid #444; color:#fff; text-align:center;">
+                            <span style="color:#555;">-</span>
+                            <input type="number" id="loop-end-a" value="0" step="0.01"
+                                style="width:34px; background:transparent; border:none; border-bottom:1px solid #444; color:#fff; text-align:center;">
+                            <button id="btn-analyze-loop-a" class="btn-small"
+                                style="padding:1px 3px; font-size:0.55rem;">Anlyz</button>
+                            <span style="color:#666; margin-left:2px;">Test</span>
+                            <input type="number" id="test-duration-a" value="1.5" step="0.1"
+                                style="width:24px; background:transparent; border:none; border-bottom:1px solid #444; color:#fff; text-align:center;">
+                            <button id="btn-test-loop-a" class="btn-small"
+                                style="padding:1px 3px; font-size:0.55rem;">▶</button>
+                        </div>
+                    </div>
+
+                    <!-- Title -->
+                    <div class="deck-info-drag-handle" style="display:flex; align-items:center; background:#111; padding:4px 6px; border-radius:4px; border:1px solid #222; cursor: grab;">
+                        <h3 id="info-a-title" style="margin:0; font-size:0.9rem; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; flex:1;">No Track</h3>
+                        <i id="deck-a-group-mark" class="fa-solid fa-folder-tree" style="display:none; color:#5a9eff; font-size:0.8rem; margin-left:6px;" title="Group Mode Active"></i>
+                    </div>
+
+                    <!-- Seek & Play -->
+                    <div style="display:flex; align-items:center; gap:8px;">
+                        <button class="btn-play-pause btn-small" id="btn-play-a"
+                            style="width:26px; height:26px; font-size:0.7rem;"><i class="fa-solid fa-play"></i></button>
+                        <div class="seekbar-container" style="flex:1; padding:0; height:6px;">
+                            <input type="range" class="seekbar" id="seek-a" min="0" max="100" value="0">
+                        </div>
+                        <p id="info-a-time"
+                            style="margin:0; font-family:'Outfit', sans-serif; font-size:0.75rem; color:#888; white-space:nowrap;">
+                            00:00 / 00:00</p>
+                    </div>
+
+                    <!-- URL Input Box -->
+                    <div class="input-group" style="padding:2px 4px; background:#111; margin-top:2px;">
+                        <i class="fa-brands fa-youtube" style="color:#555; font-size:0.9rem;"></i>
+                        <input type="text" id="input-a" placeholder="YouTube URL"
+                            style="font-size:0.75rem; padding:2px;">
+                        <button id="btn-load-a" class="btn-icon"
+                            style="font-size:0.75rem; padding:2px 6px;">Load</button>
+                        <button id="btn-clear-a" class="btn-icon" title="Clear Deck"
+                            style="font-size:0.75rem; padding:2px 6px; color: #ff5a5a;"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </div>
+
+                <!-- Faders Container (Right Side) -->
+                <div style="display:flex; flex-direction:column; gap:2px; border-left:1px solid #333; padding-left:4px; align-self:flex-end; align-items:center; padding-bottom:2px;">
+                    <!-- Volume Fader -->
+                    <div class="fader-control-vertical" style="width: 20px; align-items:center;">
+                        <i class="fa-solid fa-volume-high vol-icon" style="color:var(--accent-a); font-size:0.6rem; margin-bottom:2px;"></i>
+                        <input type="range" id="vol-a" min="0" max="100" step="0.1" value="5" class="vertical-slider slider-a" title="Deck A Volume">
+                    </div>
+
+                    <!-- Trim row: TRIM label + number input -->
+                    <div class="trim-container" id="trim-container-a" title="Trim (Gain Balance)" style="display:flex; flex-direction:row; align-items:center; gap:0px; padding:0; background:transparent; border:none; margin-left:-8px;">
+                        <span id="trim-label-a" class="trim-drag-label" style="font-size:0.45rem; color:#888; font-weight:900; white-space:nowrap; cursor:ns-resize; user-select:none;" title="Drag up/down to adjust TRIM">TRIM</span>
+                        <input type="number" id="trim-val-a" value="1.00" step="0.01" style="width:18px; background:transparent; border:none; border-bottom:1px solid #444; color:var(--accent-a); font-family:monospace; text-align:center; font-size:0.55rem; padding:0; outline:none;">
+                    </div>
+
+                    <!-- AUTO button -->
+                    <button id="trim-auto-a" class="btn-trim-toggle" title="Toggle Auto Trim" style="margin-top:2px; margin-bottom:2px;">AUTO</button>
+                </div>
+            </section>
+
+            <!-- Mixer / Center -->
+            <section class="mixer-controls"
+                style="display:flex; flex-direction:row; gap:12px; padding:8px; width:auto; border-radius:8px; background:var(--bg-panel); border:1px solid var(--glass-border); box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
+
+                <div style="display:flex; flex-direction:column; align-items:center; flex:1; justify-content:center;">
+                    <!-- Integrated Timer & Switch: single-line button -->
+                    <div id="match-timer" style="display:none;">--:--</div>
+                    <button id="btn-switch-deck" class="btn-primary"
+                        style="display:inline-flex; align-items:center; justify-content:center; padding:4px 16px; font-size:0.85rem; border-radius:6px; box-shadow:none; margin-bottom:4px; background:linear-gradient(135deg, var(--bg-control), #222); border:1px solid #444; color:#fff; gap:6px; cursor:pointer; width:100%;">
+                        <span class="btn-text"
+                            style="font-family:'Outfit', sans-serif; font-weight:700; font-size:1.1rem;">🔀
+                            SWITCH</span>
+                    </button>
+
+                    <!-- Crossfader -->
+                    <div class="crossfader-container" style="margin:2px 0 6px 0;">
+                        <span class="deck-label" style="font-size:0.7rem;">A</span>
+                        <input type="range" id="crossfader" min="0" max="100" value="0">
+                        <span class="deck-label" style="font-size:0.7rem;">B</span>
+                    </div>
+
+                    <!-- Modes (Text Label next to Buttons) Horizontal -->
+                    <div style="display:flex; flex-direction:row; justify-content:space-between; width:100%; gap:8px;">
+
+                        <!-- Mode B➔A (Left) -->
+                        <div
+                            style="display:flex; align-items:center; gap:2px; background:#1e1e1e; padding:2px 4px; border-radius:4px;">
+                            <span style="font-size:0.6rem; color:#A0A0A0; font-weight:bold;">B➔A</span>
+                            <div class="mode-row button-group-mode" id="mode-group-ba" style="display:flex; gap:1px;">
+                                <button class="btn-mode-select active" data-val="resume" title="Resume">Res</button>
+                                <button class="btn-mode-select" data-val="restart" title="Restart">0s</button>
+                                <button class="btn-mode-select" data-val="next" title="Next">Nxt</button>
+                                <button id="btn-mode-a" class="btn-icon-toggle" title="Queue Mode"><i
+                                        class="fa-solid fa-arrow-down-1-9"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Mode A➔B (Right) -->
+                        <div
+                            style="display:flex; align-items:center; gap:2px; background:#1e1e1e; padding:2px 4px; border-radius:4px;">
+                            <span style="font-size:0.6rem; color:#A0A0A0; font-weight:bold;">A➔B</span>
+                            <div class="mode-row button-group-mode" id="mode-group-ab" style="display:flex; gap:1px;">
+                                <button class="btn-mode-select active" data-val="resume" title="Resume">Res</button>
+                                <button class="btn-mode-select" data-val="restart" title="Restart">0s</button>
+                                <button class="btn-mode-select" data-val="next" title="Next">Nxt</button>
+                                <button id="btn-mode-b" class="btn-icon-toggle" title="Queue Mode"><i
+                                        class="fa-solid fa-arrow-down-1-9"></i></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Master Vol -->
+                <div class="fader-control-vertical"
+                    style="border-left:1px solid #333; padding-left:12px; align-self:center;">
+                    <i class="fa-solid fa-volume-high vol-icon"
+                        style="color:var(--accent-master); font-size:0.8rem;"></i>
+                    <input type="range" id="master-vol" min="0" max="100" step="0.1" value="100"
+                        class="vertical-slider slider-master" title="Master Volume">
+                    <span class="mixer-vol-label" style="margin-top:4px;">MST</span>
+                </div>
+
+            </section>
+
+            <!-- Deck B -->
+            <section class="deck deck-b" id="deck-b"
+                style="display:flex; flex-direction:row; padding:6px 8px; gap:8px;">
+                <div style="flex:1; display:flex; flex-direction:column; gap:4px; min-width:0;">
+
+                    <!-- Header Info & LOOP -->
+                    <div style="display:flex; justify-content:space-between; align-items:center; gap:4px;">
+                        <div style="display:flex; align-items:center; gap:6px;">
+                            <span style="font-weight:900; color:var(--accent-b); font-style:italic; font-size:1.1rem;">B</span>
+                            <button class="btn-text-small btn-add-lib" id="btn-add-b"
+                                style="padding:0; font-size:0.7rem;"><i class="fa-solid fa-plus"></i></button>
+                            <div style="display:flex; gap:2px;">
+                                <div class="mini-player-container">
+                                    <div id="player-b-1" class="youtube-player"></div>
+                                </div>
+                                <div class="mini-player-container">
+                                    <div id="player-b-2" class="youtube-player"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- LOOP Without heavy border/padding -->
+                        <div class="loop-controls-compact"
+                            style="display:flex; align-items:center; gap:2px; font-size:0.6rem; padding:1px 4px; background:#111; border-radius:4px; border:1px solid #222;">
+                            <span style="color:#666; font-weight:bold;">LOOP</span>
+                            <input type="number" id="loop-start-b" value="6.0" step="0.01"
+                                style="width:34px; background:transparent; border:none; border-bottom:1px solid #444; color:#fff; text-align:center;">
+                            <span style="color:#555;">-</span>
+                            <input type="number" id="loop-end-b" value="92.0" step="0.01"
+                                style="width:34px; background:transparent; border:none; border-bottom:1px solid #444; color:#fff; text-align:center;">
+                            <button id="btn-analyze-loop" class="btn-small"
+                                style="padding:1px 3px; font-size:0.55rem;">Anlyz</button>
+                            <span style="color:#666; margin-left:2px;">Test</span>
+                            <input type="number" id="test-duration" value="1.5" step="0.1"
+                                style="width:24px; background:transparent; border:none; border-bottom:1px solid #444; color:#fff; text-align:center;">
+                            <button id="btn-test-loop" class="btn-small"
+                                style="padding:1px 3px; font-size:0.55rem;">▶</button>
+                        </div>
+                    </div>
+
+                    <!-- Title -->
+                    <div class="deck-info-drag-handle" style="display:flex; align-items:center; background:#111; padding:4px 6px; border-radius:4px; border:1px solid #222; cursor: grab;">
+                        <h3 id="info-b-title" style="margin:0; font-size:0.9rem; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; flex:1;">No Track</h3>
+                        <i id="deck-b-group-mark" class="fa-solid fa-folder-tree" style="display:none; color:#5a9eff; font-size:0.8rem; margin-left:6px;" title="Group Mode Active"></i>
+                    </div>
+
+                    <!-- Seek & Play -->
+                    <div style="display:flex; align-items:center; gap:8px;">
+                        <button class="btn-play-pause btn-small" id="btn-play-b"
+                            style="width:26px; height:26px; font-size:0.7rem;"><i class="fa-solid fa-play"></i></button>
+                        <div class="seekbar-container" style="flex:1; padding:0; height:6px;">
+                            <input type="range" class="seekbar" id="seek-b" min="0" max="100" value="0">
+                        </div>
+                        <p id="info-b-time"
+                            style="margin:0; font-family:'Outfit', sans-serif; font-size:0.75rem; color:#888; white-space:nowrap;">
+                            00:00 / 00:00</p>
+                    </div>
+
+                    <!-- URL Input Box -->
+                    <div class="input-group" style="padding:2px 4px; background:#111;">
+                        <i class="fa-brands fa-youtube" style="color:#555; font-size:0.9rem;"></i>
+                        <input type="text" id="input-b" placeholder="URL / Playlist"
+                            style="font-size:0.75rem; padding:2px;">
+                        <button id="btn-load-b" class="btn-icon"
+                            style="font-size:0.75rem; padding:2px 6px;">Load</button>
+                        <button id="btn-clear-b" class="btn-icon" title="Clear Deck"
+                            style="font-size:0.75rem; padding:2px 6px; color: #ff5a5a;"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </div>
+
+                <!-- Faders Container (Right Side) -->
+                <div style="display:flex; flex-direction:column; gap:2px; border-left:1px solid #333; padding-left:4px; align-self:flex-end; align-items:center; padding-bottom:2px;">
+                    <!-- Volume Fader -->
+                    <div class="fader-control-vertical" style="width: 20px; align-items:center;">
+                        <i class="fa-solid fa-volume-high vol-icon" style="color:var(--accent-b); font-size:0.6rem; margin-bottom:2px;"></i>
+                        <input type="range" id="vol-b" min="0" max="100" step="0.1" value="5" class="vertical-slider slider-b" title="Deck B Volume">
+                    </div>
+
+                    <!-- Trim row: TRIM label + number input -->
+                    <div class="trim-container" id="trim-container-b" title="Trim (Gain Balance)" style="display:flex; flex-direction:row; align-items:center; gap:0px; padding:0; background:transparent; border:none; margin-left:-8px;">
+                        <span id="trim-label-b" class="trim-drag-label" style="font-size:0.45rem; color:#888; font-weight:900; white-space:nowrap; cursor:ns-resize; user-select:none;" title="Drag up/down to adjust TRIM">TRIM</span>
+                        <input type="number" id="trim-val-b" value="1.00" step="0.01" style="width:18px; background:transparent; border:none; border-bottom:1px solid #444; color:var(--accent-b); font-family:monospace; text-align:center; font-size:0.55rem; padding:0; outline:none;">
+                    </div>
+
+                    <!-- AUTO button -->
+                    <button id="trim-auto-b" class="btn-trim-toggle" title="Toggle Auto Trim" style="margin-top:2px; margin-bottom:2px;">AUTO</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Queue / Library Manager -->
+        <section class="library-section">
+            <div class="queue-container">
+                <!-- Queue A -->
+                <div class="queue-column queue-a">
+                    <div class="column-header">
+                        <span><i class="fa-solid fa-list-ol"></i> QUEUE A</span>
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <button class="btn-icon btn-add-group" data-target="deckA" title="Create Group" style="font-size:0.8rem;"><i class="fa-solid fa-folder-plus"></i></button>
+                            <span style="font-size:0.7rem; color:#666;" id="count-a">0 items</span>
+                        </div>
+                    </div>
+                    <div class="queue-list" id="queue-list-a"></div>
+                </div>
+
+                <!-- Library (Central) -->
+                <div class="library-column">
+                    <div class="column-header">
+                        <span style="display:flex; align-items:center; gap:8px;">
+                            <i class="fa-solid fa-music"></i> LIBRARY
+                        </span>
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <button class="btn-icon btn-add-group" data-target="library" title="Create Group" style="font-size:0.8rem;"><i class="fa-solid fa-folder-plus"></i></button>
+                            <button id="btn-clip-watch" class="btn-clip-toggle" title="F2: ON / F9: OFF">
+                                <i class="fa-solid fa-clipboard-check"></i>
+                                <span>CLIP MONITOR</span>
+                                <span class="clip-keys"><span style="color:#10b981; margin-right:1px;">ON:</span><span id="label-hotkey-clip-on">F2</span> <span style="color:#a1a1aa; margin-left:3px; margin-right:1px;">OFF:</span><span id="label-hotkey-clip-off">F9</span></span>
+                            </button>
+                            <select id="clipboard-target"
+                                style="background:#000; color:#fff; border:1px solid #444; font-size:0.7rem; padding:2px;">
+                                <option value="library" selected>Libraryへ</option>
+                                <option value="deckA">Queue Aへ</option>
+                                <option value="deckB">Queue Bへ</option>
+                                <option value="loadA">Deck A (Load)</option>
+                                <option value="loadB">Deck B (Load)</option>
+                                <option value="loadA_analyze">Deck A (L+Anlyz)</option>
+                                <option value="loadB_analyze">Deck B (L+Anlyz)</option>
+                            </select>
+                            <span style="font-size:0.7rem; color:#666; margin-left:6px;" id="count-lib">0 items</span>
+                        </div>
+                    </div>
+                    <div class="library-list" id="library-list"></div>
+                </div>
+
+                <!-- Queue B -->
+                <div class="queue-column queue-b">
+                    <div class="column-header">
+                        <span><i class="fa-solid fa-list-ol"></i> QUEUE B</span>
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <button class="btn-icon btn-add-group" data-target="deckB" title="Create Group" style="font-size:0.8rem;"><i class="fa-solid fa-folder-plus"></i></button>
+                            <span style="font-size:0.7rem; color:#666;" id="count-b">0 items</span>
+                        </div>
+                    </div>
+                    <div class="queue-list" id="queue-list-b"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Settings Modal -->
+    <div id="settings-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>デッキ切り替え設定</h2>
+                <button id="btn-close-settings" class="btn-icon"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <!-- A → B -->
+                <div class="setting-block">
+                    <h3>A → B 切り替え</h3>
+                    <div class="setting-row">
+                        <label><input type="checkbox" id="timer-enabled-ab"> タイマーで自動切替</label>
+                        <div style="display:flex; align-items:center; gap:4px;">
+                            <input type="number" id="timer-minutes-ab" value="10" min="0" max="60" style="width:45px;">
+                            <span style="font-size:0.8rem;">分</span>
+                            <input type="number" id="timer-seconds-ab" value="0" min="0" max="59" style="width:45px;">
+                            <span style="font-size:0.8rem;">秒</span>
+                        </div>
+                    </div>
+                    <div class="setting-row">
+                        <label><input type="checkbox" id="obs-enabled-ab"> OBS連動</label>
+                    </div>
+                    <div class="setting-row">
+                        <label>Fade:</label>
+                        <div style="display:flex; align-items:center; gap:4px;">
+                            <input type="number" id="fade-duration-ab" value="2.0" min="0" max="10" step="0.1"
+                                style="width:50px;"> <span style="font-size:0.8rem;">秒</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- B → A -->
+                <div class="setting-block">
+                    <h3>B → A 切り替え</h3>
+                    <div class="setting-row">
+                        <label><input type="checkbox" id="timer-enabled-ba"> タイマーで自動切替</label>
+                        <div style="display:flex; align-items:center; gap:4px;">
+                            <input type="number" id="timer-minutes-ba" value="10" min="0" max="60" style="width:45px;">
+                            <span style="font-size:0.8rem;">分</span>
+                            <input type="number" id="timer-seconds-ba" value="0" min="0" max="59" style="width:45px;">
+                            <span style="font-size:0.8rem;">秒</span>
+                        </div>
+                    </div>
+                    <div class="setting-row">
+                        <label><input type="checkbox" id="obs-enabled-ba"> OBS連動</label>
+                    </div>
+                    <div class="setting-row">
+                        <label>Fade:</label>
+                        <div style="display:flex; align-items:center; gap:4px;">
+                            <input type="number" id="fade-duration-ba" value="2.0" min="0" max="10" step="0.1"
+                                style="width:50px;"> <span style="font-size:0.8rem;">秒</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 共通設定 -->
+                <div class="setting-block">
+                    <h3>共通設定</h3>
+                    <div class="setting-row">
+                        <label>デフォルト音量調整基準 (RMS):</label>
+                        <input type="number" id="setting-target-rms" value="0.08" step="0.01" min="0.01" max="0.5" style="width:60px;" title="目安: 0.08">
+                    </div>
+                    <div class="setting-row" style="margin-bottom: 8px;">
+                        <label><input type="checkbox" id="setting-sync-trim"> 隣のデッキに音量を合わせる (Auto)</label>
+                    </div>
+                    <div class="setting-row">
+                        <label>Deck Switch Hotkey:</label>
+                        <input type="text" id="hotkey-switch" class="hotkey-input" style="width:60px;">
+                    </div>
+                    <div class="setting-row">
+                        <label>Clip-Monitor ON Hotkey:</label>
+                        <input type="text" id="hotkey-clip-on" class="hotkey-input" style="width:60px;">
+                        <span class="label-hint" style="margin-left: 8px;">(Default: F2)</span>
+                    </div>
+                    <div class="setting-row">
+                        <label>Clip-Monitor OFF Hotkey:</label>
+                        <input type="text" id="hotkey-clip-off" class="hotkey-input" style="width:60px;">
+                        <span class="label-hint" style="margin-left: 8px;">(Default: F9)</span>
+                    </div>
+                </div>
+
+                <!-- OBS接続 -->
+                <div class="setting-block">
+                    <h3>OBS接続設定</h3>
+                    <div class="setting-row">
+                        <label>Host:</label>
+                        <input type="text" id="obs-host" value="localhost" style="width:120px;">
+                    </div>
+                    <div class="setting-row">
+                        <label>Port:</label>
+                        <input type="number" id="obs-port" value="4455" style="width:70px;">
+                    </div>
+                    <div class="setting-row">
+                        <label>Password:</label>
+                        <input type="password" id="obs-password" value="" style="width:120px;">
+                    </div>
+                    <div class="setting-row">
+                        <label>Scene A <span class="label-hint">(Deck Aと連動するOBSシーン名)</span>:</label>
+                        <input type="text" id="obs-scene-a" value="Deck A" style="width:120px;" placeholder="例: ユナイト表示">
+                    </div>
+                    <div class="setting-row">
+                        <label>Scene B <span class="label-hint">(Deck Bと連動するOBSシーン名)</span>:</label>
+                        <input type="text" id="obs-scene-b" value="Deck B" style="width:120px;"
+                            placeholder="例: battling">
+                    </div>
+                    <div class="setting-row">
+                        <button id="btn-obs-connect" class="btn-secondary" style="font-size:0.8rem;">接続テスト</button>
+                        <span id="obs-status" class="status-badge status-disconnected">Disconnected</span>
+                    </div>
+                    <div class="setting-info">
+                        デッキ切り替え時にOBSのシーンを自動で切り替えます。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search and Replace Floating Window -->
+    <div id="modal-replace" class="floating-window hidden">
+        <div class="modal-content" style="width: min(900px, 96vw); box-shadow: 0 15px 40px rgba(0,0,0,0.8); border: 1px solid #444; border-radius: 8px;">
+            <!-- Header -->
+            <div class="modal-header" style="padding: 8px 14px; background: #1a1a1a; border-radius: 8px 8px 0 0; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #333;">
+                <h3 style="font-size: 0.85rem; margin: 0; color: #fff;"><i class="fa-solid fa-magnifying-glass-plus"></i> 検索 ＆ 置換</h3>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <span id="replace-status" style="font-size: 0.72rem; color: #ffeb3b; font-weight: bold; white-space: nowrap;"></span>
+                    <button class="btn-close" id="btn-close-replace" style="background: transparent; border: none; color: #aaa; font-size: 1.2rem; cursor: pointer; line-height: 1;">&times;</button>
+                </div>
+            </div>
+            <!-- Body: single horizontal row -->
+            <div class="modal-body" style="padding: 10px 14px; display: flex; align-items: flex-start; gap: 10px;">
+
+                <!-- Left: field selector -->
+                <div style="display: flex; flex-direction: column; justify-content: center; gap: 4px; flex-shrink: 0; padding-top: 2px;">
+                    <span style="font-size: 0.65rem; color: #666; white-space: nowrap;">検索対象</span>
+                    <select id="replace-field" style="background: #111; color: #fff; border: 1px solid #444; font-size: 0.72rem; padding: 3px 4px; border-radius: 3px;">
+                        <option value="title">Title</option>
+                        <option value="url" selected>URL</option>
+                    </select>
+                </div>
+
+                <!-- Center: find and replace inputs with inline previews -->
+                <div style="flex: 1; display: flex; flex-direction: column; gap: 6px; min-width: 0;">
+                    <!-- Find row: input (left) + preview (right) -->
+                    <div style="display: flex; align-items: center; gap: 6px; min-width: 0;">
+                        <div style="flex: 1; display: flex; align-items: center; gap: 5px; min-width: 0;">
+                            <input type="text" id="replace-find" placeholder="検索…" style="flex: 1; background: #0d0d0d; color: #fff; border: 1px solid #555; padding: 5px 8px; border-radius: 4px; font-size: 0.78rem; box-sizing: border-box; min-width: 0;">
+                            <input type="checkbox" id="replace-meta-find" checked style="width: 11px; height: 11px; cursor: pointer; flex-shrink: 0;">
+                            <label for="replace-meta-find" style="font-size: 0.6rem; color: #888; cursor: pointer; white-space: nowrap; flex-shrink: 0;">Loop</label>
+                        </div>
+                        <div id="replace-find-preview" class="replace-preview-container" style="display: none; flex: 1; min-width: 0;"></div>
+                    </div>
+                    <!-- Replace row: input (left) + preview (right) -->
+                    <div style="display: flex; align-items: center; gap: 6px; min-width: 0;">
+                        <div style="flex: 1; display: flex; align-items: center; gap: 5px; min-width: 0;">
+                            <input type="text" id="replace-with" placeholder="置換後…" style="flex: 1; background: #0d0d0d; color: #fff; border: 1px solid #444; padding: 5px 8px; border-radius: 4px; font-size: 0.78rem; box-sizing: border-box; min-width: 0;">
+                            <input type="checkbox" id="replace-meta-with" checked style="width: 11px; height: 11px; cursor: pointer; flex-shrink: 0;">
+                            <label for="replace-meta-with" style="font-size: 0.6rem; color: #888; cursor: pointer; white-space: nowrap; flex-shrink: 0;">Loop</label>
+                        </div>
+                        <div id="replace-with-preview" class="replace-preview-container" style="display: none; flex: 1; min-width: 0;"></div>
+                    </div>
+                </div>
+
+                <!-- Right: action buttons -->
+                <div style="display: flex; flex-direction: column; gap: 5px; flex-shrink: 0;">
+                    <button class="btn-secondary" id="btn-find-next" style="background: #333; color: #fff; padding: 5px 10px; font-size: 0.75rem; border-radius: 4px; white-space: nowrap;"><i class="fa-solid fa-arrow-down"></i> 次を検索</button>
+                    <button class="btn-secondary" id="btn-replace-single" style="background: var(--accent-b); color: #000; font-weight: bold; padding: 5px 10px; font-size: 0.75rem; border-radius: 4px; white-space: nowrap;"><i class="fa-solid fa-pen-to-square"></i> 個別置換</button>
+                    <button class="btn-secondary" id="btn-exec-replace" style="background: var(--accent-a); color: #fff; font-weight: bold; padding: 5px 10px; font-size: 0.75rem; border-radius: 4px; white-space: nowrap;"><i class="fa-solid fa-layer-group"></i> すべて置換</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
