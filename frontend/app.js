@@ -2641,21 +2641,26 @@ function loadTrackDirect(deckKey, url, autoPlay = true, trackId = null, trackInf
         state.ws.send(JSON.stringify({ type: 'analyze_loop', url: otherDk.currentUrl, trim_only: true, target_rms: tRms }));
     }
     
-    resetDeck(deckKey);
-
     if (autoPlay && isPlaying) {
-        // Loader -> Fade sequence
-        // Use Preload player only. DO NOT touch p1/p2 yet as they might be playing.
+        // === Fade sequence: DO NOT call resetDeck (it would pause p1/p2) ===
+        // Cancel any ongoing fade, but keep players running
+        if (!deckState.fadeId) deckState.fadeId = 0;
+        deckState.fadeId++;
+        deckState.fadeMultiplier = 1.0;
+        deckState.nextLoopQueued = false;
+        applyMixer();
+
+        // Use Preload player only. DO NOT touch p1/p2 as they are playing.
         deckState.pendingFade = { vid, autoPlay, trackId, trackInfo };
         if (deckState.pPreload) {
             deckState.pPreload.cueVideoById({videoId: vid, suggestedQuality: 'tiny'});
         } else {
             console.error("pPreload not ready for", deckKey);
-            // Fallback to p1 only if absolutely necessary (will cause stutter)
             deckState.p1.cueVideoById({videoId: vid, suggestedQuality: 'tiny'});
         }
     } else {
-        // Not playing -> Load directly to p1 and p2
+        // Not playing -> safe to fully reset and load
+        resetDeck(deckKey);
         deckState.activePlayer = 1;
         if (autoPlay) {
             deckState.p1.loadVideoById({videoId: vid, suggestedQuality: 'tiny'});
