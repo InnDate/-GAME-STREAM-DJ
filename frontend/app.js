@@ -2820,8 +2820,15 @@ function getCalculatedVolume(k) {
     const masterVolEl = document.getElementById('master-vol');
     const masterVol = masterVolEl ? (masterVolEl.value / 100) : 1.0;
     
-    // 計算結果を 0-100 に制限
-    const vol = deckVolVal * xFadeMult * masterVol * deck.fadeMultiplier * (deck.trim || 1.0);
+    // 計算結果
+    let vol = deckVolVal * xFadeMult * masterVol * deck.fadeMultiplier * (deck.trim || 1.0);
+
+    // ループ切り替え（オーバーラップ）期間中の音量スパイク抑制
+    // 二つのプレイヤーが重なるため、そのままでは音量が最大2倍（+6dB）になるのを防ぐ
+    if (deck.switching) {
+        vol *= 0.6; 
+    }
+
     return Math.min(100, Math.max(0, vol));
 }
 
