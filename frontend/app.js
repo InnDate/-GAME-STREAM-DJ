@@ -342,6 +342,9 @@ function updateDeckLoopLogic(deckKey) {
 
         dk.activePlayer = dk.activePlayer === 1 ? 2 : 1;
         dk.nextLoopQueued = false;
+        
+        // 切り替え直後に全プレイヤーの音量を強制同期
+        applyMixer();
     }
 }
 
@@ -2811,15 +2814,14 @@ function getCalculatedVolume(k) {
     const deckKey = k === 'a' ? 'deckA' : 'deckB';
     const deck = state[deckKey];
     
-    // ループテスト中は確認しやすくするために最大音量にする（既存仕様の継承）
-    if (state.isTestingLoop) return 100;
-
     const deckVolVal = parseFloat(document.getElementById(`vol-${k}`).value) || 0;
     const xFadeMult = k === 'a' ? ((100 - state.crossfade) / 100) : (state.crossfade / 100);
     const masterVolEl = document.getElementById('master-vol');
     const masterVol = masterVolEl ? (masterVolEl.value / 100) : 1.0;
     
-    return deckVolVal * xFadeMult * masterVol * deck.fadeMultiplier * (deck.trim || 1.0);
+    // 計算結果を 0-100 に制限
+    const vol = deckVolVal * xFadeMult * masterVol * deck.fadeMultiplier * (deck.trim || 1.0);
+    return Math.min(100, Math.max(0, vol));
 }
 
 function applyMixer() {
