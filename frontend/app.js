@@ -327,8 +327,8 @@ function updateDeckLoopLogic(deckKey) {
 
     // Switch (0.1s before)
     if (remaining <= 0.1 && dk.nextLoopQueued) {
-        const crossVal = deckKey === 'deckA' ? ((100 - state.crossfade) / 100) : (state.crossfade / 100);
-        const vol = state.isTestingLoop ? 100 : (dk.volume * crossVal);
+        const k = deckKey === 'deckA' ? 'a' : 'b';
+        const vol = getCalculatedVolume(k);
         nextP.setVolume(vol);
         nextP.playVideo();
 
@@ -2647,18 +2647,19 @@ function loadTrackDirect(deckKey, url, autoPlay = true, trackId = null, trackInf
         if (deckState.pPreload) {
             deckState.pPreload.cueVideoById({videoId: vid, suggestedQuality: 'tiny'});
         } else {
-            // Fallback if pPreload not ready
-            const nextP = deckState.activePlayer === 1 ? deckState.p2 : deckState.p1;
-            nextP.cueVideoById({videoId: vid, suggestedQuality: 'tiny'});
+            // Should not happen if init is correct
+            console.error("pPreload not ready for", deckKey);
+            deckState.p1.cueVideoById({videoId: vid, suggestedQuality: 'tiny'});
         }
     } else if (autoPlay) {
-        activeP.loadVideoById({videoId: vid, suggestedQuality: 'tiny'});
-        const nextP = deckState.activePlayer === 1 ? deckState.p2 : deckState.p1;
-        nextP.cueVideoById({videoId: vid, suggestedQuality: 'tiny'});
+        // Not playing -> Load directly to p1
+        deckState.activePlayer = 1;
+        deckState.p1.loadVideoById({videoId: vid, suggestedQuality: 'tiny'});
     } else {
+        deckState.activePlayer = 1;
         deckState.p1.cueVideoById({videoId: vid, suggestedQuality: 'tiny'});
-        deckState.p2.cueVideoById({videoId: vid, suggestedQuality: 'tiny'});
     }
+    deckState.p2.cueVideoById({videoId: vid, suggestedQuality: 'tiny'});
     fetchTitle(vid, `info-${keyLower}-title`, deckKey);
 }
 
@@ -2804,30 +2805,41 @@ function animateDeckFade(deckKey, start, end, duration, onComplete) {
     requestAnimationFrame(step);
 }
 
+function getCalculatedVolume(k) {
+    const deckKey = k === 'a' ? 'deckA' : 'deckB';
+    const deck = state[deckKey];
+    
+    // ループテスト中は確認しやすくするために最大音量にする（既存仕様の継承）
+    if (state.isTestingLoop) return 100;
+
+    const deckVolVal = parseFloat(document.getElementById(`vol-${k}`).value) || 0;
+    const xFadeMult = k === 'a' ? ((100 - state.crossfade) / 100) : (state.crossfade / 100);
+    const masterVolEl = document.getElementById('master-vol');
+    const masterVol = masterVolEl ? (masterVolEl.value / 100) : 1.0;
+    
+    return deckVolVal * xFadeMult * masterVol * deck.fadeMultiplier * (deck.trim || 1.0);
+}
+
 function applyMixer() {
     const slider = document.getElementById('crossfader');
     if (slider) slider.value = state.crossfade;
 
-    const masterVolEl = document.getElementById('master-vol');
-    const masterVol = masterVolEl ? (masterVolEl.value / 100) : 1.0;
-
     ['a', 'b'].forEach(k => {
         const deckKey = k === 'a' ? 'deckA' : 'deckB';
         const deck = state[deckKey];
-        const deckVolVal = parseFloat(document.getElementById(`vol-${k}`).value) || 0;
-        const xFadeMult = k === 'a' ? ((100 - state.crossfade) / 100) : (state.crossfade / 100);
         
-        // Check if combined volume (Deck Vol * Trim) exceeds 100% limit
+        // 警告表示用の計算
+        const deckVolVal = parseFloat(document.getElementById(`vol-${k}`).value) || 0;
         const combinedVol = deckVolVal * (deck.trim || 1.0);
         const label = document.getElementById(`trim-label-${k}`);
         if (label) {
             label.classList.toggle('trim-clipping', combinedVol > 100);
         }
 
-        const finalVol = deckVolVal * xFadeMult * masterVol * deck.fadeMultiplier * (deck.trim || 1.0);
-        
+        const finalVol = getCalculatedVolume(k);
         if (deck.p1) deck.p1.setVolume(finalVol);
         if (deck.p2) deck.p2.setVolume(finalVol);
+        if (deck.pPreload) deck.pPreload.setVolume(finalVol);
     });
 }
 
@@ -2842,8 +2854,10 @@ function togglePlay(deckKey) {
         // Something is playing → Pause ALL decks
         if (state.deckA.p1 && state.deckA.p1.pauseVideo) state.deckA.p1.pauseVideo();
         if (state.deckA.p2 && state.deckA.p2.pauseVideo) state.deckA.p2.pauseVideo();
+        if (state.deckA.pPreload && state.deckA.pPreload.pauseVideo) state.deckA.pPreload.pauseVideo();
         if (state.deckB.p1 && state.deckB.p1.pauseVideo) state.deckB.p1.pauseVideo();
         if (state.deckB.p2 && state.deckB.p2.pauseVideo) state.deckB.p2.pauseVideo();
+        if (state.deckB.pPreload && state.deckB.pPreload.pauseVideo) state.deckB.pPreload.pauseVideo();
     } else {
         // Nothing is playing → Play only the target deck if it has content
         const dk = state[deckKey];
@@ -3709,21 +3723,22 @@ window.onYouTubeIframeAPIReady = function () {
             const dkKey = deckKey.startsWith('deckB') ? 'deckB' : 'deckA';
             const deckState = state[dkKey];
             
-            // Trigger if PRELOAD player is ready, or if we used the loop player as fallback
+            // Trigger if PRELOAD player is ready
             const isPreload = deckKey.endsWith('Preload');
-            const isNextP = (deckState.activePlayer === 1 && deckKey.endsWith('2')) || (deckState.activePlayer === 2 && deckKey.endsWith('1'));
 
-            if (deckState.pendingFade && (isPreload || isNextP)) {
+            if (deckState.pendingFade && isPreload) {
                 deckState.pendingFade = null;
-                const duration = (dkKey === 'deckB' ? state.settings.fadeDurationAB : state.settings.fadeDurationBA) || 2.0;
+                // Use directional fade duration
+                const duration = (state.mode === 'A' ? state.settings.fadeDurationAB : state.settings.fadeDurationBA) || 2.0;
 
                 animateDeckFade(dkKey, 1.0, 0.0, duration * 1000, () => {
-                    // Start new track on current active player
-                    // Since it was buffered in pPreload, this should be fast
-                    const p = deckState.activePlayer === 1 ? deckState.p1 : deckState.p2;
-                    if (p && p.loadVideoById) {
-                        p.loadVideoById({videoId: deckState.videoId, suggestedQuality: 'tiny'});
+                    // Play the track DIRECTLY on pPreload to avoid loading lag
+                    if (deckState.pPreload && deckState.pPreload.playVideo) {
+                        deckState.pPreload.playVideo();
                     }
+                    
+                    // Mark pPreload (Player 3) as active
+                    deckState.activePlayer = 3;
 
                     // Restore volume instantly
                     deckState.fadeMultiplier = 1.0;
