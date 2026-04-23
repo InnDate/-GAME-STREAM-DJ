@@ -2560,11 +2560,9 @@ function loadTrackDirect(deckKey, url, autoPlay = true, trackId = null, trackInf
         deckState.lastRms = trackInfo.rms;
     }
 
-    // Auto-Analysis (Auto-Scan): Trigger only if enabled and not already analyzed.
-    // 修正: trim !== 1.0 ではなく、単に定義されているかどうかで判定（1.0の曲もあるため）
-    const isAnalyzed = trackInfo && (trackInfo.trim !== undefined || (trackInfo.loopEnd && trackInfo.loopEnd < 9999));
-    
-    if (vid && state.ws && state.wsConnected && !isAnalyzed && deckState.trimAutoEnabled) {
+    // Auto-Analysis (Auto-Scan): Trigger if enabled.
+    // 修正: 既に解析済み(trim!==1.0等)であっても、Autoがオンなら常に最新の基準で再スキャンする
+    if (vid && state.ws && state.wsConnected && deckState.trimAutoEnabled) {
         const otherDeck = isA ? state.deckB : state.deckA;
         let targetRms = state.settings.targetRms || 0.08;
         
@@ -3293,9 +3291,9 @@ function setupSeekAndVol() {
                     return;
                 }
                 
-                // オートスキャン開始 (オンにした時、未解析であれば)
-                const isAnalyzed = dk.trim !== undefined && dk.trim !== 1.0;
-                if (isActive && !isAnalyzed && dk.currentUrl && state.ws && state.wsConnected) {
+                // オートスキャン開始 (オンにした時)
+                // 修正: 既に解析済みであっても、明示的にオンにした場合は再スキャンを実行する
+                if (isActive && dk.currentUrl && state.ws && state.wsConnected) {
                     let targetRms = state.settings.targetRms || 0.08;
                     
                     if (state.settings.syncTrim) {
