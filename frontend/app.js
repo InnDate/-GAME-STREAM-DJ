@@ -260,9 +260,10 @@ function engineTick() {
     // Check Deck A
     const aPlaying = state.deckA.ready1 && state.deckA.ready2 && 
         ((state.deckA.activePlayer === 1 && state.deckA.p1 && state.deckA.p1.getPlayerState && state.deckA.p1.getPlayerState() === YT.PlayerState.PLAYING) || 
-         (state.deckA.activePlayer === 2 && state.deckA.p2 && state.deckA.p2.getPlayerState && state.deckA.p2.getPlayerState() === YT.PlayerState.PLAYING));
+         (state.deckA.activePlayer === 2 && state.deckA.p2 && state.deckA.p2.getPlayerState && state.deckA.p2.getPlayerState() === YT.PlayerState.PLAYING) ||
+         (state.deckA.activePlayer === 3 && state.deckA.pPreload && state.deckA.pPreload.getPlayerState && state.deckA.pPreload.getPlayerState() === YT.PlayerState.PLAYING));
     if (aPlaying && state.deckA.loopEnd < 9999) {
-        const activePa = state.deckA.activePlayer === 1 ? state.deckA.p1 : state.deckA.p2;
+        const activePa = state.deckA.activePlayer === 3 ? state.deckA.pPreload : (state.deckA.activePlayer === 1 ? state.deckA.p1 : state.deckA.p2);
         if (activePa && activePa.getCurrentTime) {
             const remaining = Math.max(0, state.deckA.loopEnd - activePa.getCurrentTime());
             if (remaining < 3.5) nextPace = 50;
@@ -272,9 +273,10 @@ function engineTick() {
     // Check Deck B
     const bPlaying = state.deckB.ready1 && state.deckB.ready2 && 
         ((state.deckB.activePlayer === 1 && state.deckB.p1 && state.deckB.p1.getPlayerState && state.deckB.p1.getPlayerState() === YT.PlayerState.PLAYING) || 
-         (state.deckB.activePlayer === 2 && state.deckB.p2 && state.deckB.p2.getPlayerState && state.deckB.p2.getPlayerState() === YT.PlayerState.PLAYING));
+         (state.deckB.activePlayer === 2 && state.deckB.p2 && state.deckB.p2.getPlayerState && state.deckB.p2.getPlayerState() === YT.PlayerState.PLAYING) ||
+         (state.deckB.activePlayer === 3 && state.deckB.pPreload && state.deckB.pPreload.getPlayerState && state.deckB.pPreload.getPlayerState() === YT.PlayerState.PLAYING));
     if (bPlaying && state.deckB.loopEnd < 9999) {
-        const activePb = state.deckB.activePlayer === 1 ? state.deckB.p1 : state.deckB.p2;
+        const activePb = state.deckB.activePlayer === 3 ? state.deckB.pPreload : (state.deckB.activePlayer === 1 ? state.deckB.p1 : state.deckB.p2);
         if (activePb && activePb.getCurrentTime) {
             const remaining = Math.max(0, state.deckB.loopEnd - activePb.getCurrentTime());
             if (remaining < 3.5) nextPace = 50;
@@ -304,7 +306,7 @@ function updateDeckLoopLogic(deckKey) {
     const dk = state[deckKey];
     if (!dk.ready1 || !dk.ready2 || dk.switching) return;
 
-    const activeP = dk.activePlayer === 1 ? dk.p1 : dk.p2;
+    const activeP = dk.activePlayer === 3 ? dk.pPreload : (dk.activePlayer === 1 ? dk.p1 : dk.p2);
     const nextP = dk.activePlayer === 1 ? dk.p2 : dk.p1;
 
     if (!activeP || !activeP.getCurrentTime) return;
@@ -2410,7 +2412,7 @@ function switchDeck(forceMode = null) {
     }
 
     if (mode === 'restart') {
-        const p = targetDeck.activePlayer === 1 ? targetDeck.p1 : targetDeck.p2;
+        const p = targetDeck.activePlayer === 3 ? targetDeck.pPreload : (targetDeck.activePlayer === 1 ? targetDeck.p1 : targetDeck.p2);
         if (targetDeck.videoId) {
             if (p && p.pauseVideo) p.pauseVideo();
             p.seekTo(0);
@@ -2470,7 +2472,7 @@ function switchDeck(forceMode = null) {
             }
         }
     } else {
-        const p = targetDeck.activePlayer === 1 ? targetDeck.p1 : targetDeck.p2;
+        const p = targetDeck.activePlayer === 3 ? targetDeck.pPreload : (targetDeck.activePlayer === 1 ? targetDeck.p1 : targetDeck.p2);
         if (targetDeck.videoId) {
             p.playVideo();
         }
@@ -2515,7 +2517,7 @@ function loadTrackDirect(deckKey, url, autoPlay = true, trackId = null, trackInf
     deckState.restricted = false;
     document.querySelectorAll(`.deck-${keyLower} .mini-player-container`).forEach(c => c.classList.add('has-track'));
 
-    const activeP = deckState.activePlayer === 1 ? deckState.p1 : deckState.p2;
+    const activeP = deckState.activePlayer === 3 ? deckState.pPreload : (deckState.activePlayer === 1 ? deckState.p1 : deckState.p2);
     const isPlaying = activeP && activeP.getPlayerState && activeP.getPlayerState() === YT.PlayerState.PLAYING;
 
     // トラック情報にloop設定やTrimがあれば反映、なければデフォルトにリセット
@@ -2731,7 +2733,7 @@ function animateCrossfade(start, end, duration) {
 
             if (state.pendingPlay) {
                 const targetDeck = state.mode === 'A' ? state.deckA : state.deckB;
-                const p = targetDeck.activePlayer === 1 ? targetDeck.p1 : targetDeck.p2;
+                const p = targetDeck.activePlayer === 3 ? targetDeck.pPreload : (targetDeck.activePlayer === 1 ? targetDeck.p1 : targetDeck.p2);
                 if (p && p.playVideo && targetDeck.videoId) p.playVideo();
                 state.pendingPlay = false;
             }
@@ -2845,9 +2847,9 @@ function applyMixer() {
 
 function togglePlay(deckKey) {
     // Check if ANY deck is currently playing
-    const aPlayer = state.deckA.activePlayer === 1 ? state.deckA.p1 : state.deckA.p2;
+    const aPlayer = state.deckA.activePlayer === 3 ? state.deckA.pPreload : (state.deckA.activePlayer === 1 ? state.deckA.p1 : state.deckA.p2);
     const aPl = aPlayer && aPlayer.getPlayerState && aPlayer.getPlayerState() === YT.PlayerState.PLAYING;
-    const bPlayer = state.deckB.activePlayer === 1 ? state.deckB.p1 : state.deckB.p2;
+    const bPlayer = state.deckB.activePlayer === 3 ? state.deckB.pPreload : (state.deckB.activePlayer === 1 ? state.deckB.p1 : state.deckB.p2);
     const bPl = bPlayer && bPlayer.getPlayerState && bPlayer.getPlayerState() === YT.PlayerState.PLAYING;
 
     if (aPl || bPl) {
@@ -2861,16 +2863,16 @@ function togglePlay(deckKey) {
     } else {
         // Nothing is playing → Play only the target deck if it has content
         const dk = state[deckKey];
-        const p = dk.activePlayer === 1 ? dk.p1 : dk.p2;
+        const p = dk.activePlayer === 3 ? dk.pPreload : (dk.activePlayer === 1 ? dk.p1 : dk.p2);
         if (p && p.playVideo && dk.videoId) p.playVideo();
     }
 }
 
 function updatePlayPauseIcons() {
     // Check states
-    const aPlayer = state.deckA.activePlayer === 1 ? state.deckA.p1 : state.deckA.p2;
+    const aPlayer = state.deckA.activePlayer === 3 ? state.deckA.pPreload : (state.deckA.activePlayer === 1 ? state.deckA.p1 : state.deckA.p2);
     const aPl = aPlayer && aPlayer.getPlayerState && aPlayer.getPlayerState() === YT.PlayerState.PLAYING;
-    const bPlayer = state.deckB.activePlayer === 1 ? state.deckB.p1 : state.deckB.p2;
+    const bPlayer = state.deckB.activePlayer === 3 ? state.deckB.pPreload : (state.deckB.activePlayer === 1 ? state.deckB.p1 : state.deckB.p2);
     const bPl = bPlayer && bPlayer.getPlayerState && bPlayer.getPlayerState() === YT.PlayerState.PLAYING;
 
     const btnA = document.getElementById('btn-play-a');
@@ -3146,7 +3148,7 @@ function setupSeekAndVol() {
         if (seekEl) {
             seekEl.oninput = (e) => {
                 const dk = k === 'a' ? state.deckA : state.deckB;
-                const p = dk.activePlayer === 1 ? dk.p1 : dk.p2;
+                const p = dk.activePlayer === 3 ? dk.pPreload : (dk.activePlayer === 1 ? dk.p1 : dk.p2);
                 p.seekTo(p.getDuration() * (e.target.value / 100));
             };
         }
