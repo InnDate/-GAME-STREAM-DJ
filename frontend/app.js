@@ -1,5 +1,5 @@
 /**
- * 自作GAME STREAM DJ - v1.9.0
+ * 自作GAME STREAM DJ - v1.9.1
  * Grouping and Advanced UI
  */
 
@@ -2853,9 +2853,16 @@ function applyMixer() {
         }
 
         const finalVol = getCalculatedVolume(k);
-        if (deck.p1) deck.p1.setVolume(finalVol);
-        if (deck.p2) deck.p2.setVolume(finalVol);
-        if (deck.pPreload) deck.pPreload.setVolume(finalVol);
+        
+        // 1. どのプレイヤーが音を出すべきか判定
+        // ループ切り替え中（switching）は p1 と p2 の両方。それ以外は activePlayer のみ。
+        const isP1Active = (deck.activePlayer === 1) || (deck.switching);
+        const isP2Active = (deck.activePlayer === 2) || (deck.switching);
+        const isPPreloadActive = (deck.activePlayer === 3);
+
+        if (deck.p1) deck.p1.setVolume(isP1Active ? finalVol : 0);
+        if (deck.p2) deck.p2.setVolume(isP2Active ? finalVol : 0);
+        if (deck.pPreload) deck.pPreload.setVolume(isPPreloadActive ? finalVol : 0);
     });
 }
 
