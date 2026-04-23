@@ -760,23 +760,21 @@ async function pasteFromInternal() {
         }
     }
 
-    // 重複チェック: 追加先のコンテナ（グループ内またはリストのルート）でURL重複を確認
-    const targetContainer = findContainerByAnchor(targetListRoot, anchorId);
-    
-    // 挿入前に重複を確認（個別に確認するのは大変なので、まとめてフィルタリングするか、警告を出す）
-    // 今回は「一つでも重複があれば警告」または「URLごとにチェック」の実装
+    // 重複チェック: リスト全体（Library全体、または指定デッキのQueue全体）でURL重複を確認
     const filteredItems = [];
     for (const item of itemsToInsert) {
         if (item.url) {
             const itemId = extractVideoId(item.url);
-            const existing = itemId ? findNode(targetContainer, i => extractVideoId(i.url) === itemId) : null;
+            // リスト全体から検索
+            const existing = itemId ? findNode(targetListRoot, i => i.url && extractVideoId(i.url) === itemId) : null;
+            
             if (existing) {
-                if (!confirm(`このURLは追加先のリスト内に既に存在します（${existing.title}）。\n上書きして新しく追加しますか？\n（「キャンセル」でこの曲の追加をスキップします）`)) {
-                    continue; // Skip this item
+                const choice = confirm(`この曲は既にリスト内に存在します（${existing.title}）。\n既存のものをすべて削除して、この位置に新位に上書き（移動）しますか？\n\n・はい（OK）：既存を削除してここに配置\n・いいえ（キャンセル）：削除せずに重複して追加`);
+                
+                if (choice) {
+                    // 「はい」の場合、リスト全体から全ての重複（URL一致）を削除
+                    removeNodes(targetListRoot, i => i.url && extractVideoId(i.url) === itemId);
                 }
-                // 既存のものを消してから追加する or 何もしない（後ほど新規追加される）
-                // ユーザーの要望は「警告を出して上書き」なので、既存を削除して新規追加のフローにする
-                removeNodes(targetContainer, i => i.id === existing.id);
             }
         }
         filteredItems.push(item);
