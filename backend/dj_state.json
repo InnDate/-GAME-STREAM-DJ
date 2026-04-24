@@ -834,6 +834,16 @@
         "id": "17769469854853080",
         "loopStart": 112.4,
         "loopEnd": 342
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=8B18k0XlGoo",
+        "title": "Farewell | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+        "id": "17770164390244428"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=CP6D4KHRPO8",
+        "title": "File Select | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+        "id": "17770164390249034"
       }
     ],
     "deckB": [
@@ -7694,5 +7704,22 @@
     "clipboardAutoAnalyze": false,
     "targetRms": 0.1229,
     "syncTrim": true
+  },
+  "decks": {
+    "deckA": {
+      "currentUrl": "https://www.youtube.com/watch?v=CP6D4KHRPO8",
+      "currentTrackId": "17770132054709330",
+      "loopStart": 0,
+      "loopEnd": 9999,
+      "trim": 1,
+      "trimAutoEnabled": false
+    },
+    "deckB": {
+      "currentUrl": "",
+      "loopStart": 6,
+      "loopEnd": 92,
+      "trim": 1,
+      "trimAutoEnabled": false
+    }
   }
 }

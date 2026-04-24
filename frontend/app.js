@@ -1,5 +1,5 @@
 /**
- * 自作GAME STREAM DJ - v1.9.1
+ * 自作GAME STREAM DJ - v1.9.2
  * Grouping and Advanced UI
  */
 
@@ -1803,8 +1803,8 @@ function renderList(containerId, listData, type) {
                     if (aTimer) { clearTimeout(aTimer); aTimer = null; }
                     if (!isGroup) {
                         pushHistory();
-                        loadTrackDirect('deckA', item.url, false, item.id, item);
-                        showToast("Loaded to Deck A (Paused)");
+                        loadTrackDirect('deckA', item.url, true, item.id, item);
+                        showToast("Loaded to Deck A");
                     } else {
                         loadGroupDirect('deckA', item);
                     }
@@ -1820,8 +1820,8 @@ function renderList(containerId, listData, type) {
                     if (bTimer) { clearTimeout(bTimer); bTimer = null; }
                     if (!isGroup) {
                         pushHistory();
-                        loadTrackDirect('deckB', item.url, false, item.id, item);
-                        showToast("Loaded to Deck B (Paused)");
+                        loadTrackDirect('deckB', item.url, true, item.id, item);
+                        showToast("Loaded to Deck B");
                     } else {
                         loadGroupDirect('deckB', item);
                     }
@@ -2287,8 +2287,8 @@ function finishDrag() {
         if (item.type === 'group') {
             loadGroupDirect(deckKey, item);
         } else {
-            loadTrackDirect(deckKey, item.url, false, item.id, item);
-            showToast(`Loaded to Deck ${deckKey === 'deckA' ? 'A' : 'B'} (Paused)`);
+            loadTrackDirect(deckKey, item.url, true, item.id, item);
+            showToast(`Loaded to Deck ${deckKey === 'deckA' ? 'A' : 'B'}`);
         }
         return; // Skip normal list reordering
     }
