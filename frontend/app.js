@@ -770,7 +770,7 @@ async function pasteFromInternal() {
             const existing = itemId ? findNode(targetListRoot, i => i.url && extractVideoId(i.url) === itemId) : null;
             
             if (existing) {
-                const choice = confirm(`この曲は既にリスト内に存在します（${existing.title}）。\n既存のものをすべて削除して、この位置に新位に上書き（移動）しますか？\n\n・はい（OK）：既存を削除してここに配置\n・いいえ（キャンセル）：削除せずに重複して追加`);
+                const choice = confirm(`この曲は既にリスト内に存在します（${existing.title}）。\n既存のものをすべて削除して、この位置に新しく上書き（移動）しますか？\n\n・はい（OK）：既存を削除してここに配置\n・いいえ（キャンセル）：削除せずに重複して追加`);
                 
                 if (choice) {
                     // 「はい」の場合、リスト全体から全ての重複（URL一致）を削除
@@ -783,8 +783,12 @@ async function pasteFromInternal() {
 
     if (filteredItems.length === 0) return;
 
+    // 挿入先のコンテナ配列を事前に特定（アンカーが削除されてもコンテナへの参照を維持するため）
+    const targetContainer = findContainerByAnchor(targetListRoot, anchorId) || targetListRoot;
+
     if (!insertNodes(targetListRoot, anchorId, filteredItems)) {
-        targetListRoot.unshift(...filteredItems); // Default to top
+        // アンカーが見つからなかった場合（上書き削除された等）、特定済みのコンテナの末尾に追加
+        targetContainer.push(...filteredItems);
     }
 
     // Mark inserted IDs for visual feedback
@@ -1290,6 +1294,12 @@ async function executeClipboardProcess(url) {
 
     // プレイリスト判定の強化: ?list= または &list= を含む場合にダイアログを出す
     if (isPlaylist) {
+        // 分析モード（L+Anlyz）の場合はプレイリストとしてではなく単体曲として自動で処理する
+        if (target === 'loadA_analyze' || target === 'loadB_analyze') {
+            processSingleUrl(url);
+            return;
+        }
+
         if (!confirm(`プレイリストの識別子（list=）が検出されました。プレイリスト内のすべての曲をグループで追加しますか？\n\n・はい（OK）: プレイリストとして一括追加\n・いいえ（キャンセル）: この曲単体として追加`)) {
             processSingleUrl(url);
             return;
@@ -1972,25 +1982,31 @@ function handleEasyMove(targetAnchorId, targetType, providedItems = null) {
 
     const targetList = targetType === 'library' ? state.library : (targetType === 'deckA' ? state.deckA.queue : state.deckB.queue);
     
-    // Duplicate Check (Scoped to target container)
-    // findContainerByAnchor returns the specific array (e.g. group.children) where insertion will happen
-    const actualTargetArr = findContainerByAnchor(targetList, targetAnchorId) || targetList;
-
-    if (itemsToMove.length === 1 && itemsToMove[0].type !== 'group') {
-        const url = itemsToMove[0].url;
-        // Check only within actualTargetArr (Shallow check only, allowing same song in different groups)
-        const vid = extractVideoId(url);
-        const existing = vid ? actualTargetArr.find(i => extractVideoId(i.url) === vid) : null;
-        if (existing) {
-            const targetName = targetType === 'library' ? 'Library' : (targetType === 'deckA' ? 'Queue A' : 'Queue B');
-            if (!confirm(`この曲（${existing.title}）はここ（${targetName}）に既に存在します。重複して追加しますか？`)) {
-                return;
+    // Duplicate Check (Entire target list)
+    const filteredItems = [];
+    for (const item of itemsToMove) {
+        if (item.url && item.type !== 'group') {
+            const itemId = extractVideoId(item.url);
+            const existing = itemId ? findNode(targetList, i => i.url && extractVideoId(i.url) === itemId) : null;
+            
+            if (existing) {
+                const choice = confirm(`この曲は既にリスト内に存在します（${existing.title}）。\n既存のものをすべて削除して、この位置に新しく上書き（移動）しますか？\n\n・はい（OK）：既存を削除してここに配置\n・いいえ（キャンセル）：削除せずに重複して追加`);
+                
+                if (choice) {
+                    removeNodes(targetList, i => i.url && extractVideoId(i.url) === itemId);
+                }
             }
         }
+        filteredItems.push(item);
     }
 
-    if (!insertNodes(targetList, targetAnchorId, itemsToMove)) {
-        targetList.push(...itemsToMove);
+    if (filteredItems.length === 0) return;
+
+    // 挿入先のコンテナ配列を事前に特定
+    const targetContainer = findContainerByAnchor(targetList, targetAnchorId) || targetList;
+
+    if (!insertNodes(targetList, targetAnchorId, filteredItems)) {
+        targetContainer.push(...filteredItems);
     }
     
     // Clear selection after move
