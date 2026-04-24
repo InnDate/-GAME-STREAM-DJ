@@ -3195,6 +3195,7 @@ function updateTrimInAllLists(url, trimValue, rms = null) {
     update(state.deckA.queue);
     update(state.deckB.queue);
     saveState(false);
+    renderAllLists();
 }
 
 function setupSeekAndVol() {
@@ -3456,6 +3457,13 @@ function connectWebSocket() {
                         if (msg.volGain && dk.trimAutoEnabled) {
                             animateTrimChange(dkKey, msg.volGain);
                             updateTrimInAllLists(msg.url, msg.volGain, msg.rms || null);
+                        } else {
+                            // AUTOがオフ（同期用スキャンなど）の場合は表示だけリセット
+                            const ind = document.getElementById(`trim-auto-${keyLower}`);
+                            if (ind) {
+                                ind.textContent = 'AUTO';
+                                ind.classList.remove('trim-scanning');
+                            }
                         }
                         
                         // Check if the OTHER deck was waiting for this deck's RMS
@@ -3518,9 +3526,16 @@ function connectWebSocket() {
                         updateAllTracks(state.deckA.queue);
                         updateAllTracks(state.deckB.queue);
                         saveState(false);
+                        renderAllLists();
                     } else if (msg.rms) {
                         // AUTOがオフでもRMS情報だけは同期リファレンスのために保持
                         dk.lastRms = msg.rms;
+                        // 表示リセット
+                        const ind = document.getElementById(`trim-auto-${keyLower}`);
+                        if (ind) {
+                            ind.textContent = 'AUTO';
+                            ind.classList.remove('trim-scanning');
+                        }
                     }
                     
                     // Check for pending sync trim on other deck

@@ -93,6 +93,11 @@
         "id": "17760490078017120"
       },
       {
+        "url": "https://www.youtube.com/watch?v=gVykcylcy3Q",
+        "title": "Buried Relic | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+        "id": "17770148333641361"
+      },
+      {
         "id": "17770132054577740",
         "type": "group",
         "title": "Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
@@ -1183,7 +1188,7 @@
             "url": "https://www.youtube.com/watch?v=BcmJDQfiGqw&pp=ygUb44Of44OE44Or44CA44CAQkdN44CA6ICQ5LmF0gcJCdsKAYcqIYzv",
             "title": "【30分間耐久】 戦闘！ミツル 【ポケモンORAS】 mp4",
             "id": "17759851993577682",
-            "trim": 1.49,
+            "trim": 1.5,
             "rms": 0.1079
           },
           {
@@ -1258,7 +1263,7 @@
             "id": "17759851993577699"
           }
         ],
-        "collapsed": true
+        "collapsed": false
       },
       {
         "id": "17759948756264836",
@@ -3322,7 +3327,7 @@
             "url": "https://www.youtube.com/watch?v=BcmJDQfiGqw&pp=ygUb44Of44OE44Or44CA44CAQkdN44CA6ICQ5LmF0gcJCdsKAYcqIYzv",
             "title": "【30分間耐久】 戦闘！ミツル 【ポケモンORAS】 mp4",
             "id": "17748545469729818",
-            "trim": 1.49,
+            "trim": 1.5,
             "rms": 0.1079
           },
           {
@@ -4325,7 +4330,7 @@
             "url": "https://www.youtube.com/watch?v=BcmJDQfiGqw&pp=ygUb44Of44OE44Or44CA44CAQkdN44CA6ICQ5LmF0gcJCdsKAYcqIYzv",
             "title": "【30分間耐久】 戦闘！ミツル 【ポケモンORAS】 mp4",
             "id": "17748586201792875",
-            "trim": 1.49,
+            "trim": 1.5,
             "rms": 0.1079
           },
           {
@@ -4400,7 +4405,7 @@
             "id": "1770553258946"
           }
         ],
-        "collapsed": true
+        "collapsed": false
       },
       {
         "id": "group_1774861463564",
@@ -4920,7 +4925,7 @@
             "loopEnd": 405.44
           }
         ],
-        "collapsed": false
+        "collapsed": true
       },
       {
         "id": "group_1774861482726",
@@ -7661,7 +7666,7 @@
     "testLoopDuration": 1.5,
     "switchMode": "restart",
     "clipboardTargetDeck": "loadA_analyze",
-    "switchModeAB": "resume",
+    "switchModeAB": "restart",
     "switchModeBA": "resume",
     "playModeA": "shuffle",
     "playModeB": "order",
@@ -7682,7 +7687,7 @@
     "timerSecondsAB": 2,
     "timerSecondsBA": 0,
     "clipboardAutoAnalyze": false,
-    "targetRms": 0.1609,
+    "targetRms": 0.1229,
     "syncTrim": true
   }
 }
