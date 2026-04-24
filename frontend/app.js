@@ -3410,6 +3410,27 @@ function connectWebSocket() {
                 // 設定ロード後にOBS自動接続（onopen時よりも確実）
                 tryAutoConnectObs();
             }
+            if (msg.decks) {
+                // Restore Decks
+                ['deckA', 'deckB'].forEach(dkKey => {
+                    const saved = msg.decks[dkKey];
+                    if (saved && saved.currentUrl) {
+                        // Restore state values before loading so they are picked up
+                        state[dkKey].loopStart = saved.loopStart || 0;
+                        state[dkKey].loopEnd = saved.loopEnd || 9999;
+                        state[dkKey].trim = saved.trim || 1.0;
+                        state[dkKey].lastRms = saved.lastRms;
+                        state[dkKey].trimAutoEnabled = saved.trimAutoEnabled || false;
+
+                        loadTrackDirect(dkKey, saved.currentUrl, false, saved.currentTrackId, {
+                            loopStart: saved.loopStart,
+                            loopEnd: saved.loopEnd,
+                            trim: saved.trim,
+                            rms: saved.lastRms
+                        });
+                    }
+                });
+            }
         } else if (msg.type === 'hotkey_triggered') {
             console.log("Global Hotkey Triggered:", msg.action);
             if (document.hidden) {
@@ -3654,7 +3675,27 @@ function saveState(hist = true) {
             deckB: state.deckB.queue,
             library: state.library
         },
-        settings: state.settings
+        settings: state.settings,
+        decks: {
+            deckA: {
+                currentUrl: state.deckA.currentUrl,
+                currentTrackId: state.deckA.currentTrackId,
+                loopStart: state.deckA.loopStart,
+                loopEnd: state.deckA.loopEnd,
+                trim: state.deckA.trim,
+                lastRms: state.deckA.lastRms,
+                trimAutoEnabled: state.deckA.trimAutoEnabled
+            },
+            deckB: {
+                currentUrl: state.deckB.currentUrl,
+                currentTrackId: state.deckB.currentTrackId,
+                loopStart: state.deckB.loopStart,
+                loopEnd: state.deckB.loopEnd,
+                trim: state.deckB.trim,
+                lastRms: state.deckB.lastRms,
+                trimAutoEnabled: state.deckB.trimAutoEnabled
+            }
+        }
     }));
 }
 

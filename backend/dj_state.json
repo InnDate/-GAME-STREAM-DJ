@@ -98,6 +98,11 @@
         "id": "17770148333641361"
       },
       {
+        "url": "https://www.youtube.com/watch?v=YO_O47Hms-s",
+        "title": "Escape Through the Snow | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+        "id": "17770159047870114"
+      },
+      {
         "id": "17770132054577740",
         "type": "group",
         "title": "Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
@@ -7669,7 +7674,7 @@
     "switchModeAB": "restart",
     "switchModeBA": "resume",
     "playModeA": "shuffle",
-    "playModeB": "order",
+    "playModeB": "group_shuffle",
     "obsEnabled": true,
     "clipboardWatchEnabled": false,
     "timerMinutes": 10,

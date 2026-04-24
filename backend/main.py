@@ -95,6 +95,7 @@ class AppState:
             self.playlists["library"] = []
             
         self.settings = DEFAULT_STATE["settings"].copy()
+        self.decks = {"deckA": {}, "deckB": {}}
         self.websockets: Set[WebSocket] = set()
         self.clipboard_watch_enabled = False
         self.last_clipboard = ""
@@ -115,6 +116,7 @@ class AppState:
                         self.playlists["library"] = []
                         
                     self.settings = data.get("settings", DEFAULT_STATE["settings"])
+                    self.decks = data.get("decks", {"deckA": {}, "deckB": {}})
                     self.clipboard_watch_enabled = self.settings.get("clipboardWatchEnabled", False)
                 logger.info(f"State loaded from file (Clipboard Watch: {self.clipboard_watch_enabled})")
             except Exception as e:
@@ -125,7 +127,8 @@ class AppState:
             with open(STATE_FILE, 'w', encoding='utf-8') as f:
                 json.dump({
                     "playlists": self.playlists,
-                    "settings": self.settings
+                    "settings": self.settings,
+                    "decks": self.decks
                 }, f, indent=2, ensure_ascii=False)
             logger.info("State saved")
         except Exception as e:
@@ -657,7 +660,8 @@ async def websocket_endpoint(websocket: WebSocket):
     await websocket.send_json({
         "type": "state",
         "playlists": app_state.playlists,
-        "settings": app_state.settings
+        "settings": app_state.settings,
+        "decks": app_state.decks
     })
     
     try:
@@ -677,12 +681,16 @@ async def handle_ws_message(ws: WebSocket, data: dict):
         await ws.send_json({
             "type": "state",
             "playlists": app_state.playlists,
-            "settings": app_state.settings
+            "settings": app_state.settings,
+            "decks": app_state.decks
         })
     
     elif msg_type == "save_state":
         if "playlists" in data:
             app_state.playlists = data["playlists"]
+        
+        if "decks" in data:
+            app_state.decks = data["decks"]
         
         # Check if settings changed, especially hotkey
         hotkey_changed = False
