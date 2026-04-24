@@ -761,7 +761,10 @@ async function pasteFromInternal() {
         }
     }
 
-    // 重複チェック: リスト全体（Library全体、または指定デッキのQueue全体）でURL重複を確認
+    // 1. 挿入先のコンテナ配列を事前に特定（上書き削除されてもコンテナへの参照を維持するため）
+    const targetContainer = findContainerByAnchor(targetListRoot, anchorId) || targetListRoot;
+
+    // 2. 重複チェック: リスト全体（Library全体、または指定デッキのQueue全体）でURL重複を確認
     const filteredItems = [];
     for (const item of itemsToInsert) {
         if (item.url) {
@@ -782,9 +785,6 @@ async function pasteFromInternal() {
     }
 
     if (filteredItems.length === 0) return;
-
-    // 挿入先のコンテナ配列を事前に特定（アンカーが削除されてもコンテナへの参照を維持するため）
-    const targetContainer = findContainerByAnchor(targetListRoot, anchorId) || targetListRoot;
 
     if (!insertNodes(targetListRoot, anchorId, filteredItems)) {
         // アンカーが見つからなかった場合（上書き削除された等）、特定済みのコンテナの末尾に追加
@@ -1982,7 +1982,10 @@ function handleEasyMove(targetAnchorId, targetType, providedItems = null) {
 
     const targetList = targetType === 'library' ? state.library : (targetType === 'deckA' ? state.deckA.queue : state.deckB.queue);
     
-    // Duplicate Check (Entire target list)
+    // 1. 挿入先のコンテナ配列を事前に特定
+    const targetContainer = findContainerByAnchor(targetList, targetAnchorId) || targetList;
+
+    // 2. Duplicate Check (Entire target list)
     const filteredItems = [];
     for (const item of itemsToMove) {
         if (item.url && item.type !== 'group') {
@@ -2001,9 +2004,6 @@ function handleEasyMove(targetAnchorId, targetType, providedItems = null) {
     }
 
     if (filteredItems.length === 0) return;
-
-    // 挿入先のコンテナ配列を事前に特定
-    const targetContainer = findContainerByAnchor(targetList, targetAnchorId) || targetList;
 
     if (!insertNodes(targetList, targetAnchorId, filteredItems)) {
         targetContainer.push(...filteredItems);
