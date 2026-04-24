@@ -2,6 +2,20 @@
   "playlists": {
     "deckA": [
       {
+        "url": "https://www.youtube.com/watch?v=INBmZOQk2FE&list=PLhmIWJu57gfcU5ZFjASxtHlFtcQTrCEdg&index=107",
+        "title": "102 - Pelipper Island - (Pokémon Mystery Dungeon - Explorers of Sky)",
+        "loopStart": 16.51,
+        "loopEnd": 42.68,
+        "id": "17769892671921202"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=lI3PBm7c_0o",
+        "title": "100 - Random Dungeon Theme 3 - (Pokémon Mystery Dungeon - Explorers of Sky)",
+        "loopStart": 63.13,
+        "loopEnd": 135.84,
+        "id": "17769891390110319"
+      },
+      {
         "url": "https://www.youtube.com/watch?v=dZCWU1q3xAs&list=PLhmIWJu57gfcU5ZFjASxtHlFtcQTrCEdg&index=104",
         "title": "099 - Random Dungeon Theme 2 - (Pokémon Mystery Dungeon - Explorers of Sky)",
         "id": "17769146743888453",
@@ -11,18 +25,18 @@
         "loopEnd": 161.85
       },
       {
-        "url": "https://www.youtube.com/watch?v=sFkhJMg-lwM",
-        "title": "084 - Sky Peak Coast - (Pokémon Mystery Dungeon - Explorers of Sky)",
-        "loopStart": 41.94,
-        "loopEnd": 93.53,
-        "id": "17769089163704909"
-      },
-      {
         "url": "https://www.youtube.com/watch?v=8Ec5zMIbREk&list=PLhmIWJu57gfcU5ZFjASxtHlFtcQTrCEdg&index=103",
         "title": "098 - Random Dungeon Theme 1 - (Pokémon Mystery Dungeon - Explorers of Sky)",
         "id": "17769146435529872",
         "loopStart": 74.614,
         "loopEnd": 158.852
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=sFkhJMg-lwM",
+        "title": "084 - Sky Peak Coast - (Pokémon Mystery Dungeon - Explorers of Sky)",
+        "loopStart": 41.94,
+        "loopEnd": 93.53,
+        "id": "17769089163704909"
       },
       {
         "url": "https://www.youtube.com/watch?v=E_l1LJWfqUc",
@@ -2661,13 +2675,6 @@
             "rms": 0.021,
             "loopStart": 3462.625,
             "loopEnd": 3648.625
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=0vvmc_gQQJU#trim=2.5&title=%E3%80%90Pok%C3%A9mon%20LEGENDS%20Z-A%E3%80%91%E9%87%8E%E7%94%9F%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3(%E7%95%B0%E6%AC%A1%E5%85%83%E3%83%9F%E3%82%A2%E3%83%AC)%20%E6%88%A6%E9%97%98%20BGM%20%E3%80%901%E6%99%82%E9%96%93%E8%80%90%E4%B9%85%E3%80%91%E3%80%90%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3ZA%E3%80%91%E3%80%90%E4%BD%9C%E6%A5%AD%E7%94%A8BGM%E3%80%91#trim=2.5&title=%E3%80%90Pok%C3%A9mon%20LEGENDS%20Z-A%E3%80%91%E9%87%8E%E7%94%9F%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3(%E7%95%B0%E6%AC%A1%E5%85%83%E3%83%9F%E3%82%A2%E3%83%AC)%20%E6%88%A6%E9%97%98%20BGM%20%E3%80%901%E6%99%82%E9%96%93%E8%80%90%E4%B9%85%E3%80%91%E3%80%90%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3ZA%E3%80%91%E3%80%90%E4%BD%9C%E6%A5%AD%E7%94%A8BGM%E3%80%91",
-            "title": "【Pokémon LEGENDS Z-A】野生ポケモン(異次元ミアレ) 戦闘 BGM 【1時間耐久】【ポケモンZA】【作業用BGM】",
-            "id": "17769458140364099",
-            "loopStart": 0,
-            "loopEnd": 9999
           },
           {
             "url": "https://www.youtube.com/watch?v=kHKbYa65BGc&pp=ygUVemHjgIDjgqrjg6Tjg5bjg7MgYmdt",
@@ -6182,7 +6189,8 @@
             "url": "https://www.youtube.com/watch?v=0vvmc_gQQJU#trim=2.5&title=%E3%80%90Pok%C3%A9mon%20LEGENDS%20Z-A%E3%80%91%E9%87%8E%E7%94%9F%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3(%E7%95%B0%E6%AC%A1%E5%85%83%E3%83%9F%E3%82%A2%E3%83%AC)%20%E6%88%A6%E9%97%98%20BGM%20%E3%80%901%E6%99%82%E9%96%93%E8%80%90%E4%B9%85%E3%80%91%E3%80%90%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3ZA%E3%80%91%E3%80%90%E4%BD%9C%E6%A5%AD%E7%94%A8BGM%E3%80%91#trim=2.5&title=%E3%80%90Pok%C3%A9mon%20LEGENDS%20Z-A%E3%80%91%E9%87%8E%E7%94%9F%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3(%E7%95%B0%E6%AC%A1%E5%85%83%E3%83%9F%E3%82%A2%E3%83%AC)%20%E6%88%A6%E9%97%98%20BGM%20%E3%80%901%E6%99%82%E9%96%93%E8%80%90%E4%B9%85%E3%80%91%E3%80%90%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3ZA%E3%80%91%E3%80%90%E4%BD%9C%E6%A5%AD%E7%94%A8BGM%E3%80%91&trim=2.5&title=%E3%80%90Pok%C3%A9mon%20LEGENDS%20Z-A%E3%80%91%E9%87%8E%E7%94%9F%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3(%E7%95%B0%E6%AC%A1%E5%85%83%E3%83%9F%E3%82%A2%E3%83%AC)%20%E6%88%A6%E9%97%98%20BGM%20%E3%80%901%E6%99%82%E9%96%93%E8%80%90%E4%B9%85%E3%80%91%E3%80%90%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3ZA%E3%80%91%E3%80%90%E4%BD%9C%E6%A5%AD%E7%94%A8BGM%E3%80%91#trim=2.5&title=%E3%80%90Pok%C3%A9mon%20LEGENDS%20Z-A%E3%80%91%E9%87%8E%E7%94%9F%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3(%E7%95%B0%E6%AC%A1%E5%85%83%E3%83%9F%E3%82%A2%E3%83%AC)%20%E6%88%A6%E9%97%98%20BGM%20%E3%80%901%E6%99%82%E9%96%93%E8%80%90%E4%B9%85%E3%80%91%E3%80%90%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3ZA%E3%80%91%E3%80%90%E4%BD%9C%E6%A5%AD%E7%94%A8BGM%E3%80%91#trim=2.5&title=%E3%80%90Pok%C3%A9mon%20LEGENDS%20Z-A%E3%80%91%E9%87%8E%E7%94%9F%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3(%E7%95%B0%E6%AC%A1%E5%85%83%E3%83%9F%E3%82%A2%E3%83%AC)%20%E6%88%A6%E9%97%98%20BGM%20%E3%80%901%E6%99%82%E9%96%93%E8%80%90%E4%B9%85%E3%80%91%E3%80%90%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3ZA%E3%80%91%E3%80%90%E4%BD%9C%E6%A5%AD%E7%94%A8BGM%E3%80%91#trim=2.5&title=%E3%80%90Pok%C3%A9mon%20LEGENDS%20Z-A%E3%80%91%E9%87%8E%E7%94%9F%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3(%E7%95%B0%E6%AC%A1%E5%85%83%E3%83%9F%E3%82%A2%E3%83%AC)%20%E6%88%A6%E9%97%98%20BGM%20%E3%80%901%E6%99%82%E9%96%93%E8%80%90%E4%B9%85%E3%80%91%E3%80%90%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3ZA%E3%80%91%E3%80%90%E4%BD%9C%E6%A5%AD%E7%94%A8BGM%E3%80%91",
             "title": "【Pokémon LEGENDS Z-A】野生ポケモン(異次元ミアレ) 戦闘 BGM 【1時間耐久】【ポケモンZA】【作業用BGM】",
             "id": "17748607980571401",
-            "trim": 2.5
+            "trim": 4.63,
+            "rms": 0.0216
           },
           {
             "url": "https://www.youtube.com/watch?v=kHKbYa65BGc&pp=ygUVemHjgIDjgqrjg6Tjg5bjg7MgYmdt",
@@ -7211,13 +7219,13 @@
     "obsPassword": "tWcvcipDTJkU7BR4",
     "testLoopDuration": 1.5,
     "switchMode": "restart",
-    "clipboardTargetDeck": "deckA",
+    "clipboardTargetDeck": "loadA_analyze",
     "switchModeAB": "resume",
     "switchModeBA": "resume",
     "playModeA": "shuffle",
     "playModeB": "group_shuffle",
     "obsEnabled": true,
-    "clipboardWatchEnabled": false,
+    "clipboardWatchEnabled": true,
     "timerMinutes": 10,
     "timerEnabledAB": true,
     "timerEnabledBA": false,
@@ -7233,7 +7241,7 @@
     "timerSecondsAB": 2,
     "timerSecondsBA": 0,
     "clipboardAutoAnalyze": false,
-    "targetRms": 0.021,
+    "targetRms": 0.1,
     "syncTrim": true
   }
 }

@@ -3163,6 +3163,24 @@ function resetAll() {
     resetDeckB();
 }
 
+function updateTrimInAllLists(url, trimValue, rms = null) {
+    const update = (list) => {
+        list.forEach(item => {
+            if (item.url === url) {
+                item.trim = trimValue;
+                if (rms !== null) item.rms = rms;
+            }
+            if (item.type === 'group' && item.children) {
+                update(item.children);
+            }
+        });
+    };
+    update(state.library);
+    update(state.deckA.queue);
+    update(state.deckB.queue);
+    saveState(false);
+}
+
 function setupSeekAndVol() {
     ['a', 'b'].forEach(k => {
         const seekEl = document.getElementById(`seek-${k}`);
@@ -3196,21 +3214,7 @@ function setupSeekAndVol() {
                 
                 // ドラッグ中以外（数値入力など）は即座に保存
                 if (dk.videoId && !trimValInput.dataset.dragging) {
-                    const findAndSave = (list) => {
-                        const item = list.find(i => i.url === dk.currentUrl);
-                        if (item) {
-                            item.trim = val;
-                            saveState(false);
-                            return true;
-                        }
-                        for (const i of list) {
-                            if (i.type === 'group' && i.children && findAndSave(i.children)) return true;
-                        }
-                        return false;
-                    };
-                    findAndSave(state.library);
-                    findAndSave(state.deckA.queue);
-                    findAndSave(state.deckB.queue);
+                    updateTrimInAllLists(dk.currentUrl, val);
                 }
             };
         }
@@ -3244,21 +3248,7 @@ function setupSeekAndVol() {
                 const dk = k === 'a' ? state.deckA : state.deckB;
                 const finalVal = parseFloat(trimValInput.value);
                 if (dk.videoId && !isNaN(finalVal)) {
-                    const findAndSave = (list) => {
-                        const item = list.find(i => i.url === dk.currentUrl);
-                        if (item) {
-                            item.trim = finalVal;
-                            return true;
-                        }
-                        for (const i of list) {
-                            if (i.type === 'group' && i.children && findAndSave(i.children)) return true;
-                        }
-                        return false;
-                    };
-                    findAndSave(state.library);
-                    findAndSave(state.deckA.queue);
-                    findAndSave(state.deckB.queue);
-                    saveState(false);
+                    updateTrimInAllLists(dk.currentUrl, finalVal);
                 }
 
                 document.removeEventListener('mousemove', onMouseMove);
@@ -3448,23 +3438,7 @@ function connectWebSocket() {
                         
                         if (msg.volGain) {
                             animateTrimChange(dkKey, msg.volGain);
-                            
-                            // Save to library/queue for persistence (ALL matching URLs)
-                            const updateAllTracks = (list) => {
-                                list.forEach(item => {
-                                    if (item.url === msg.url) {
-                                        item.trim = msg.volGain;
-                                        if (msg.rms) item.rms = msg.rms;
-                                    }
-                                    if (item.type === 'group' && item.children) {
-                                        updateAllTracks(item.children);
-                                    }
-                                });
-                            };
-                            updateAllTracks(state.library);
-                            updateAllTracks(state.deckA.queue);
-                            updateAllTracks(state.deckB.queue);
-                            saveState(false);
+                            updateTrimInAllLists(msg.url, msg.volGain, msg.rms || null);
                         }
                         
                         // Check if the OTHER deck was waiting for this deck's RMS
