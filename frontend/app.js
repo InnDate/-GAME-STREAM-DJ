@@ -1007,7 +1007,7 @@ function setupEventListeners() {
             state._analyzingDeck = 'deckB';
             document.getElementById('global-status').textContent = '⏳ Analyzing (B)...';
             document.getElementById('btn-cancel-analysis').classList.remove('hidden');
-            state.ws.send(JSON.stringify({ type: 'analyze_loop', url, target_rms: state.settings.targetRms || 0.08, do_trim: !!state.deckB.trimAutoEnabled }));
+            state.ws.send(JSON.stringify({ type: 'analyze_loop', url, target_rms: state.settings.targetRms || 0.08, do_trim: true }));
         } else {
             document.getElementById('global-status').textContent = 'WebSocket not connected';
         }
@@ -1023,7 +1023,7 @@ function setupEventListeners() {
             state._analyzingDeck = 'deckA';
             document.getElementById('global-status').textContent = '⏳ Analyzing (A)...';
             document.getElementById('btn-cancel-analysis').classList.remove('hidden');
-            state.ws.send(JSON.stringify({ type: 'analyze_loop', url, target_rms: state.settings.targetRms || 0.08, do_trim: !!state.deckA.trimAutoEnabled }));
+            state.ws.send(JSON.stringify({ type: 'analyze_loop', url, target_rms: state.settings.targetRms || 0.08, do_trim: true }));
         } else {
             document.getElementById('global-status').textContent = 'WebSocket not connected';
         }
@@ -3452,7 +3452,8 @@ function connectWebSocket() {
                             dk.lastRms = msg.rms;
                         }
                         
-                        if (msg.volGain) {
+                        // 修正: そのデッキのAUTOがオンである場合のみ、実際に音量設定を反映する
+                        if (msg.volGain && dk.trimAutoEnabled) {
                             animateTrimChange(dkKey, msg.volGain);
                             updateTrimInAllLists(msg.url, msg.volGain, msg.rms || null);
                         }
@@ -3490,7 +3491,8 @@ function connectWebSocket() {
                     }
 
                     // Update Volume Trim (Normalization)
-                    if (msg.volGain) {
+                    // 修正: そのデッキのAUTOがオンである場合のみ反映
+                    if (msg.volGain && dk.trimAutoEnabled) {
                         // Save RMS for sync-trim reference even in full analysis
                         if (msg.rms) {
                             dk.lastRms = msg.rms;
@@ -3516,6 +3518,9 @@ function connectWebSocket() {
                         updateAllTracks(state.deckA.queue);
                         updateAllTracks(state.deckB.queue);
                         saveState(false);
+                    } else if (msg.rms) {
+                        // AUTOがオフでもRMS情報だけは同期リファレンスのために保持
+                        dk.lastRms = msg.rms;
                     }
                     
                     // Check for pending sync trim on other deck
@@ -4070,6 +4075,9 @@ function renderReplacePreview(target) {
     const vid = extractVideoId(val);
     if (!vid) {
         previewContainer.style.display = 'none';
+        const thumbTargetId = previewContainer.id.replace('-preview', '-thumb');
+        const thumbTarget = document.getElementById(thumbTargetId);
+        if (thumbTarget) thumbTarget.innerHTML = '';
         return;
     }
 
@@ -4102,6 +4110,21 @@ function renderReplacePreview(target) {
 
 function drawPreviewNode(container, item) {
     container.innerHTML = '';
+    
+    const videoId = extractVideoId(item.url);
+    const thumbHtml = videoId
+        ? `<img class="q-thumb" src="https://img.youtube.com/vi/${videoId}/default.jpg" loading="lazy" alt="" style="width: 40px; height: 30px; object-fit: cover; border-radius: 2px;">`
+        : '';
+
+    // Handle separate thumb container if it exists (for Search & Replace UI)
+    if (container.id === 'replace-find-preview' || container.id === 'replace-with-preview') {
+        const thumbTargetId = container.id.replace('-preview', '-thumb');
+        const thumbTarget = document.getElementById(thumbTargetId);
+        if (thumbTarget) {
+            thumbTarget.innerHTML = thumbHtml;
+        }
+    }
+
     const el = document.createElement('div');
     el.className = 'queue-item';
     el.style.margin = '0';
@@ -4112,11 +4135,6 @@ function drawPreviewNode(container, item) {
     el.style.boxSizing = 'border-box';
     el.style.maxWidth = '100%';
     
-    const videoId = extractVideoId(item.url);
-    const thumbHtml = videoId
-        ? `<img class="q-thumb" src="https://img.youtube.com/vi/${videoId}/default.jpg" loading="lazy" alt="" style="width: 40px; height: 30px; object-fit: cover; border-radius: 2px;">`
-        : '';
-        
     let metaHtml = '';
     if (item.loopStart) {
         metaHtml += `<span class="q-meta-item q-meta-loop" style="margin-right:6px;">LOOP: ${formatTime(item.loopStart)}-${formatTime(item.loopEnd || 9999)}</span>`;
@@ -4126,7 +4144,7 @@ function drawPreviewNode(container, item) {
     }
     
     el.innerHTML = `
-        ${thumbHtml}
+        ${(container.id === 'replace-find-preview' || container.id === 'replace-with-preview') ? '' : thumbHtml}
         <div class="q-content" style="display: flex; flex-direction: column; justify-content: center; min-width: 0;">
             <span class="q-title" style="font-size: 0.75rem; font-weight: bold; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; max-width: 100%;">${item.title}</span>
             <div class="q-time" style="font-size: 0.65rem; margin-top: 2px; display:flex; align-items:center;">${metaHtml}</div>

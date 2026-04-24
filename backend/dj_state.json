@@ -2,6 +2,27 @@
   "playlists": {
     "deckA": [
       {
+        "url": "https://www.youtube.com/watch?v=NGjC485Uv2s&list=PLhmIWJu57gfcU5ZFjASxtHlFtcQTrCEdg&index=126",
+        "title": "121 - Boulder Quarry - (Pokémon Mystery Dungeon - Explorers of Sky)",
+        "loopStart": 77.18,
+        "loopEnd": 164.03,
+        "id": "17769917676825737"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=aMsJ7ATFblQ&list=PLhmIWJu57gfcU5ZFjASxtHlFtcQTrCEdg&index=119",
+        "title": "114 - Defend Globe - (Pokémon Mystery Dungeon - Explorers of Sky)",
+        "loopStart": 132.86,
+        "loopEnd": 275.35,
+        "id": "17769915235900863"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=HztmG2tSLoA&list=PLhmIWJu57gfcU5ZFjASxtHlFtcQTrCEdg&index=115",
+        "title": "110 - A Fun Exploration - (Pokémon Mystery Dungeon - Explorers of Sky)",
+        "loopStart": 6,
+        "loopEnd": 98,
+        "id": "17769912743480730"
+      },
+      {
         "url": "https://www.youtube.com/watch?v=8pOi7AUciro&list=PLhmIWJu57gfcU5ZFjASxtHlFtcQTrCEdg&index=108",
         "title": "103 - Sympathy - (Pokémon Mystery Dungeon - Explorers of Sky)",
         "loopStart": 87.57,
@@ -62,7 +83,9 @@
       {
         "url": "https://www.youtube.com/watch?v=AhOP2EaHGT8",
         "title": "Thunderwave Cave | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-        "id": "17759933173513732"
+        "id": "17759933173513732",
+        "trim": 1,
+        "rms": 0.1609
       },
       {
         "url": "https://www.youtube.com/watch?v=deRYqGI2e1g",
@@ -70,1766 +93,407 @@
         "id": "17760490078017120"
       },
       {
-        "id": "group_17743237239684413",
+        "id": "17770132054577740",
         "type": "group",
         "title": "Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-        "collapsed": true,
+        "collapsed": false,
         "children": [
           {
             "url": "https://www.youtube.com/watch?v=AYSM_upZDYk",
             "title": "Aftermath | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239684754"
+            "id": "17770132054706161"
           },
           {
             "url": "https://www.youtube.com/watch?v=RkSPOXLKsp4",
             "title": "At The End of the Road | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239688705"
+            "id": "17770132054706022"
           },
           {
             "url": "https://www.youtube.com/watch?v=3TnS53nbSPE",
             "title": "At The End of the Road: Arrangement 1 | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239684688"
+            "id": "17770132054709517"
           },
           {
             "url": "https://www.youtube.com/watch?v=_GIDxRvKi2c",
             "title": "At The End of the Road: Arrangement 2 | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239688258"
+            "id": "17770132054707958"
           },
           {
             "url": "https://www.youtube.com/watch?v=LT5G2DkXHLE",
             "title": "At The End of the Road: Arrangement 3 | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239684994"
+            "id": "17770132054708822"
           },
           {
             "url": "https://www.youtube.com/watch?v=iLA_OJ3CuRk",
             "title": "At Just Such a Moment | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239685836"
+            "id": "17770132054707725"
           },
           {
             "url": "https://www.youtube.com/watch?v=r-1GMW2mYPk",
             "title": "Awakening | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239687297"
+            "id": "17770132054700142"
           },
           {
             "url": "https://www.youtube.com/watch?v=YcguHL_j6pw",
             "title": "Benevolent Spirit | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239685862"
+            "id": "17770132054702571"
           },
           {
             "url": "https://www.youtube.com/watch?v=gVykcylcy3Q",
             "title": "Buried Relic | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239682392"
+            "id": "17770132054708584"
           },
           {
             "url": "https://www.youtube.com/watch?v=C4T0YLL1WBU",
             "title": "Danger | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239686606"
+            "id": "17770132054706829"
           },
           {
             "url": "https://www.youtube.com/watch?v=QUbqOULtp5k",
             "title": "Danger: Arrangement 1 | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239681733"
+            "id": "17770132054705466"
           },
           {
             "url": "https://www.youtube.com/watch?v=GgezwDm1LHM",
             "title": "Danger: Arrangement 2 | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239685641"
+            "id": "17770132054708837"
           },
           {
             "url": "https://www.youtube.com/watch?v=Gx9302hIvNA",
             "title": "Danger: Arrangement 3 | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239685997"
+            "id": "17770132054702102"
           },
           {
             "url": "https://www.youtube.com/watch?v=aoo2-y8dtCI",
             "title": "Dream | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239687498"
+            "id": "17770132054707142"
           },
           {
             "url": "https://www.youtube.com/watch?v=WCr0hlo90vA",
             "title": "Dream Eater | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239688899"
+            "id": "17770132054704587"
           },
           {
             "url": "https://www.youtube.com/watch?v=9fbl6aiMGYk",
             "title": "During an Adventure | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239684552"
+            "id": "17770132054707662"
           },
           {
             "url": "https://www.youtube.com/watch?v=YO_O47Hms-s",
             "title": "Escape Through the Snow | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239681161"
+            "id": "17770132054709629"
           },
           {
             "url": "https://www.youtube.com/watch?v=8B18k0XlGoo",
             "title": "Farewell | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239681171"
+            "id": "17770132054706312"
           },
           {
             "url": "https://www.youtube.com/watch?v=CP6D4KHRPO8",
             "title": "File Select | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239685496"
+            "id": "17770132054709330"
           },
           {
             "url": "https://www.youtube.com/watch?v=K_grFAreCaU",
             "title": "Friend Area ~ Caves | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239685953"
+            "id": "17770132054709326"
           },
           {
             "url": "https://www.youtube.com/watch?v=-NDxv9nDj5U",
             "title": "Friend Area ~ Cryptic Cave | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239682799"
+            "id": "17770132054709143"
           },
           {
             "url": "https://www.youtube.com/watch?v=EO162byn6xk",
             "title": "Friend Area ~ Deep-Sea Current | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239683868"
+            "id": "17770132054708381"
           },
           {
             "url": "https://www.youtube.com/watch?v=qD0dPOOQPpk",
             "title": "Friend Area ~ Enclosed Island | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239686191"
+            "id": "17770132054707835"
           },
           {
             "url": "https://www.youtube.com/watch?v=ye6xGwStxU0",
             "title": "Friend Area ~ Field | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239682088"
+            "id": "17770132054706886"
           },
           {
             "url": "https://www.youtube.com/watch?v=qgQbAvCwoHY",
             "title": "Friend Area ~ Final Island | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239681874"
+            "id": "17770132054700321"
           },
           {
             "url": "https://www.youtube.com/watch?v=SpGmQwgGSG8",
             "title": "Friend Area ~ Forest | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239687629"
+            "id": "17770132054703090"
           },
           {
             "url": "https://www.youtube.com/watch?v=3ZYikzGRYFs",
             "title": "Friend Area ~ Healing Forest | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239684230"
+            "id": "17770132054701100"
           },
           {
             "url": "https://www.youtube.com/watch?v=x2SmpQJsg2k",
             "title": "Friend Area ~ Lab | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239688167"
+            "id": "17770132054703107"
           },
           {
             "url": "https://www.youtube.com/watch?v=iwB841K4PH4",
             "title": "Friend Area ~ Legendary Island | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239682638"
+            "id": "17770132054706789"
           },
           {
             "url": "https://www.youtube.com/watch?v=GFDlgASAVhg",
             "title": "Friend Area ~ Oceanic | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239683578"
+            "id": "17770132054707721"
           },
           {
             "url": "https://www.youtube.com/watch?v=tGhBae7-umY",
             "title": "Friend Area ~ Pond | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239689107"
+            "id": "17770132054704975"
           },
           {
             "url": "https://www.youtube.com/watch?v=oVRjfQHOz-M",
             "title": "Friend Area ~ Rainbow Peak | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239682769"
+            "id": "17770132054704680"
           },
           {
             "url": "https://www.youtube.com/watch?v=oFtXOTosS5U",
             "title": "Friend Area ~ Seafloor Cave | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239689657"
+            "id": "17770132054708769"
           },
           {
             "url": "https://www.youtube.com/watch?v=W2GcduMtZT8",
             "title": "Friend Area ~ Southern Island | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239681764"
+            "id": "17770132054703444"
           },
           {
             "url": "https://www.youtube.com/watch?v=lr4hquDZsts",
             "title": "Friend Area ~ Steppe | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239684932"
+            "id": "17770132054707385"
           },
           {
             "url": "https://www.youtube.com/watch?v=nFKFNQVfUtA",
             "title": "Friend Area ~ Stratos Lookout | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239686993"
+            "id": "17770132054702202"
           },
           {
             "url": "https://www.youtube.com/watch?v=w1qdzzBFoBw",
             "title": "Friend Area ~ Swamp | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239681416"
+            "id": "17770132054707784"
           },
           {
             "url": "https://www.youtube.com/watch?v=16ZAeOx4cVg",
             "title": "Friend Area ~ Volcanic Pit | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239682067"
+            "id": "17770132054700375"
           },
           {
             "url": "https://www.youtube.com/watch?v=OwhRt8ldrsE",
             "title": "Friend Area ~ Wilds | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239680771"
+            "id": "17770132054707453"
           },
           {
             "url": "https://www.youtube.com/watch?v=GAC8pcr_XAU",
             "title": "Frosty Forest | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239685786"
+            "id": "17770132054706245"
           },
           {
             "url": "https://www.youtube.com/watch?v=ItyauR8iGvw",
             "title": "Frosty Grotto | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239681335"
+            "id": "17770132054702606"
           },
           {
             "url": "https://www.youtube.com/watch?v=08l-LcC_BIY",
             "title": "Great Canyon | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239686897"
+            "id": "17770132054702694"
           },
           {
             "url": "https://www.youtube.com/watch?v=Gjn2b5Yy4XA",
             "title": "Happiness | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239687635"
+            "id": "17770132054701017"
           },
           {
             "url": "https://www.youtube.com/watch?v=oTnB_8l8-9w",
             "title": "Kecleon Shop | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239687102"
+            "id": "17770132054703239"
           },
           {
             "url": "https://www.youtube.com/watch?v=Z2YsqAmgZ50",
             "title": "Lapis Cave | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239680541"
+            "id": "17770132054703576"
           },
           {
             "url": "https://www.youtube.com/watch?v=DAhZOfuhLzw",
             "title": "Magma Cavern | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239682637"
+            "id": "17770132054700539"
           },
           {
             "url": "https://www.youtube.com/watch?v=3Wnhy5COxD4",
             "title": "Magma Cavern Pit | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239684076"
+            "id": "17770132054702932"
           },
           {
             "url": "https://www.youtube.com/watch?v=_wFmEWqtH5k",
             "title": "Makuhita Dojo | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239688492"
+            "id": "17770132054708463"
           },
           {
             "url": "https://www.youtube.com/watch?v=QF_Mqq6gVic",
             "title": "Monster House! | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239681608"
+            "id": "17770132054705962"
           },
           {
             "url": "https://www.youtube.com/watch?v=zoRs787dfkU",
             "title": "Mt. Blaze | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239683946"
+            "id": "17770132054701242"
           },
           {
             "url": "https://www.youtube.com/watch?v=qYiC82ahzYg",
             "title": "Mt. Blaze Peak | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239684598"
+            "id": "17770132054707038"
           },
           {
             "url": "https://www.youtube.com/watch?v=hjTkxFFhQlI",
             "title": "Mt. Freeze | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239684010"
+            "id": "17770132054704933"
           },
           {
             "url": "https://www.youtube.com/watch?v=Ggwq0PDX_L0",
             "title": "Mt. Freeze Peak | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239683225"
+            "id": "17770132054702441"
           },
           {
             "url": "https://www.youtube.com/watch?v=_GIVSXguepM",
             "title": "Mt. Steel | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239684941"
+            "id": "17770132054701907"
           },
           {
             "url": "https://www.youtube.com/watch?v=73rR-bdHa68",
             "title": "Mt. Thunder | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239686165"
+            "id": "17770132054704372"
           },
           {
             "url": "https://www.youtube.com/watch?v=PgBBl0RjL14",
             "title": "Mt. Thunder Peak | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239680577"
+            "id": "17770132054702701"
           },
           {
             "url": "https://www.youtube.com/watch?v=tDVXob_jRmE",
             "title": "Oddity Cave: Gates to Infinity Medley | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239688924"
+            "id": "17770132054706733"
           },
           {
             "url": "https://www.youtube.com/watch?v=_cCaQbyqu-0",
             "title": "Personality Test | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239684436"
+            "id": "17770132054709745"
           },
           {
             "url": "https://www.youtube.com/watch?v=XkbLyrd5QnU",
             "title": "Pokémon Plaza | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239681036"
+            "id": "17770132054705154"
           },
           {
             "url": "https://www.youtube.com/watch?v=y25V6YKZFy0",
             "title": "Puzzling... | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239681833"
+            "id": "17770132054700753"
           },
           {
             "url": "https://www.youtube.com/watch?v=6brwKIPzUhk",
             "title": "Rayquaza's Domain | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239688985"
+            "id": "17770132054707913"
           },
           {
             "url": "https://www.youtube.com/watch?v=aKpAKobNPKE",
             "title": "Rescue Team Base | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239684941"
+            "id": "17770132054704497"
           },
           {
             "url": "https://www.youtube.com/watch?v=KQr3SddX-5g",
             "title": "Run Away | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239684614"
+            "id": "17770132054701528"
           },
           {
             "url": "https://www.youtube.com/watch?v=CSmF0NLXVbc",
             "title": "Run Away: Arrangement | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239681305"
+            "id": "17770132054700898"
           },
           {
             "url": "https://www.youtube.com/watch?v=VK484V6rkwk",
             "title": "Silent Chasm | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239685367"
+            "id": "17770132054703969"
           },
           {
             "url": "https://www.youtube.com/watch?v=fsGmrMxfZQU",
             "title": "Sinister Woods | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239688252"
+            "id": "17770132054700278"
           },
           {
             "url": "https://www.youtube.com/watch?v=D9uHQ_rEhyI",
             "title": "Sky Tower | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239683910"
+            "id": "17770132054702461"
           },
           {
             "url": "https://www.youtube.com/watch?v=0FFh6DjIpaE",
             "title": "Sky Tower Summit | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239687414"
+            "id": "17770132054708623"
           },
           {
             "url": "https://www.youtube.com/watch?v=5aHKk_ilS2U",
             "title": "Staff Roll | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239682610"
+            "id": "17770132054702454"
           },
           {
             "url": "https://www.youtube.com/watch?v=4DedxYMs_co",
             "title": "Stormy Sea | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239689049"
+            "id": "17770132054702260"
           },
           {
             "url": "https://www.youtube.com/watch?v=YTSTqw-Y6F0",
             "title": "The Legend of Ninetales | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239684283"
+            "id": "17770132054702470"
           },
           {
             "url": "https://www.youtube.com/watch?v=2Wv9o3xO9M8",
             "title": "The Other Side | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239684277"
+            "id": "17770132054705814"
           },
           {
             "url": "https://www.youtube.com/watch?v=dkQZ-V9fkDs",
             "title": "There's Trouble! | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239684556"
+            "id": "17770132054701746"
           },
           {
             "url": "https://www.youtube.com/watch?v=AhOP2EaHGT8",
             "title": "Thunderwave Cave | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239686048"
+            "id": "17770132054706172",
+            "trim": 1,
+            "rms": 0.1609
           },
           {
             "url": "https://www.youtube.com/watch?v=6as-OPbqcpk",
             "title": "Tiny Woods | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239687809"
+            "id": "17770132054705044"
           },
           {
             "url": "https://www.youtube.com/watch?v=deRYqGI2e1g",
             "title": "Title Screen | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239683673"
+            "id": "17770132054707102"
           },
           {
             "url": "https://www.youtube.com/watch?v=-a3utRCm3j4",
             "title": "Versus Boss | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239683269"
+            "id": "17770132054704452"
           },
           {
             "url": "https://www.youtube.com/watch?v=CPkZV_pFvkc",
             "title": "Versus Legendary | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239685188"
+            "id": "17770132054700198"
           },
           {
             "url": "https://www.youtube.com/watch?v=LKroP0ikzws",
             "title": "World Calamity | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-            "id": "17743237239688875"
-          }
-        ]
-      },
-      {
-        "id": "group_17743237083688482",
-        "type": "group",
-        "title": "ポケモン不思議のダンジョン マグナゲートと∞迷宮 耐久版BGM集",
-        "collapsed": true,
-        "children": [
-          {
-            "url": "https://www.youtube.com/watch?v=Bs2fwQ9wFt0",
-            "title": "ポケモン不思議のダンジョン マグナゲートと∞迷宮 メインテーマ【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083680921"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=KO99rtfT64s",
-            "title": "トップメニュー【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083688423"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=rcvJijXkEvQ",
-            "title": "すがたが……ポケモンに……【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083688269"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=1hDCj7ts46Y",
-            "title": "はじめての出会い【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083681644"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=num9wREwLic",
-            "title": "でこぼこ山【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083686388"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=RM1uMg9Hw3E",
-            "title": "いらいクリア！【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083688391"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=IIlq10HIEks",
-            "title": "ポケモンパラダイス【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083688773"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=Q-2kazZSRFs",
-            "title": "よっておいで！宿場町！【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083688016"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=beadL3fmWHI",
-            "title": "宿場町の大工【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083683674"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=rL8lCcgVLtI",
-            "title": "石の洞窟【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083683082"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=Qa5KcgLJjo0",
-            "title": "ヘンだよね……？【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083682764"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=nDke5yoKpMA",
-            "title": "カゲロウ峠【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083686958"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=6hQYRo_DCPY",
-            "title": "夢の中の声【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083681691"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=1n3xKZ1DKB0",
-            "title": "せまるきょうふ【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083684189"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=UkCjOEJxWXc",
-            "title": "ボスバトル【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083681279"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=BZxT7Hz3wxs",
-            "title": "絶望 ライトアレンジ【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083680706"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=PyypzKI5I38",
-            "title": "絶望 スーパーライト【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083680485"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=Y8nOfh0meYk",
-            "title": "希望 ライトアレンジ２【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083685720"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=hXfUUAHHCbA",
-            "title": "カゲロウ峠　高地【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083687861"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=Oo5r5kL1R98",
-            "title": "希望 ライトアレンジ１【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083688189"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=zp542BzGUyk",
-            "title": "トントン山【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083682088"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=i7ULxOQQzL0",
-            "title": "不思議な世界【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083686984"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=47gk_gyGPgw",
-            "title": "みんな なんなんだよ……【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083688378"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=cTNItbrVDrg",
-            "title": "荒れ果て谷【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083683219"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=IyDbZthJw8k",
-            "title": "せまるきょうふ アレンジ【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083681582"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=Oz6HJR_F_CA",
-            "title": "ポケモンの仲間達【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083684722"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=q5PVbYFLJGQ",
-            "title": "希望のテーマ マーチ【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083687558"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=Y2dgl25bjlM",
-            "title": "希望のテーマ【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083684096"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=Sc2p4inkYgg",
-            "title": "ポケモンパラダイス２【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083688843"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=dAQdyH_5feA",
-            "title": "Vルーレット！【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083683696"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=BUmNFFGnrhg",
-            "title": "カクレオンのお店【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17743237083683495"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=pqvRHuo8Mf0",
-            "title": "わるものだぁ！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17743237083689706"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=PqwFcRe9Zvk",
-            "title": "氷の秘境 アレンジ１【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083680429"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=V78-ZCEl_gM",
-            "title": "シキサイの森【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083680827"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=acPAt5u5qec",
-            "title": "やさしさにふれて【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083680872"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=Mi7O8QdI7Xg",
-            "title": "おやすみなさい【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083682641"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=Odwv62LX4d8",
-            "title": "奥底にひそむもの【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083681534"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=-7oF9UuZt8A",
-            "title": "ポケモンの仲間達 アレンジ【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083689998"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=ju7qjzg93HE",
-            "title": "ドウコクの谷【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083684810"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=lV-bPDiNQxQ",
-            "title": "ドウコクの谷　奥地【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083685904"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=Dletn1I3Crc",
-            "title": "夢と希望と【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083687158"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=RWwmnEd212I",
-            "title": "氷の秘境 アレンジ２【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083687264"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=G711HBl3gI4",
-            "title": "マグナゲート【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083687177"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=e_H5EvGbdmU",
-            "title": "たくした思い【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083686855"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=or2S_iEX-D0",
-            "title": "地脈のはざま【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083680145"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=kmvJqjhXA2o",
-            "title": "氷の秘境【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083689701"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=KNadeYHCAcw",
-            "title": "大氷河【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083687143"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=k6ntL5meuas",
-            "title": "氷の地下道【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083684547"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=JuqqIOELwHM",
-            "title": "グレッシャーパレス【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083681816"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=7A4aB_QhhhE",
-            "title": "グレッシャーパレス　最上部【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083685341"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=1PBATna82Js",
-            "title": "奥底にひそむもの アレンジ１【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083682173"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=_RkpJQQmfd4",
-            "title": "思いやりと真心と【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083681583"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=TzpLcBMoB-s",
-            "title": "ゲノウエア間道【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083686145"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=JukeC3CK1ig",
-            "title": "モンスターハウスだ！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17743237083688430"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=lG7EVAMsK-w",
-            "title": "闇夜の森【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083685243"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=3rCwdkdEcmg",
-            "title": "やみにまぎれて【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083685002"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=YUVmBJtiYBY",
-            "title": "暗がりの中で……【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083681743"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=cTXRvLr7QYA",
-            "title": "あかつきの山岳【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083682532"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=yDLuyUieERg",
-            "title": "あかつきの山岳　高地【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083683317"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=4Ca_RwOjgQQ",
-            "title": "急襲！サザンドラ！【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083687951"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=VlMcUEdcxQU",
-            "title": "イエローキャニオン【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083683626"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=-TjAyQWrwBY",
-            "title": "カレカレ草原【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083687286"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=JN1ql2MmwvQ",
-            "title": "風穴の丘【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083683700"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=1kzUX7NL5mY",
-            "title": "しかけられたワナ【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083687063"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=9TlYW5EQvE0",
-            "title": "決戦！風穴の丘！【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083684205"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=d9nP7vlItVs",
-            "title": "カエン砂漠【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083682497"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=RHSs9yTKvSY",
-            "title": "キュレム接近【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083686711"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=YjT-TuDc3WA",
-            "title": "絶望 ヘビーアレンジ【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083687592"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=5_6ykF1Ipjg",
-            "title": "奥底にひそむもの アレンジ２【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083681655"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=O7-3hoVVBlQ",
-            "title": "希望 ライトアレンジ３【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083683748"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=Qz7ZmvUgDns",
-            "title": "シアンの迷い道【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083680589"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=oWIq8j_Fn9A",
-            "title": "シアンの迷い道　最奥部【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083687821"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=XQBPSyMw1YE",
-            "title": "グレッシャーパレス　東の塔【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083685665"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=1K7oITrVEck",
-            "title": "グレッシャーパレス　西の塔【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083688909"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=aaHUxVRz8Hc",
-            "title": "グレッシャーパレス　大結晶の塔【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083680875"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=QJKvo05K6z4",
-            "title": "運命を守るもの【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083687720"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=Xpq80u2H4GM",
-            "title": "キュレム！　宿命の戦い！【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083685675"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=Xa7kXY4QHJg",
-            "title": "絶望 ハイパーヘビー【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083687323"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=B1nC_u1did0",
-            "title": "きこえる……【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083682120"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=MUgVzNY645I",
-            "title": "はげましの声【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083681800"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=LNLPcUaArh8",
-            "title": "氷触体戦　ファースト【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083687923"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=Ygz1RlUpVc4",
-            "title": "失望の風【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083683882"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=n0MG4O4pUyg",
-            "title": "もう一度！あの虹を！【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083689026"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=QJ1sSgkuEVo",
-            "title": "氷触体戦　セカンド【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083684631"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=zo28HvEV1lQ",
-            "title": "いつもの景色……そして……【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083681499"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=DAzlSedgGjY",
-            "title": "希望の虹【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083680728"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=D03hXyAz9Qk",
-            "title": "平和のうたげ【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083683554"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=XvnmjiufLCM",
-            "title": "思い出の家【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083688040"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=RRQMXbUw0uQ",
-            "title": "光に包まれて イントロ【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083680480"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=hvSE2tQT3u4",
-            "title": "光に包まれて【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083684980"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=oke0Xggycrc",
-            "title": "パラダイスが見えてきた……【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083681665"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=zjo9f9ZsAjg",
-            "title": "キミが忘れても【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083681594"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=LvzYwWMFXKI",
-            "title": "フリズム【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083683764"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=NAxN_RKAZAM",
-            "title": "エンディング【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083688121"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=33Lmb0Mm6-o",
-            "title": "伝説との戦い【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083685480"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=SqKBVsNJiLI",
-            "title": "無限大ダンジョン１【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083681037"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=VPG2oZ9aGoE",
-            "title": "無限大ダンジョン２【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083688859"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=HyxT3__2HvU",
-            "title": "無限大ダンジョン３【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083688933"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=qqPsf_52QD0",
-            "title": "まぼろしのでこぼこ山【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083683131"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=GXn-vUNjME8",
-            "title": "まぼろしのカゲロウ峠【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083681804"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=qDxKEFPrUXI",
-            "title": "まぼろしの風穴の丘【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083686436"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=rd-DD3_qSRo",
-            "title": "おたからサルベージ【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083680039"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=liguhhl3RYw",
-            "title": "ツンベアーホッケー【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083687550"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=bM5Bg_7AAQc",
-            "title": "ポケモンパラダイス３【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17743237083687905"
-          }
-        ]
-      },
-      {
-        "id": "group_1774176191563",
-        "type": "group",
-        "title": "ポケモン超不思議のダンジョン 耐久版BGM集",
-        "collapsed": true,
-        "children": [
-          {
-            "url": "https://www.youtube.com/watch?v=qnvZAqY2fwo",
-            "title": "ポケモン超不思議のダンジョン　メインテーマ【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915635200"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=AiCmAqM3gDc",
-            "title": "トップメニュー【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915634765"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=n8ojcJMpQW8",
-            "title": "ようこそ！　ポケモンたちの世界へ！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915639168"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=I9njzRL71u0",
-            "title": "この星に生きるもの【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915630005"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=D1oJ1jvjx7g",
-            "title": "なんでいきなりっ！？【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915633735"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=Eb1Tr1THtmc",
-            "title": "ジョバンとうげ【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915636556"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=dSSaWNs5Ju8",
-            "title": "シンリョクの森【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915635237"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=K4pVJIpNGpU",
-            "title": "ちょっとしたひと時に【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915632794"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=pUl9Z5Mfwnw",
-            "title": "しかたない......【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915630646"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=YOSbRm340_Y",
-            "title": "山を越えて【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915635795"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=WZo3ioWe04g",
-            "title": "コノハナの家【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915634144"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=hlIn4at5XIc",
-            "title": "村の子どもたち【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915634180"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=9AxqWpas2Z8",
-            "title": "わわわわわっ！！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915631312"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=OajrbgZJak8",
-            "title": "おだやか村【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915639500"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=oKTbV59pl3U",
-            "title": "小さなもめごと【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915638337"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=IMRes-fygWw",
-            "title": "こわそうな森【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915633706"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=XD6qhkaj0eg",
-            "title": "奥底にひそむもの【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915633916"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=BW29RkIU6wk",
-            "title": "学校にいこう！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915633532"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=wF0sG57nn3g",
-            "title": "帰り道【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915639559"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=PFAGGlo1lJk",
-            "title": "ヤンチャムとチョボマキ【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915639685"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=lgKYZ_d6DpI",
-            "title": "おこられる【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915635937"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=HYuokLQBtWc",
-            "title": "モグリュー炭鉱【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915635061"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=ZBzDyCA3bB4",
-            "title": "せまるきょうふ【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915636908"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=E42bHml2iIc",
-            "title": "ボスバトル！　子どもたちの冒険！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915639114"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=Sykh5ADFHD0",
-            "title": "心の中の宝物【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915630089"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=w75yW0aRNpI",
-            "title": "パートナーのテーマ【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915638972"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=7Ial5S-lkrA",
-            "title": "学校うらの森【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915634813"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=MEU02-DzGls",
-            "title": "冒険のとちゅうで【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915637133"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=0icDSLjOkxs",
-            "title": "くじけない　あきらめない【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915632519"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=--gIwUP6fgM",
-            "title": "ミルホッグ教頭先生のテーマ【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915634450"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=mI6TlcDcVdU",
-            "title": "キララ山【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915635231"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=dFbaoy-0348",
-            "title": "ほのぼの【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915630528"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=LdyrUV65-wM",
-            "title": "おおらかな　やさしさで【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915638038"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=zvdm6sG7CeA",
-            "title": "どうしよう......【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915634576"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=VpoUIzpmJnM",
-            "title": "いったい　どこに......？【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915638547"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=uc2IcfILOfY",
-            "title": "カンロ草原【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915632175"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=yZvOSPR1dKM",
-            "title": "さすらいのデンリュウ【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915639739"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=dOYez6kNuvc",
-            "title": "ニョロボンリバー【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915631814"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=YgPZDveiNyE",
-            "title": "調査団のあかし【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915630561"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=1yUVdqiBeas",
-            "title": "しずかな夜【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915639731"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=BXhjXO3nAmw",
-            "title": "夜の学校のウワサ【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915638695"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=9LlRfCQyfHw",
-            "title": "学校の見回りで【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915632158"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=ObIAHCTWykM",
-            "title": "あついよぉ......【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915639887"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=Ew-8YWM-T3w",
-            "title": "おそろしい影【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915633526"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=FQcPp166Na8",
-            "title": "青白い火【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915635933"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=SEOPPDmXOUg",
-            "title": "いにしえの骨跡【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915635748"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=wOoNLyiTi7I",
-            "title": "パートナーのテーマ　オルゴール【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915632353"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=zohH430aaTk",
-            "title": "テンケイ山【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915633696"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=n8uPSWPdpGE",
-            "title": "子どもたちが見送りに......【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915634679"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=u_oNcAVcpaI",
-            "title": "キリタッタ山脈【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915637807"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=m9arkrMt8Fo",
-            "title": "なだらかな洞窟【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915631756"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=0obPRAu3hTk",
-            "title": "ワイワイタウン【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915631275"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=DRXnVThdAYo",
-            "title": "進め！　ポケモン調査団！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915632571"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=1w4a6wo5DFI",
-            "title": "ポケモン調査団　オルゴール【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915636417"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=X2KnNWWI6m4",
-            "title": "伝説ボスバトル！　ロックバージョン【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915634589"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=IyyzPt-1u40",
-            "title": "風の大陸　パラムタウン【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915634374"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=h1ddACY83oU",
-            "title": "神秘の森【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915636511"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=L1_fFBdzfeM",
-            "title": "石化のなぞ【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915631615"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=AtE-jhQYVw8",
-            "title": "せまるきょうふ　アレンジ１【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915639514"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=pm-jcKbtaNQ",
-            "title": "立ち向かうは調査団のほこり【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915639436"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=78vU1BHa6ks",
-            "title": "炎の島の火山【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915638051"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=bJ3zU9NdQto",
-            "title": "ボスバトル！　調査団の戦い！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915630564"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=yHb6qb8pG2Y",
-            "title": "進化のちから【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915632183"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=soStaati-vM",
-            "title": "対決！　火山のエンテイ！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915638814"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=vAZovdwMbkA",
-            "title": "調査団の気持ちは同じ！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915635748"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=u4P4Sk9MCFo",
-            "title": "決戦ヶ岳【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915631903"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=eNw-R7UG1Ec",
-            "title": "奥底にひそむもの　アレンジ１【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915635331"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=vc7SLEjjJYU",
-            "title": "たいへんだっ！！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915633537"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=QYK0Uv3yzZ8",
-            "title": "残された古代文字【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915631258"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=kcBroeVGeEo",
-            "title": "なにかが...ちがう......！？【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915638275"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=bpozXqGpqaM",
-            "title": "急襲！　イベルタル！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915633210"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=c6Ggt5w2ynA",
-            "title": "スベテノポケモンニ告グッ！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915636183"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=axwj3pXe2AQ",
-            "title": "虚無の世界【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915635720"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=OX2_gPXeaHU",
-            "title": "ならくの荒野【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915630019"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=kt2h2E5jJhY",
-            "title": "悲しみの中で【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915639110"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=ZqmT-LS9Dtg",
-            "title": "シンエン洞窟【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915632177"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=_WuSkwTDAUw",
-            "title": "静かな岩場【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915635526"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=DfEGH4pkCcA",
-            "title": "虚無の影【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915637218"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=CwfqlYMy718",
-            "title": "伝説の三聖獣【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915637067"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=Be0i_E0Qsi4",
-            "title": "地天の山【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915630739"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=7cKGmDnlPsA",
-            "title": "奥底にひそむもの　アレンジ２【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915636017"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=5prqyHkrLoU",
-            "title": "三聖獣の決意【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915636357"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=UIkVRv6l39Q",
-            "title": "たくされた希望【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915632071"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=QM6GVtTRfwk",
-            "title": "海中洞窟【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915636907"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=8Ps0ifCUOeQ",
-            "title": "古代遺跡【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915635391"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=dWzJAh2jfYA",
-            "title": "失われた記憶の秘密【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915636496"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=24WQoMds8D0",
-            "title": "生命の木　南の島【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915633427"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=VlQexxQHc58",
-            "title": "始まりの森への道【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915631091"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=vOvEwnP_hUc",
-            "title": "かれた生命の木【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915633516"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=jpF0WEInlGE",
-            "title": "イベルタルたちとの戦い【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915636445"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=gwe-vUeZWoM",
-            "title": "ぼくたちは飛べる！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915637485"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=iWvN58K3Nco",
-            "title": "ポケモンたちのちから【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915630907"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=S377YbvvPyE",
-            "title": "生命の木　はこびの千本根【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915633251"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=l8jvCPGM5Ps",
-            "title": "生命の木　かがやきの幹【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915637864"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=XMTTfd6Ln6E",
-            "title": "かならず...たおすから！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915639893"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=eXB-za7FsBc",
-            "title": "ダークマター戦　ファースト【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915632818"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=RTrKHBdkz-c",
-            "title": "再生！　ダークマター！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915631647"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=ZOeo5JAhRcw",
-            "title": "弱くても　あがくだけだッ！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915636270"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=zc6igi76m98",
-            "title": "奥底にひそむもの　アレンジ３【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915632708"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=v2isfPdz7Bo",
-            "title": "あきらめるな【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915630900"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=CYxj2WNpW4s",
-            "title": "ダークマター戦　セカンド【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915638860"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=aIMmIU--I7o",
-            "title": "なくならぬ負の感情【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915631834"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=x2h24rNle-8",
-            "title": "こ...ここは......？【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915636374"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=eBRKBcVArw4",
-            "title": "復活！　生命の木！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915633993"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=rehFXQACTsw",
-            "title": "世界が守られたよろこびで【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915636641"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=UF0oJO9M8ys",
-            "title": "おだやか村へ帰ろう【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915636926"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=_VMMCp7pqlA",
-            "title": "おかえり！　そしてありがとう！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915633386"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=jQ2_7s2WG1k",
-            "title": "光に包まれて......【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915634632"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=6_Y1YtrzKns",
-            "title": "別れの時【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915638772"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=ag8eTXoY5Pw",
-            "title": "エンディング【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915637979"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=b_DV5lzJmQE",
-            "title": "草の大陸　カビンタウン【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915630879"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=iZRQ4vJCCxM",
-            "title": "霧の大陸　ノエタウン【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915632249"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=fDz_aB7TpLc",
-            "title": "砂の大陸　ラムルタウン【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915633533"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=U3uFcs_Ha70",
-            "title": "森と山のささやき（救助隊）【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915630017"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=gxs7EabDgpU",
-            "title": "海岸の洞窟（探検隊）【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915632959"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=rphRQZXQ3jQ",
-            "title": "エレキ平原（探検隊）【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915635518"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=uUGwiPJBdco",
-            "title": "水晶の洞窟（探検隊）【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915637839"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=toVnqlgwPMA",
-            "title": "ボスバトル！　列強伝説！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915634968"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=XnAUR0kSb98",
-            "title": "ペリッパー島【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915633892"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=JukeC3CK1ig",
-            "title": "モンスターハウスだ！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915637317"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=BUmNFFGnrhg",
-            "title": "カクレオンのお店【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915632094"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=pqvRHuo8Mf0",
-            "title": "わるものだぁ！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915633564"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=eQRaqVMf48A",
-            "title": "せいれいの砂丘【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915636076"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=vGxXYgmBPLg",
-            "title": "ミステリージャングル【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915630508"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=AiplWCddgZE",
-            "title": "じょうかの洞窟【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915635989"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=SqKBVsNJiLI",
-            "title": "無限大ダンジョン１【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915630300"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=VPG2oZ9aGoE",
-            "title": "無限大ダンジョン２【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915630788"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=HyxT3__2HvU",
-            "title": "無限大ダンジョン３【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915630221"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=dAQdyH_5feA",
-            "title": "Vルーレット！【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915635620"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=33Lmb0Mm6-o",
-            "title": "伝説との戦い【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915637440"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=num9wREwLic",
-            "title": "でこぼこ山【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915630539"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=qqPsf_52QD0",
-            "title": "まぼろしのでこぼこ山【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915631508"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=rL8lCcgVLtI",
-            "title": "石の洞窟【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915632156"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=nDke5yoKpMA",
-            "title": "カゲロウ峠【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915630964"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=hXfUUAHHCbA",
-            "title": "カゲロウ峠　高地【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915639033"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=GXn-vUNjME8",
-            "title": "まぼろしのカゲロウ峠【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915638950"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=zp542BzGUyk",
-            "title": "トントン山【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915639964"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=cTNItbrVDrg",
-            "title": "荒れ果て谷【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915633618"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=V78-ZCEl_gM",
-            "title": "シキサイの森【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915637254"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=ju7qjzg93HE",
-            "title": "ドウコクの谷【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915634750"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=lV-bPDiNQxQ",
-            "title": "ドウコクの谷　奥地【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915634127"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=or2S_iEX-D0",
-            "title": "地脈のはざま【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915631015"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=KNadeYHCAcw",
-            "title": "大氷河【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915630220"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=k6ntL5meuas",
-            "title": "氷の地下道【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915631737"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=JuqqIOELwHM",
-            "title": "グレッシャーパレス【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915633138"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=7A4aB_QhhhE",
-            "title": "グレッシャーパレス　最上部【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915636187"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=TzpLcBMoB-s",
-            "title": "ゲノウエア間道【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915636309"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=lG7EVAMsK-w",
-            "title": "闇夜の森【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915633280"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=cTXRvLr7QYA",
-            "title": "あかつきの山岳【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915633061"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=yDLuyUieERg",
-            "title": "あかつきの山岳　高地【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915633835"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=VlMcUEdcxQU",
-            "title": "イエローキャニオン【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915632050"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=-TjAyQWrwBY",
-            "title": "カレカレ草原【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915633555"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=JN1ql2MmwvQ",
-            "title": "風穴の丘【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915637155"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=qDxKEFPrUXI",
-            "title": "まぼろしの風穴の丘【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915638063"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=d9nP7vlItVs",
-            "title": "カエン砂漠【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915631871"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=Qz7ZmvUgDns",
-            "title": "シアンの迷い道【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915631835"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=oWIq8j_Fn9A",
-            "title": "シアンの迷い道　最奥部【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915631964"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=XQBPSyMw1YE",
-            "title": "グレッシャーパレス　東の塔【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915634986"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=1K7oITrVEck",
-            "title": "グレッシャーパレス　西の塔【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915631012"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=aaHUxVRz8Hc",
-            "title": "グレッシャーパレス　大結晶の塔【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915634729"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=Xpq80u2H4GM",
-            "title": "キュレム！　宿命の戦い！【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915636385"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=LNLPcUaArh8",
-            "title": "氷触体戦　ファースト【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915635781"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=QJ1sSgkuEVo",
-            "title": "氷触体戦　セカンド【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
-            "id": "17741761915635210"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=63vhYBEhWxE",
-            "title": "レックウザとの戦い（救助隊）【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915636619"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=9IQzpepBr0M",
-            "title": "決戦！　ディアルガ！（探検隊）【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
-            "id": "17741761915637247"
+            "id": "17770132054704172"
           }
         ]
       },
@@ -2518,7 +1182,9 @@
           {
             "url": "https://www.youtube.com/watch?v=BcmJDQfiGqw&pp=ygUb44Of44OE44Or44CA44CAQkdN44CA6ICQ5LmF0gcJCdsKAYcqIYzv",
             "title": "【30分間耐久】 戦闘！ミツル 【ポケモンORAS】 mp4",
-            "id": "17759851993577682"
+            "id": "17759851993577682",
+            "trim": 1.49,
+            "rms": 0.1079
           },
           {
             "url": "https://www.youtube.com/watch?v=fBStudHgFds&t=28s",
@@ -2688,13 +1354,6 @@
             "loopEnd": 342
           },
           {
-            "url": "https://www.youtube.com/watch?v=2k_VYEsRAn0&pp=ygUbWkEg44OI44Os44O844OK44O844CA6ICQ5LmF",
-            "title": "【Pokémon LEGENDS Z-A】トレーナー 戦闘BGM 【1時間耐久】【ポケモンZA】【作業用BGM】",
-            "id": "17759986568356316",
-            "loopStart": 0,
-            "loopEnd": 9999
-          },
-          {
             "url": "https://www.youtube.com/watch?v=63XjSOYsKZU",
             "title": "🎼  Battle! Wild Pokémon - Kalos Version [Master Style] | Pokémon Masters EX",
             "id": "17769121860194861",
@@ -2726,9 +1385,16 @@
             "id": "17759986568354138",
             "loopStart": 185.24,
             "loopEnd": 405.44
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=2k_VYEsRAn0&pp=ygUbWkEg44OI44Os44O844OK44O844CA6ICQ5LmF",
+            "title": "【Pokémon LEGENDS Z-A】トレーナー 戦闘BGM 【1時間耐久】【ポケモンZA】【作業用BGM】",
+            "id": "17769912895530376",
+            "loopStart": 0,
+            "loopEnd": 9999
           }
         ],
-        "collapsed": false
+        "collapsed": true
       },
       {
         "id": "17762462672705957",
@@ -4655,7 +3321,9 @@
           {
             "url": "https://www.youtube.com/watch?v=BcmJDQfiGqw&pp=ygUb44Of44OE44Or44CA44CAQkdN44CA6ICQ5LmF0gcJCdsKAYcqIYzv",
             "title": "【30分間耐久】 戦闘！ミツル 【ポケモンORAS】 mp4",
-            "id": "17748545469729818"
+            "id": "17748545469729818",
+            "trim": 1.49,
+            "rms": 0.1079
           },
           {
             "url": "https://www.youtube.com/watch?v=yNAx1Vkr20s&pp=0gcJCdsKAYcqIYzv",
@@ -5656,7 +4324,9 @@
           {
             "url": "https://www.youtube.com/watch?v=BcmJDQfiGqw&pp=ygUb44Of44OE44Or44CA44CAQkdN44CA6ICQ5LmF0gcJCdsKAYcqIYzv",
             "title": "【30分間耐久】 戦闘！ミツル 【ポケモンORAS】 mp4",
-            "id": "17748586201792875"
+            "id": "17748586201792875",
+            "trim": 1.49,
+            "rms": 0.1079
           },
           {
             "url": "https://www.youtube.com/watch?v=fBStudHgFds&t=28s",
@@ -7214,6 +5884,1772 @@
         "url": "https://www.youtube.com/watch?v=H2zDrSo3vdc",
         "title": "【ポケモンHGSS】戦闘！野生ポケモン(ジョウト)【ソウルシルバー】【ハートゴールド】【ポケモンBGM】【15分耐久】",
         "id": "1770552705213"
+      },
+      {
+        "id": "group_17743237239684413",
+        "type": "group",
+        "title": "Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+        "collapsed": false,
+        "children": [
+          {
+            "url": "https://www.youtube.com/watch?v=AYSM_upZDYk",
+            "title": "Aftermath | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239684754"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=RkSPOXLKsp4",
+            "title": "At The End of the Road | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239688705"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=3TnS53nbSPE",
+            "title": "At The End of the Road: Arrangement 1 | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239684688"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=_GIDxRvKi2c",
+            "title": "At The End of the Road: Arrangement 2 | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239688258"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=LT5G2DkXHLE",
+            "title": "At The End of the Road: Arrangement 3 | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239684994"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=iLA_OJ3CuRk",
+            "title": "At Just Such a Moment | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239685836"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=r-1GMW2mYPk",
+            "title": "Awakening | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239687297"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=YcguHL_j6pw",
+            "title": "Benevolent Spirit | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239685862"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=gVykcylcy3Q",
+            "title": "Buried Relic | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239682392"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=C4T0YLL1WBU",
+            "title": "Danger | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239686606"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=QUbqOULtp5k",
+            "title": "Danger: Arrangement 1 | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239681733"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=GgezwDm1LHM",
+            "title": "Danger: Arrangement 2 | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239685641"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Gx9302hIvNA",
+            "title": "Danger: Arrangement 3 | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239685997"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=aoo2-y8dtCI",
+            "title": "Dream | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239687498"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=WCr0hlo90vA",
+            "title": "Dream Eater | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239688899"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=9fbl6aiMGYk",
+            "title": "During an Adventure | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239684552"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=YO_O47Hms-s",
+            "title": "Escape Through the Snow | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239681161"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=8B18k0XlGoo",
+            "title": "Farewell | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239681171"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=CP6D4KHRPO8",
+            "title": "File Select | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239685496"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=K_grFAreCaU",
+            "title": "Friend Area ~ Caves | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239685953"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=-NDxv9nDj5U",
+            "title": "Friend Area ~ Cryptic Cave | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239682799"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=EO162byn6xk",
+            "title": "Friend Area ~ Deep-Sea Current | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239683868"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=qD0dPOOQPpk",
+            "title": "Friend Area ~ Enclosed Island | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239686191"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=ye6xGwStxU0",
+            "title": "Friend Area ~ Field | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239682088"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=qgQbAvCwoHY",
+            "title": "Friend Area ~ Final Island | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239681874"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=SpGmQwgGSG8",
+            "title": "Friend Area ~ Forest | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239687629"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=3ZYikzGRYFs",
+            "title": "Friend Area ~ Healing Forest | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239684230"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=x2SmpQJsg2k",
+            "title": "Friend Area ~ Lab | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239688167"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=iwB841K4PH4",
+            "title": "Friend Area ~ Legendary Island | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239682638"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=GFDlgASAVhg",
+            "title": "Friend Area ~ Oceanic | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239683578"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=tGhBae7-umY",
+            "title": "Friend Area ~ Pond | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239689107"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=oVRjfQHOz-M",
+            "title": "Friend Area ~ Rainbow Peak | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239682769"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=oFtXOTosS5U",
+            "title": "Friend Area ~ Seafloor Cave | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239689657"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=W2GcduMtZT8",
+            "title": "Friend Area ~ Southern Island | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239681764"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=lr4hquDZsts",
+            "title": "Friend Area ~ Steppe | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239684932"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=nFKFNQVfUtA",
+            "title": "Friend Area ~ Stratos Lookout | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239686993"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=w1qdzzBFoBw",
+            "title": "Friend Area ~ Swamp | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239681416"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=16ZAeOx4cVg",
+            "title": "Friend Area ~ Volcanic Pit | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239682067"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=OwhRt8ldrsE",
+            "title": "Friend Area ~ Wilds | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239680771"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=GAC8pcr_XAU",
+            "title": "Frosty Forest | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239685786"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=ItyauR8iGvw",
+            "title": "Frosty Grotto | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239681335"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=08l-LcC_BIY",
+            "title": "Great Canyon | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239686897"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Gjn2b5Yy4XA",
+            "title": "Happiness | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239687635"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=oTnB_8l8-9w",
+            "title": "Kecleon Shop | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239687102"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Z2YsqAmgZ50",
+            "title": "Lapis Cave | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239680541"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=DAhZOfuhLzw",
+            "title": "Magma Cavern | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239682637"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=3Wnhy5COxD4",
+            "title": "Magma Cavern Pit | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239684076"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=_wFmEWqtH5k",
+            "title": "Makuhita Dojo | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239688492"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=QF_Mqq6gVic",
+            "title": "Monster House! | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239681608"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=zoRs787dfkU",
+            "title": "Mt. Blaze | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239683946"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=qYiC82ahzYg",
+            "title": "Mt. Blaze Peak | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239684598"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=hjTkxFFhQlI",
+            "title": "Mt. Freeze | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239684010"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Ggwq0PDX_L0",
+            "title": "Mt. Freeze Peak | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239683225"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=_GIVSXguepM",
+            "title": "Mt. Steel | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239684941"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=73rR-bdHa68",
+            "title": "Mt. Thunder | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239686165"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=PgBBl0RjL14",
+            "title": "Mt. Thunder Peak | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239680577"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=tDVXob_jRmE",
+            "title": "Oddity Cave: Gates to Infinity Medley | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239688924"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=_cCaQbyqu-0",
+            "title": "Personality Test | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239684436"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=XkbLyrd5QnU",
+            "title": "Pokémon Plaza | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239681036"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=y25V6YKZFy0",
+            "title": "Puzzling... | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239681833"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=6brwKIPzUhk",
+            "title": "Rayquaza's Domain | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239688985"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=aKpAKobNPKE",
+            "title": "Rescue Team Base | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239684941"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=KQr3SddX-5g",
+            "title": "Run Away | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239684614"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=CSmF0NLXVbc",
+            "title": "Run Away: Arrangement | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239681305"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=VK484V6rkwk",
+            "title": "Silent Chasm | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239685367"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=fsGmrMxfZQU",
+            "title": "Sinister Woods | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239688252"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=D9uHQ_rEhyI",
+            "title": "Sky Tower | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239683910"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=0FFh6DjIpaE",
+            "title": "Sky Tower Summit | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239687414"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=5aHKk_ilS2U",
+            "title": "Staff Roll | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239682610"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=4DedxYMs_co",
+            "title": "Stormy Sea | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239689049"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=YTSTqw-Y6F0",
+            "title": "The Legend of Ninetales | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239684283"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=2Wv9o3xO9M8",
+            "title": "The Other Side | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239684277"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=dkQZ-V9fkDs",
+            "title": "There's Trouble! | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239684556"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=AhOP2EaHGT8",
+            "title": "Thunderwave Cave | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239686048",
+            "trim": 1,
+            "rms": 0.1609
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=6as-OPbqcpk",
+            "title": "Tiny Woods | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239687809"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=deRYqGI2e1g",
+            "title": "Title Screen | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239683673"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=-a3utRCm3j4",
+            "title": "Versus Boss | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239683269"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=CPkZV_pFvkc",
+            "title": "Versus Legendary | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239685188"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=LKroP0ikzws",
+            "title": "World Calamity | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+            "id": "17743237239688875"
+          }
+        ]
+      },
+      {
+        "id": "group_17743237083688482",
+        "type": "group",
+        "title": "ポケモン不思議のダンジョン マグナゲートと∞迷宮 耐久版BGM集",
+        "collapsed": true,
+        "children": [
+          {
+            "url": "https://www.youtube.com/watch?v=Bs2fwQ9wFt0",
+            "title": "ポケモン不思議のダンジョン マグナゲートと∞迷宮 メインテーマ【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083680921"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=KO99rtfT64s",
+            "title": "トップメニュー【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083688423"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=rcvJijXkEvQ",
+            "title": "すがたが……ポケモンに……【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083688269"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=1hDCj7ts46Y",
+            "title": "はじめての出会い【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083681644"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=num9wREwLic",
+            "title": "でこぼこ山【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083686388"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=RM1uMg9Hw3E",
+            "title": "いらいクリア！【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083688391"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=IIlq10HIEks",
+            "title": "ポケモンパラダイス【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083688773"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Q-2kazZSRFs",
+            "title": "よっておいで！宿場町！【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083688016"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=beadL3fmWHI",
+            "title": "宿場町の大工【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083683674"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=rL8lCcgVLtI",
+            "title": "石の洞窟【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083683082"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Qa5KcgLJjo0",
+            "title": "ヘンだよね……？【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083682764"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=nDke5yoKpMA",
+            "title": "カゲロウ峠【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083686958"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=6hQYRo_DCPY",
+            "title": "夢の中の声【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083681691"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=1n3xKZ1DKB0",
+            "title": "せまるきょうふ【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083684189"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=UkCjOEJxWXc",
+            "title": "ボスバトル【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083681279"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=BZxT7Hz3wxs",
+            "title": "絶望 ライトアレンジ【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083680706"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=PyypzKI5I38",
+            "title": "絶望 スーパーライト【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083680485"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Y8nOfh0meYk",
+            "title": "希望 ライトアレンジ２【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083685720"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=hXfUUAHHCbA",
+            "title": "カゲロウ峠　高地【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083687861"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Oo5r5kL1R98",
+            "title": "希望 ライトアレンジ１【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083688189"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=zp542BzGUyk",
+            "title": "トントン山【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083682088"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=i7ULxOQQzL0",
+            "title": "不思議な世界【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083686984"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=47gk_gyGPgw",
+            "title": "みんな なんなんだよ……【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083688378"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=cTNItbrVDrg",
+            "title": "荒れ果て谷【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083683219"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=IyDbZthJw8k",
+            "title": "せまるきょうふ アレンジ【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083681582"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Oz6HJR_F_CA",
+            "title": "ポケモンの仲間達【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083684722"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=q5PVbYFLJGQ",
+            "title": "希望のテーマ マーチ【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083687558"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Y2dgl25bjlM",
+            "title": "希望のテーマ【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083684096"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Sc2p4inkYgg",
+            "title": "ポケモンパラダイス２【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083688843"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=dAQdyH_5feA",
+            "title": "Vルーレット！【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083683696"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=BUmNFFGnrhg",
+            "title": "カクレオンのお店【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17743237083683495"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=pqvRHuo8Mf0",
+            "title": "わるものだぁ！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17743237083689706"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=PqwFcRe9Zvk",
+            "title": "氷の秘境 アレンジ１【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083680429"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=V78-ZCEl_gM",
+            "title": "シキサイの森【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083680827"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=acPAt5u5qec",
+            "title": "やさしさにふれて【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083680872"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Mi7O8QdI7Xg",
+            "title": "おやすみなさい【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083682641"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Odwv62LX4d8",
+            "title": "奥底にひそむもの【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083681534"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=-7oF9UuZt8A",
+            "title": "ポケモンの仲間達 アレンジ【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083689998"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=ju7qjzg93HE",
+            "title": "ドウコクの谷【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083684810"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=lV-bPDiNQxQ",
+            "title": "ドウコクの谷　奥地【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083685904"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Dletn1I3Crc",
+            "title": "夢と希望と【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083687158"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=RWwmnEd212I",
+            "title": "氷の秘境 アレンジ２【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083687264"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=G711HBl3gI4",
+            "title": "マグナゲート【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083687177"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=e_H5EvGbdmU",
+            "title": "たくした思い【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083686855"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=or2S_iEX-D0",
+            "title": "地脈のはざま【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083680145"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=kmvJqjhXA2o",
+            "title": "氷の秘境【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083689701"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=KNadeYHCAcw",
+            "title": "大氷河【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083687143"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=k6ntL5meuas",
+            "title": "氷の地下道【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083684547"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=JuqqIOELwHM",
+            "title": "グレッシャーパレス【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083681816"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=7A4aB_QhhhE",
+            "title": "グレッシャーパレス　最上部【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083685341"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=1PBATna82Js",
+            "title": "奥底にひそむもの アレンジ１【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083682173"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=_RkpJQQmfd4",
+            "title": "思いやりと真心と【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083681583"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=TzpLcBMoB-s",
+            "title": "ゲノウエア間道【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083686145"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=JukeC3CK1ig",
+            "title": "モンスターハウスだ！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17743237083688430"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=lG7EVAMsK-w",
+            "title": "闇夜の森【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083685243"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=3rCwdkdEcmg",
+            "title": "やみにまぎれて【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083685002"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=YUVmBJtiYBY",
+            "title": "暗がりの中で……【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083681743"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=cTXRvLr7QYA",
+            "title": "あかつきの山岳【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083682532"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=yDLuyUieERg",
+            "title": "あかつきの山岳　高地【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083683317"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=4Ca_RwOjgQQ",
+            "title": "急襲！サザンドラ！【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083687951"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=VlMcUEdcxQU",
+            "title": "イエローキャニオン【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083683626"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=-TjAyQWrwBY",
+            "title": "カレカレ草原【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083687286"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=JN1ql2MmwvQ",
+            "title": "風穴の丘【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083683700"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=1kzUX7NL5mY",
+            "title": "しかけられたワナ【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083687063"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=9TlYW5EQvE0",
+            "title": "決戦！風穴の丘！【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083684205"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=d9nP7vlItVs",
+            "title": "カエン砂漠【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083682497"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=RHSs9yTKvSY",
+            "title": "キュレム接近【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083686711"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=YjT-TuDc3WA",
+            "title": "絶望 ヘビーアレンジ【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083687592"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=5_6ykF1Ipjg",
+            "title": "奥底にひそむもの アレンジ２【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083681655"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=O7-3hoVVBlQ",
+            "title": "希望 ライトアレンジ３【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083683748"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Qz7ZmvUgDns",
+            "title": "シアンの迷い道【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083680589"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=oWIq8j_Fn9A",
+            "title": "シアンの迷い道　最奥部【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083687821"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=XQBPSyMw1YE",
+            "title": "グレッシャーパレス　東の塔【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083685665"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=1K7oITrVEck",
+            "title": "グレッシャーパレス　西の塔【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083688909"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=aaHUxVRz8Hc",
+            "title": "グレッシャーパレス　大結晶の塔【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083680875"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=QJKvo05K6z4",
+            "title": "運命を守るもの【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083687720"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Xpq80u2H4GM",
+            "title": "キュレム！　宿命の戦い！【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083685675"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Xa7kXY4QHJg",
+            "title": "絶望 ハイパーヘビー【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083687323"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=B1nC_u1did0",
+            "title": "きこえる……【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083682120"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=MUgVzNY645I",
+            "title": "はげましの声【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083681800"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=LNLPcUaArh8",
+            "title": "氷触体戦　ファースト【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083687923"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Ygz1RlUpVc4",
+            "title": "失望の風【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083683882"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=n0MG4O4pUyg",
+            "title": "もう一度！あの虹を！【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083689026"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=QJ1sSgkuEVo",
+            "title": "氷触体戦　セカンド【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083684631"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=zo28HvEV1lQ",
+            "title": "いつもの景色……そして……【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083681499"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=DAzlSedgGjY",
+            "title": "希望の虹【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083680728"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=D03hXyAz9Qk",
+            "title": "平和のうたげ【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083683554"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=XvnmjiufLCM",
+            "title": "思い出の家【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083688040"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=RRQMXbUw0uQ",
+            "title": "光に包まれて イントロ【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083680480"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=hvSE2tQT3u4",
+            "title": "光に包まれて【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083684980"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=oke0Xggycrc",
+            "title": "パラダイスが見えてきた……【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083681665"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=zjo9f9ZsAjg",
+            "title": "キミが忘れても【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083681594"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=LvzYwWMFXKI",
+            "title": "フリズム【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083683764"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=NAxN_RKAZAM",
+            "title": "エンディング【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083688121"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=33Lmb0Mm6-o",
+            "title": "伝説との戦い【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083685480"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=SqKBVsNJiLI",
+            "title": "無限大ダンジョン１【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083681037"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=VPG2oZ9aGoE",
+            "title": "無限大ダンジョン２【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083688859"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=HyxT3__2HvU",
+            "title": "無限大ダンジョン３【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083688933"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=qqPsf_52QD0",
+            "title": "まぼろしのでこぼこ山【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083683131"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=GXn-vUNjME8",
+            "title": "まぼろしのカゲロウ峠【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083681804"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=qDxKEFPrUXI",
+            "title": "まぼろしの風穴の丘【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083686436"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=rd-DD3_qSRo",
+            "title": "おたからサルベージ【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083680039"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=liguhhl3RYw",
+            "title": "ツンベアーホッケー【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083687550"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=bM5Bg_7AAQc",
+            "title": "ポケモンパラダイス３【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17743237083687905"
+          }
+        ]
+      },
+      {
+        "id": "group_1774176191563",
+        "type": "group",
+        "title": "ポケモン超不思議のダンジョン 耐久版BGM集",
+        "collapsed": true,
+        "children": [
+          {
+            "url": "https://www.youtube.com/watch?v=qnvZAqY2fwo",
+            "title": "ポケモン超不思議のダンジョン　メインテーマ【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915635200"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=AiCmAqM3gDc",
+            "title": "トップメニュー【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915634765"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=n8ojcJMpQW8",
+            "title": "ようこそ！　ポケモンたちの世界へ！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915639168"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=I9njzRL71u0",
+            "title": "この星に生きるもの【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915630005"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=D1oJ1jvjx7g",
+            "title": "なんでいきなりっ！？【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915633735"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Eb1Tr1THtmc",
+            "title": "ジョバンとうげ【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915636556"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=dSSaWNs5Ju8",
+            "title": "シンリョクの森【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915635237"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=K4pVJIpNGpU",
+            "title": "ちょっとしたひと時に【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915632794"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=pUl9Z5Mfwnw",
+            "title": "しかたない......【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915630646"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=YOSbRm340_Y",
+            "title": "山を越えて【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915635795"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=WZo3ioWe04g",
+            "title": "コノハナの家【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915634144"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=hlIn4at5XIc",
+            "title": "村の子どもたち【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915634180"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=9AxqWpas2Z8",
+            "title": "わわわわわっ！！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915631312"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=OajrbgZJak8",
+            "title": "おだやか村【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915639500"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=oKTbV59pl3U",
+            "title": "小さなもめごと【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915638337"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=IMRes-fygWw",
+            "title": "こわそうな森【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915633706"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=XD6qhkaj0eg",
+            "title": "奥底にひそむもの【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915633916"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=BW29RkIU6wk",
+            "title": "学校にいこう！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915633532"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=wF0sG57nn3g",
+            "title": "帰り道【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915639559"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=PFAGGlo1lJk",
+            "title": "ヤンチャムとチョボマキ【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915639685"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=lgKYZ_d6DpI",
+            "title": "おこられる【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915635937"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=HYuokLQBtWc",
+            "title": "モグリュー炭鉱【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915635061"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=ZBzDyCA3bB4",
+            "title": "せまるきょうふ【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915636908"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=E42bHml2iIc",
+            "title": "ボスバトル！　子どもたちの冒険！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915639114"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Sykh5ADFHD0",
+            "title": "心の中の宝物【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915630089"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=w75yW0aRNpI",
+            "title": "パートナーのテーマ【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915638972"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=7Ial5S-lkrA",
+            "title": "学校うらの森【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915634813"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=MEU02-DzGls",
+            "title": "冒険のとちゅうで【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915637133"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=0icDSLjOkxs",
+            "title": "くじけない　あきらめない【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915632519"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=--gIwUP6fgM",
+            "title": "ミルホッグ教頭先生のテーマ【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915634450"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=mI6TlcDcVdU",
+            "title": "キララ山【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915635231"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=dFbaoy-0348",
+            "title": "ほのぼの【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915630528"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=LdyrUV65-wM",
+            "title": "おおらかな　やさしさで【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915638038"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=zvdm6sG7CeA",
+            "title": "どうしよう......【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915634576"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=VpoUIzpmJnM",
+            "title": "いったい　どこに......？【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915638547"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=uc2IcfILOfY",
+            "title": "カンロ草原【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915632175"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=yZvOSPR1dKM",
+            "title": "さすらいのデンリュウ【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915639739"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=dOYez6kNuvc",
+            "title": "ニョロボンリバー【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915631814"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=YgPZDveiNyE",
+            "title": "調査団のあかし【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915630561"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=1yUVdqiBeas",
+            "title": "しずかな夜【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915639731"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=BXhjXO3nAmw",
+            "title": "夜の学校のウワサ【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915638695"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=9LlRfCQyfHw",
+            "title": "学校の見回りで【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915632158"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=ObIAHCTWykM",
+            "title": "あついよぉ......【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915639887"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Ew-8YWM-T3w",
+            "title": "おそろしい影【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915633526"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=FQcPp166Na8",
+            "title": "青白い火【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915635933"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=SEOPPDmXOUg",
+            "title": "いにしえの骨跡【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915635748"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=wOoNLyiTi7I",
+            "title": "パートナーのテーマ　オルゴール【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915632353"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=zohH430aaTk",
+            "title": "テンケイ山【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915633696"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=n8uPSWPdpGE",
+            "title": "子どもたちが見送りに......【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915634679"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=u_oNcAVcpaI",
+            "title": "キリタッタ山脈【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915637807"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=m9arkrMt8Fo",
+            "title": "なだらかな洞窟【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915631756"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=0obPRAu3hTk",
+            "title": "ワイワイタウン【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915631275"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=DRXnVThdAYo",
+            "title": "進め！　ポケモン調査団！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915632571"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=1w4a6wo5DFI",
+            "title": "ポケモン調査団　オルゴール【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915636417"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=X2KnNWWI6m4",
+            "title": "伝説ボスバトル！　ロックバージョン【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915634589"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=IyyzPt-1u40",
+            "title": "風の大陸　パラムタウン【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915634374"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=h1ddACY83oU",
+            "title": "神秘の森【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915636511"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=L1_fFBdzfeM",
+            "title": "石化のなぞ【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915631615"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=AtE-jhQYVw8",
+            "title": "せまるきょうふ　アレンジ１【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915639514"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=pm-jcKbtaNQ",
+            "title": "立ち向かうは調査団のほこり【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915639436"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=78vU1BHa6ks",
+            "title": "炎の島の火山【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915638051"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=bJ3zU9NdQto",
+            "title": "ボスバトル！　調査団の戦い！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915630564"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=yHb6qb8pG2Y",
+            "title": "進化のちから【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915632183"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=soStaati-vM",
+            "title": "対決！　火山のエンテイ！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915638814"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=vAZovdwMbkA",
+            "title": "調査団の気持ちは同じ！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915635748"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=u4P4Sk9MCFo",
+            "title": "決戦ヶ岳【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915631903"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=eNw-R7UG1Ec",
+            "title": "奥底にひそむもの　アレンジ１【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915635331"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=vc7SLEjjJYU",
+            "title": "たいへんだっ！！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915633537"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=QYK0Uv3yzZ8",
+            "title": "残された古代文字【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915631258"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=kcBroeVGeEo",
+            "title": "なにかが...ちがう......！？【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915638275"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=bpozXqGpqaM",
+            "title": "急襲！　イベルタル！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915633210"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=c6Ggt5w2ynA",
+            "title": "スベテノポケモンニ告グッ！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915636183"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=axwj3pXe2AQ",
+            "title": "虚無の世界【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915635720"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=OX2_gPXeaHU",
+            "title": "ならくの荒野【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915630019"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=kt2h2E5jJhY",
+            "title": "悲しみの中で【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915639110"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=ZqmT-LS9Dtg",
+            "title": "シンエン洞窟【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915632177"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=_WuSkwTDAUw",
+            "title": "静かな岩場【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915635526"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=DfEGH4pkCcA",
+            "title": "虚無の影【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915637218"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=CwfqlYMy718",
+            "title": "伝説の三聖獣【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915637067"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Be0i_E0Qsi4",
+            "title": "地天の山【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915630739"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=7cKGmDnlPsA",
+            "title": "奥底にひそむもの　アレンジ２【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915636017"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=5prqyHkrLoU",
+            "title": "三聖獣の決意【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915636357"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=UIkVRv6l39Q",
+            "title": "たくされた希望【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915632071"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=QM6GVtTRfwk",
+            "title": "海中洞窟【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915636907"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=8Ps0ifCUOeQ",
+            "title": "古代遺跡【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915635391"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=dWzJAh2jfYA",
+            "title": "失われた記憶の秘密【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915636496"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=24WQoMds8D0",
+            "title": "生命の木　南の島【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915633427"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=VlQexxQHc58",
+            "title": "始まりの森への道【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915631091"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=vOvEwnP_hUc",
+            "title": "かれた生命の木【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915633516"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=jpF0WEInlGE",
+            "title": "イベルタルたちとの戦い【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915636445"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=gwe-vUeZWoM",
+            "title": "ぼくたちは飛べる！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915637485"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=iWvN58K3Nco",
+            "title": "ポケモンたちのちから【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915630907"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=S377YbvvPyE",
+            "title": "生命の木　はこびの千本根【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915633251"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=l8jvCPGM5Ps",
+            "title": "生命の木　かがやきの幹【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915637864"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=XMTTfd6Ln6E",
+            "title": "かならず...たおすから！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915639893"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=eXB-za7FsBc",
+            "title": "ダークマター戦　ファースト【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915632818"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=RTrKHBdkz-c",
+            "title": "再生！　ダークマター！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915631647"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=ZOeo5JAhRcw",
+            "title": "弱くても　あがくだけだッ！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915636270"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=zc6igi76m98",
+            "title": "奥底にひそむもの　アレンジ３【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915632708"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=v2isfPdz7Bo",
+            "title": "あきらめるな【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915630900"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=CYxj2WNpW4s",
+            "title": "ダークマター戦　セカンド【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915638860"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=aIMmIU--I7o",
+            "title": "なくならぬ負の感情【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915631834"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=x2h24rNle-8",
+            "title": "こ...ここは......？【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915636374"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=eBRKBcVArw4",
+            "title": "復活！　生命の木！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915633993"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=rehFXQACTsw",
+            "title": "世界が守られたよろこびで【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915636641"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=UF0oJO9M8ys",
+            "title": "おだやか村へ帰ろう【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915636926"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=_VMMCp7pqlA",
+            "title": "おかえり！　そしてありがとう！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915633386"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=jQ2_7s2WG1k",
+            "title": "光に包まれて......【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915634632"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=6_Y1YtrzKns",
+            "title": "別れの時【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915638772"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=ag8eTXoY5Pw",
+            "title": "エンディング【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915637979"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=b_DV5lzJmQE",
+            "title": "草の大陸　カビンタウン【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915630879"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=iZRQ4vJCCxM",
+            "title": "霧の大陸　ノエタウン【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915632249"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=fDz_aB7TpLc",
+            "title": "砂の大陸　ラムルタウン【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915633533"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=U3uFcs_Ha70",
+            "title": "森と山のささやき（救助隊）【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915630017"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=gxs7EabDgpU",
+            "title": "海岸の洞窟（探検隊）【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915632959"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=rphRQZXQ3jQ",
+            "title": "エレキ平原（探検隊）【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915635518"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=uUGwiPJBdco",
+            "title": "水晶の洞窟（探検隊）【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915637839"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=toVnqlgwPMA",
+            "title": "ボスバトル！　列強伝説！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915634968"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=XnAUR0kSb98",
+            "title": "ペリッパー島【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915633892"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=JukeC3CK1ig",
+            "title": "モンスターハウスだ！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915637317"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=BUmNFFGnrhg",
+            "title": "カクレオンのお店【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915632094"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=pqvRHuo8Mf0",
+            "title": "わるものだぁ！【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915633564"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=eQRaqVMf48A",
+            "title": "せいれいの砂丘【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915636076"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=vGxXYgmBPLg",
+            "title": "ミステリージャングル【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915630508"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=AiplWCddgZE",
+            "title": "じょうかの洞窟【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915635989"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=SqKBVsNJiLI",
+            "title": "無限大ダンジョン１【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915630300"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=VPG2oZ9aGoE",
+            "title": "無限大ダンジョン２【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915630788"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=HyxT3__2HvU",
+            "title": "無限大ダンジョン３【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915630221"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=dAQdyH_5feA",
+            "title": "Vルーレット！【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915635620"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=33Lmb0Mm6-o",
+            "title": "伝説との戦い【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915637440"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=num9wREwLic",
+            "title": "でこぼこ山【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915630539"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=qqPsf_52QD0",
+            "title": "まぼろしのでこぼこ山【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915631508"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=rL8lCcgVLtI",
+            "title": "石の洞窟【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915632156"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=nDke5yoKpMA",
+            "title": "カゲロウ峠【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915630964"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=hXfUUAHHCbA",
+            "title": "カゲロウ峠　高地【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915639033"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=GXn-vUNjME8",
+            "title": "まぼろしのカゲロウ峠【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915638950"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=zp542BzGUyk",
+            "title": "トントン山【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915639964"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=cTNItbrVDrg",
+            "title": "荒れ果て谷【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915633618"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=V78-ZCEl_gM",
+            "title": "シキサイの森【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915637254"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=ju7qjzg93HE",
+            "title": "ドウコクの谷【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915634750"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=lV-bPDiNQxQ",
+            "title": "ドウコクの谷　奥地【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915634127"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=or2S_iEX-D0",
+            "title": "地脈のはざま【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915631015"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=KNadeYHCAcw",
+            "title": "大氷河【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915630220"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=k6ntL5meuas",
+            "title": "氷の地下道【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915631737"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=JuqqIOELwHM",
+            "title": "グレッシャーパレス【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915633138"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=7A4aB_QhhhE",
+            "title": "グレッシャーパレス　最上部【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915636187"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=TzpLcBMoB-s",
+            "title": "ゲノウエア間道【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915636309"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=lG7EVAMsK-w",
+            "title": "闇夜の森【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915633280"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=cTXRvLr7QYA",
+            "title": "あかつきの山岳【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915633061"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=yDLuyUieERg",
+            "title": "あかつきの山岳　高地【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915633835"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=VlMcUEdcxQU",
+            "title": "イエローキャニオン【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915632050"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=-TjAyQWrwBY",
+            "title": "カレカレ草原【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915633555"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=JN1ql2MmwvQ",
+            "title": "風穴の丘【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915637155"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=qDxKEFPrUXI",
+            "title": "まぼろしの風穴の丘【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915638063"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=d9nP7vlItVs",
+            "title": "カエン砂漠【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915631871"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Qz7ZmvUgDns",
+            "title": "シアンの迷い道【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915631835"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=oWIq8j_Fn9A",
+            "title": "シアンの迷い道　最奥部【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915631964"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=XQBPSyMw1YE",
+            "title": "グレッシャーパレス　東の塔【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915634986"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=1K7oITrVEck",
+            "title": "グレッシャーパレス　西の塔【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915631012"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=aaHUxVRz8Hc",
+            "title": "グレッシャーパレス　大結晶の塔【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915634729"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Xpq80u2H4GM",
+            "title": "キュレム！　宿命の戦い！【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915636385"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=LNLPcUaArh8",
+            "title": "氷触体戦　ファースト【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915635781"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=QJ1sSgkuEVo",
+            "title": "氷触体戦　セカンド【1時間耐久】【ポケモン不思議のダンジョン マグナゲートと∞迷宮 BGM】",
+            "id": "17741761915635210"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=63vhYBEhWxE",
+            "title": "レックウザとの戦い（救助隊）【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915636619"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=9IQzpepBr0M",
+            "title": "決戦！　ディアルガ！（探検隊）【1時間耐久】【ポケモン超不思議のダンジョン BGM】",
+            "id": "17741761915637247"
+          }
+        ]
       }
     ]
   },
@@ -7228,9 +7664,9 @@
     "switchModeAB": "resume",
     "switchModeBA": "resume",
     "playModeA": "shuffle",
-    "playModeB": "group_shuffle",
+    "playModeB": "order",
     "obsEnabled": true,
-    "clipboardWatchEnabled": true,
+    "clipboardWatchEnabled": false,
     "timerMinutes": 10,
     "timerEnabledAB": true,
     "timerEnabledBA": false,
@@ -7246,7 +7682,7 @@
     "timerSecondsAB": 2,
     "timerSecondsBA": 0,
     "clipboardAutoAnalyze": false,
-    "targetRms": 0.1,
+    "targetRms": 0.1609,
     "syncTrim": true
   }
 }
