@@ -1,5 +1,5 @@
 /**
- * 自作GAME STREAM DJ - v1.9.3
+ * 自作GAME STREAM DJ - v1.9.3-beta
  * Grouping and Advanced UI
  */
 

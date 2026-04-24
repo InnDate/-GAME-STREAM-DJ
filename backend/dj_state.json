@@ -103,6 +103,40 @@
         "id": "17770159047870114"
       },
       {
+        "url": "https://www.youtube.com/watch?v=8B18k0XlGoo",
+        "title": "Farewell | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+        "id": "17770164390244428"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=CP6D4KHRPO8",
+        "title": "File Select | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+        "id": "17770164390249034"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=K_grFAreCaU",
+        "title": "Friend Area ~ Caves | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+        "id": "17770174385642227"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=SpGmQwgGSG8",
+        "title": "Friend Area ~ Forest | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+        "id": "17770184176067715"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=GFDlgASAVhg",
+        "title": "Friend Area ~ Oceanic | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+        "id": "17770189185362684",
+        "loopStart": 0,
+        "loopEnd": 9999
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=tGhBae7-umY",
+        "title": "Friend Area ~ Pond | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
+        "id": "17770191416332215",
+        "loopStart": 0,
+        "loopEnd": 9999
+      },
+      {
         "id": "17770132054577740",
         "type": "group",
         "title": "Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
@@ -834,16 +868,6 @@
         "id": "17769469854853080",
         "loopStart": 112.4,
         "loopEnd": 342
-      },
-      {
-        "url": "https://www.youtube.com/watch?v=8B18k0XlGoo",
-        "title": "Farewell | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-        "id": "17770164390244428"
-      },
-      {
-        "url": "https://www.youtube.com/watch?v=CP6D4KHRPO8",
-        "title": "File Select | Pokémon Mystery Dungeon: Rescue Team DX Extended OST",
-        "id": "17770164390249034"
       }
     ],
     "deckB": [
@@ -1414,7 +1438,7 @@
             "loopEnd": 9999
           }
         ],
-        "collapsed": true
+        "collapsed": false
       },
       {
         "id": "17762462672705957",
@@ -3066,7 +3090,7 @@
             "id": "1770545610367"
           }
         ],
-        "collapsed": true
+        "collapsed": false
       },
       {
         "id": "group_1774840377316",
@@ -3365,7 +3389,7 @@
             "id": "17748401425355303"
           }
         ],
-        "collapsed": true
+        "collapsed": false
       },
       {
         "id": "group_1774155906577",
@@ -7681,9 +7705,9 @@
     "testLoopDuration": 1.5,
     "switchMode": "restart",
     "clipboardTargetDeck": "loadA_analyze",
-    "switchModeAB": "restart",
-    "switchModeBA": "resume",
-    "playModeA": "shuffle",
+    "switchModeAB": "next",
+    "switchModeBA": "next",
+    "playModeA": "group_order",
     "playModeB": "group_shuffle",
     "obsEnabled": true,
     "clipboardWatchEnabled": false,
@@ -7696,7 +7720,7 @@
     "obsSceneB": "battling",
     "timerMinutesAB": 10,
     "timerMinutesBA": 10,
-    "fadeDurationAB": 2.3,
+    "fadeDurationAB": 2,
     "fadeDurationBA": 2,
     "triggerFromObs": false,
     "timerSecondsAB": 2,
@@ -7707,18 +7731,20 @@
   },
   "decks": {
     "deckA": {
-      "currentUrl": "https://www.youtube.com/watch?v=CP6D4KHRPO8",
-      "currentTrackId": "17770132054709330",
+      "currentUrl": "https://www.youtube.com/watch?v=tGhBae7-umY",
+      "currentTrackId": "17743237239689107",
       "loopStart": 0,
       "loopEnd": 9999,
       "trim": 1,
       "trimAutoEnabled": false
     },
     "deckB": {
-      "currentUrl": "",
-      "loopStart": 6,
-      "loopEnd": 92,
+      "currentUrl": "https://www.youtube.com/watch?v=lKadT59x_eQ&pp=ygUhWFkg6YeO55Sf44CAQkdN44CA44K_44Kk44Kt44Ol44Km0gcJCdsKAYcqIYzv",
+      "currentTrackId": "17759986568351077",
+      "loopStart": 31.9,
+      "loopEnd": 68.61,
       "trim": 1,
+      "lastRms": 0.1079,
       "trimAutoEnabled": false
     }
   }
