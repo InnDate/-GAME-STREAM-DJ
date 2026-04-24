@@ -8,7 +8,12 @@
 - [-] 実装中 / In Progress
 - [!] 外部依存により制限あり
 
-## v1.9.2 (Current Task)
+## v1.9.3 (Current Task)
+- [x] **ライブラリ/D&D読み込み時の再生不具合修正**:
+    - loadGroupDirect において、アクティブデッキかどうかに関わらず常に自動再生（フェードあり）するように変更。
+    - loadTrackDirect において、loadVideoById の後に明示的な playVideo 命令を追加。
+
+## v1.9.2
 - [x] **デッキ状態の永続化**:
     - リロード時に各デッキのロード状態（URL、ループ、Trim、Auto設定等）を自動復元する機能を実装。
     - backend/main.py の AppState に decks 情報を統合。

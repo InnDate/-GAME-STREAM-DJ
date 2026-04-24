@@ -1,5 +1,5 @@
 /**
- * 自作GAME STREAM DJ - v1.9.2
+ * 自作GAME STREAM DJ - v1.9.3
  * Grouping and Advanced UI
  */
 
@@ -1249,9 +1249,8 @@ function loadGroupDirect(deckKey, group, fromQueue = false) {
         targetTrack = allTracks[0];
     }
 
-    // アクティブデッキなら自動再生、そうでなければ停止
-    const isActiveDeck = (deckKey === 'deckA' && state.mode === 'A') || (deckKey === 'deckB' && state.mode === 'B');
-    loadTrackDirect(deckKey, targetTrack.url, isActiveDeck, targetTrack.id, targetTrack);
+    // キューからのクリックと同様、常に自動再生（既に再生中ならフェード）させる
+    loadTrackDirect(deckKey, targetTrack.url, true, targetTrack.id, targetTrack);
     
     renderAllLists();
     saveState();
@@ -2681,6 +2680,8 @@ function loadTrackDirect(deckKey, url, autoPlay = true, trackId = null, trackInf
         deckState.activePlayer = 1;
         if (autoPlay) {
             deckState.p1.loadVideoById({videoId: vid, suggestedQuality: 'tiny'});
+            // 明示的な再生命令を追加して確実性を高める
+            if (deckState.p1.playVideo) deckState.p1.playVideo();
         } else {
             deckState.p1.cueVideoById({videoId: vid, suggestedQuality: 'tiny'});
         }
